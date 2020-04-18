@@ -1,0 +1,191 @@
+/* FONTS */
+@font-face {
+    font-family: architects-daughter;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/architectsdaughter/v8/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvTYlg4w.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/robotoslab/v7/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: special-elite;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/specialelite/v8/XLYgIZbkc4JPUL5CVArUVL0ntnAOSA.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/86b539/00000000000000003b9b093a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3);
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3);
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/3331e6/00000000000000003b9b0936/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/1cd3b2/00000000000000003b9b0937/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3);
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: bebas-neue;
+    src: url(https://use.typekit.net/af/2f0e6a/00000000000000003b9b12e6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Caveat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/caveat/v4/Wnz6HAc5bAfYB2Q7ZjYY.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: Overlock SC;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/overlocksc/v6/1cX3aUHKGZrstGAY8nwVzEGHocU.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: Vollkorn SC;
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/vollkornsc/v1/j8_y6-zQ3rXpceZj9cqnVinFG2uta7I.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: Bitter;
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/bitter/v12/rax_HiqOu8IVPmnzxKl8Axhf.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v12/4iCv6KVjbNBYlgoCjC3jsGyN.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: Roboto-Condensed;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQ.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/oswald/v16/TK3iWkUHHAIjg752GT8G.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+
+@import url(https://use.typekit.net/xyz7swh.css);

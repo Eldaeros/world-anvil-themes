@@ -1,0 +1,15 @@
+.campaign-protagonists {
+    .card-box {
+        width: 100%;
+        overflow: hidden;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25),
+            0px 0px 25px 10px rgba(35, 35, 50, 0.05) inset;
+
+        img.img-responsive {
+            width: calc(125%);
+            height: calc(125%);
+            margin: -12.5% 0 -12.5% -12.5%;
+            max-width: fit-content;
+        }
+    }
+}

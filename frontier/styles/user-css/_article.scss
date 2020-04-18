@@ -1,0 +1,70 @@
+.article-title {
+    border-bottom: 7px solid var(--primary_theme);
+    z-index: 10;
+    pointer-events: none;
+    /* To widen the div and have the border stretch across */
+    margin: 0 -10px;
+    padding: 0 25px;
+    width: calc(100% + 20px);
+    height: var(--banner_height);
+    color: white;
+    text-shadow: 0 0 3px #000000;
+
+    h1 {
+        font-family: bebas-neue, bebas-neue-regular;
+        font-size: 50px;
+        padding-top: 45px;
+        margin-top: 0px;
+        font-weight: 500;
+    }
+}
+
+.article-subheading {
+    opacity: 0.9;
+    font-family: special-elite;
+    font-size: 18px;
+}
+
+.article-title h1,
+.article-subheading {
+    color: white;
+    text-transform: none;
+    padding-left: 0px;
+}
+
+.article-title-author {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 10px !important;
+    padding-left: 0px;
+    opacity: 0.8;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: proxima-nova;
+}
+
+.article-content {
+    .col-md-8 {
+        padding-left: 15px;
+      }
+
+      .col-md-4 {
+        padding-right: 15px;
+      }
+}
+
+.article-content-left {
+    a {
+        font-weight: 600;
+    }
+
+    h2:nth-child(1),
+    p:nth-child(2) {
+        display: none;
+    }
+
+    h3:first-child {
+        text-transform: none;
+        padding-bottom: 5px;
+      }
+}

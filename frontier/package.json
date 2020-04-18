@@ -1,0 +1,9 @@
+{
+  "name": "world_anvil_sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "sass --watch ./styles:output/"
+  }
+}

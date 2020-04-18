@@ -1,0 +1,115 @@
+// HOMEPAGE
+&.page-world-homepage {
+    // Title
+    .world-title {
+        color: transparent;
+        background-image: url(https://www.worldanvil.com/uploads/images/f14960c19ce1a1d51fa3f6b21bda6863.png);
+        height: 250px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 0px;
+        position: absolute;
+        left: 0;
+        margin: 0px;
+
+        // MOBILE
+        @media (max-width: $page_width_mobile) {
+            & {
+                width: 100vw;
+                background-size: 750px;
+            }
+        }
+
+        // SMALL
+        @media (min-width: $page_width_small) {
+            & {
+                width: 750px;
+                margin-left: calc((-750px / 2) + 50%);
+                background-size: 1000px;
+            }
+        }
+
+        // STANDARD
+        @media (min-width: $page_width_standard) {
+            & {
+                width: 970px;
+                margin-left: calc((-970px / 2) + 50%);
+                background-size: 1000px;
+            }
+        }
+
+        // WIDE
+        @media (min-width: $page_width_wide) {
+            & {
+                width: 1170px;
+                margin-left: calc((-1170px / 2) + 50%);
+                background-size: 1200px;
+            }
+        }
+    }
+
+    .world-currentDate {
+        height: 250px;
+        margin: 0px;
+    }
+
+    // Subheading
+    .subheading {
+        margin-top: 16px;
+    }
+
+    // Hide Followers Counter
+    .followers-counter {
+        display: none;
+    }
+
+    // Authors
+    .world-authors {
+        padding-bottom: 8px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-end;
+
+        p {
+            height: 20px;
+            color: white;
+            font-family: proxima-nova;
+            font-style: normal;
+            font-size: 1.1em;
+            text-shadow: 0 0 3px #000000;
+            opacity: 0.8;
+            font-variant-caps: all-small-caps;
+        }
+
+        .world-owners,
+        .world-editors,
+        .world-writers {
+            .author-item {
+                text-transform: uppercase;
+                font-weight: 700;
+                width: 100px;
+                padding-bottom: 10px;
+
+                a {
+                    color: white;
+                    font-weight: 300;
+                    text-transform: capitalize;
+                    font-style: normal;
+                    -webkit-text-stroke: 0.5px;
+                    text-shadow: 0 0 3px #000000;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+// .subheading {
+//     font-family: architects-daughter;
+//     font-size: 15px;
+//     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+//     padding: 30px;
+//     margin-top: 30px;
+// }

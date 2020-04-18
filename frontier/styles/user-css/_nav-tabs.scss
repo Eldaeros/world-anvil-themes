@@ -1,0 +1,64 @@
+#cover .nav-tabs,
+.nav-tabs {
+    margin-bottom: 5px;
+    z-index: 5;
+    height: 35px;
+    border: none;
+
+    li {
+        a {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: none;
+            height: 35px;
+            line-height: 34px;
+            border-radius: 3px 3px 0px 0px;
+            min-width: 125px;
+            text-align: center;
+            background-color: rgba(125, 125, 125, 0.3);
+            color: white;
+            font-family: open-sans;
+            border: none;
+            background: var(--primary_theme);
+            text-shadow: 0 0 10px #000000;
+        }
+
+        &.active a {
+            box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        &:not(.active) a {
+            box-shadow: inset 0px -7px 11px 0px rgba(0, 0, 0, 0.19),
+                0px -1px 5px 0px rgba(0, 0, 0, 0.5);
+
+            &:hover,
+            &:focus {
+                background-color: var(--primary_theme_darker);
+            }
+        }
+    }
+
+    .active {
+        a {
+            &:hover,
+            &:focus {
+                font-family: open-sans;
+                font-size: 12px;
+                font-weight: 600;
+                color: white;
+                text-transform: none;
+                border: none;
+                background: var(--primary_theme);
+                box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.5);
+                outline: none;
+            }
+        }
+    }
+}
+
+ul.nav.nav-tabs {
+    position: absolute;
+    top: -35px;
+    margin: 0 10px;
+    left: 8px;
+}

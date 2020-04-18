@@ -1,0 +1,103 @@
+// MENUS
+.backtoworld a {
+    /* Home Button */
+    background: var(--primary_theme);
+    font-family: proxima-nova, roboto, sans-serif;
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #fff;
+    z-index: 2;
+    height: 40px;
+    line-height: 20px;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 40px;
+
+    @media (max-width: $page_width_mobile) {
+        left: 10px;
+    }
+
+    &:before {
+        content: url(https://cdn.rawgit.com/Eldaeros/city_of_mist/84b63baf/World%20Anvil/Home-Content.png);
+        position: absolute;
+        padding: 10px 10px;
+        font-size: 0.8em;
+        font-weight: 600;
+        color: #fff;
+        z-index: 2;
+        height: 40px;
+        line-height: 20px;
+        visibility: visible;
+        background: var(--primary_theme);
+        font-size: 1.2em;
+        width: 40px;
+        text-align: center;
+        left: 10px;
+        background-image: url(https://cdn.rawgit.com/Eldaeros/city_of_mist/84b63baf/World%20Anvil/Home_white.svg);
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    &:hover:before {
+        background-color: var(--primary_theme_darker);
+    }
+}
+
+// Menu Controls
+.menu-control {
+    height: 40px;
+    width: 40px;
+    background: none;
+    background-color: var(--primary_theme);
+    color: white;
+    padding: 0;
+    padding-top: 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+
+    &:hover {
+        background-color: var(--primary_theme_darker);
+    }
+
+    i.fa-bars {
+        line-height: 20px;
+    }
+
+    &:hover,
+    &:focus {
+        color: white;
+    }
+}
+
+// World Menu
+.worldmenu-inner {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.search-form {
+    position: absolute;
+    top: -50px;
+    z-index: 1;
+    right: 0;
+
+    @media (max-width: $page_width_mobile) {
+        right: 20px;
+    }
+
+    .form-group {
+        position: absolute;
+        right: 0;
+    }
+}

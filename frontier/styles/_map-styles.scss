@@ -1,0 +1,87 @@
+
+/* EVERYTHING BELOW THIS COMMENT I cannot modify with .user-css-map or any .user-css */
+
+/* MAP STYLES */
+
+#sidebar {
+    transition: margin 0.5s;
+}
+
+.my-label.label-district,
+.my-label.label-water  {
+    background: none;
+    border: none;
+    font-family: proxima-nova;
+    font-size: 0.9rem;
+    box-shadow: none;
+    text-shadow: 0 0 black;
+    letter-spacing: 0.8px;
+    height: auto;
+    width: max-content;
+    max-width: 125px;
+    font-variant-caps: petite-caps;
+}
+
+.my-label.label-district {
+    color: white;
+    white-space: normal;
+    overflow-wrap: normal;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.my-label.label-water {
+    color: #8c8c8c;
+}
+
+.leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+}
+
+.leaflet-popup-content {
+  margin: -2px 5px 1px 5px;
+}
+
+.leaflet-popup.leaflet-zoom-animated {
+  margin-bottom: 10px !important;
+}
+
+.marker-content h5 {
+  font-weight: 500;
+  font-family: proxima-nova;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+a.leaflet-popup-close-button {
+  display: none;
+}
+
+.leaflet-popup-tip {
+  display: none;
+}
+
+/* LAYOUT FIXES FOR SMALL PAGES */
+.presentation-interface {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#full-layout {
+  height: 100%;
+}
+
+#full-layout div.user-css-viewer {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 100%;
+}
+
+.page {
+  flex: 1;
+}

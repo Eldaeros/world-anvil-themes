@@ -1,0 +1,36 @@
+.theme {
+    &.logos {
+        background: rgb(255, 238, 170);
+        color: #825a00;
+    }
+
+    &.mythos {
+        background: rgb(203, 206, 226);
+        color: #4a4f6e;
+    }
+
+    &.bonus {
+        background: rgb(204, 233, 251);
+        color: #183e5a;
+    }
+}
+
+.highlight {
+    &.tag {
+        background: rgb(251, 245, 191);
+        color: #56531d;
+    }
+
+    &.status {
+        background: rgb(218, 226, 203);
+        color: #3b4a31;
+    }
+}
+
+.custom-move {
+    background: rgba(245, 245, 245, 1);
+    box-shadow: 3px 3px 5px #44444420;
+    padding: 20px;
+    margin: 10px;
+    line-height: 1.5em;
+}

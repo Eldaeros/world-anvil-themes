@@ -1,0 +1,916 @@
+/* COLOURS */
+@import url(https://use.typekit.net/xyz7swh.css);
+* {
+  --primary_theme: #413a51;
+  --primary_theme_darker: #231e2e;
+  --secondary_theme: #2b4162;
+  --secondary_theme_darker: #273045;
+  --base_text_colour: #393939fc;
+  --link_active: #2b4162;
+  --link_hover: #769bc6;
+  --link_new: #a73235;
+}
+
+/* DIMENSIONS */
+* {
+  --banner_height: 250px;
+  --page_top_margin: 50px;
+}
+
+.user-css,
+.user-css-extended,
+.user-css-map-sidebar {
+  /* prettier-ignore */
+}
+.user-css,
+.user-css-extended,
+.user-css-map-sidebar {
+  font-family: proxima-nova, open-sans, sans-serif;
+}
+.user-css h1, .user-css h2, .user-css h3, .user-css h4, .user-css h5, .user-css h6,
+.user-css-extended h1,
+.user-css-extended h2,
+.user-css-extended h3,
+.user-css-extended h4,
+.user-css-extended h5,
+.user-css-extended h6,
+.user-css-map-sidebar h1,
+.user-css-map-sidebar h2,
+.user-css-map-sidebar h3,
+.user-css-map-sidebar h4,
+.user-css-map-sidebar h5,
+.user-css-map-sidebar h6 {
+  font-family: proxima-nova;
+  text-transform: capitalize;
+}
+.user-css h2,
+.user-css-extended h2,
+.user-css-map-sidebar h2 {
+  color: var(--secondary_theme);
+  font-size: 1.5em;
+  font-family: raleway, sans-serif;
+  font-variant-caps: petite-caps;
+  font-weight: 600;
+  border-bottom-color: var(--secondary_theme);
+}
+.user-css h3,
+.user-css-extended h3,
+.user-css-map-sidebar h3 {
+  color: var(--secondary_theme_darker);
+  font-size: 1.8rem;
+  font-family: open-sans;
+  font-weight: 600;
+}
+.user-css h4,
+.user-css-extended h4,
+.user-css-map-sidebar h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--secondary_theme_darker);
+}
+.user-css h5,
+.user-css-extended h5,
+.user-css-map-sidebar h5 {
+  font-weight: 600;
+  text-transform: none;
+  font-size: 15px;
+}
+.user-css a,
+.user-css-extended a,
+.user-css-map-sidebar a {
+  color: var(--link_active);
+  font-weight: 500;
+}
+.user-css a:hover,
+.user-css-extended a:hover,
+.user-css-map-sidebar a:hover {
+  color: var(--link_hover);
+}
+.user-css a.text-danger,
+.user-css-extended a.text-danger,
+.user-css-map-sidebar a.text-danger {
+  color: var(--link_new);
+}
+.user-css b,
+.user-css-extended b,
+.user-css-map-sidebar b {
+  font-weight: 600;
+}
+.user-css p,
+.user-css #profile,
+.user-css-extended p,
+.user-css-extended #profile,
+.user-css-map-sidebar p,
+.user-css-map-sidebar #profile {
+  font-family: proxima-nova, open-sans, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: var(--base_text_colour);
+}
+.user-css blockquote,
+.user-css-extended blockquote,
+.user-css-map-sidebar blockquote {
+  background: whitesmoke;
+  border-left: 10px var(--secondary_theme) solid;
+  font-family: architects-daughter;
+  font-size: 1.6rem;
+}
+.user-css hr,
+.user-css-extended hr,
+.user-css-map-sidebar hr {
+  border-color: var(--secondary_theme);
+}
+
+.user-css {
+  /* Category Page */
+}
+.user-css #cover {
+  position: absolute;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .user-css #cover {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+.user-css #cover img {
+  height: 500px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+}
+.user-css.page-article #cover img, .user-css.page-category #cover img {
+  height: var(--banner_height);
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+}
+.user-css.page-articlediv#cover:after, .user-css.page-categorydiv#cover:after, .user-cssdiv#cover:after {
+  display: block;
+  width: 100%;
+  height: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  top: 0;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.15) 85%, rgba(0, 0, 0, 0.3) 95%, rgba(0, 0, 0, 0.6) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.15) 85%, rgba(0, 0, 0, 0.3) 95%, rgba(0, 0, 0, 0.6) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.15) 85%, rgba(0, 0, 0, 0.3) 95%, rgba(0, 0, 0, 0.6) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#99000000", GradientType=0);
+  /* IE6-9 */
+  position: absolute;
+}
+.user-css .artist-credits {
+  color: var(--base_text_colour);
+  font-weight: 600;
+  font-size: 0.85em;
+}
+.user-css .panel-greatgm {
+  background: var(--primary_theme);
+  border: 0px;
+  border-radius: 0px;
+  font-size: 14px;
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0px -25px;
+  box-shadow: inset 1px 4px 9px -6px black, inset -1px -4px 9px -6px black;
+}
+.user-css .panel-greatgm a {
+  color: white;
+  font-weight: 500;
+}
+.user-css .panel-greatgm a.text-danger {
+  color: white;
+}
+.user-css .panel-greatgm a.text-danger:hover {
+  color: var(--link_new);
+}
+.user-css .backtoworld a {
+  /* Home Button */
+  background: var(--primary_theme);
+  font-family: proxima-nova, roboto, sans-serif;
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #fff;
+  z-index: 2;
+  height: 40px;
+  line-height: 20px;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 40px;
+}
+@media (max-width: 767px) {
+  .user-css .backtoworld a {
+    left: 10px;
+  }
+}
+.user-css .backtoworld a:before {
+  content: url(https://cdn.rawgit.com/Eldaeros/city_of_mist/84b63baf/World%20Anvil/Home-Content.png);
+  position: absolute;
+  padding: 10px 10px;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #fff;
+  z-index: 2;
+  height: 40px;
+  line-height: 20px;
+  visibility: visible;
+  background: var(--primary_theme);
+  font-size: 1.2em;
+  width: 40px;
+  text-align: center;
+  left: 10px;
+  background-image: url(https://cdn.rawgit.com/Eldaeros/city_of_mist/84b63baf/World%20Anvil/Home_white.svg);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.user-css .backtoworld a:hover:before {
+  background-color: var(--primary_theme_darker);
+}
+.user-css .menu-control {
+  height: 40px;
+  width: 40px;
+  background: none;
+  background-color: var(--primary_theme);
+  color: white;
+  padding: 0;
+  padding-top: 10px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.user-css .menu-control:hover {
+  background-color: var(--primary_theme_darker);
+}
+.user-css .menu-control i.fa-bars {
+  line-height: 20px;
+}
+.user-css .menu-control:hover, .user-css .menu-control:focus {
+  color: white;
+}
+.user-css .worldmenu-inner {
+  background: rgba(0, 0, 0, 0.45);
+}
+.user-css .search-form {
+  position: absolute;
+  top: -50px;
+  z-index: 1;
+  right: 0;
+}
+@media (max-width: 767px) {
+  .user-css .search-form {
+    right: 20px;
+  }
+}
+.user-css .search-form .form-group {
+  position: absolute;
+  right: 0;
+}
+.user-css.page-world-homepage .world-title {
+  color: transparent;
+  background-image: url(https://www.worldanvil.com/uploads/images/f14960c19ce1a1d51fa3f6b21bda6863.png);
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 0px;
+  position: absolute;
+  left: 0;
+  margin: 0px;
+}
+@media (max-width: 767px) {
+  .user-css.page-world-homepage .world-title {
+    width: 100vw;
+    background-size: 750px;
+  }
+}
+@media (min-width: 768px) {
+  .user-css.page-world-homepage .world-title {
+    width: 750px;
+    margin-left: calc((-750px / 2) + 50%);
+    background-size: 1000px;
+  }
+}
+@media (min-width: 992px) {
+  .user-css.page-world-homepage .world-title {
+    width: 970px;
+    margin-left: calc((-970px / 2) + 50%);
+    background-size: 1000px;
+  }
+}
+@media (min-width: 1200px) {
+  .user-css.page-world-homepage .world-title {
+    width: 1170px;
+    margin-left: calc((-1170px / 2) + 50%);
+    background-size: 1200px;
+  }
+}
+.user-css.page-world-homepage .world-currentDate {
+  height: 250px;
+  margin: 0px;
+}
+.user-css.page-world-homepage .subheading {
+  margin-top: 16px;
+}
+.user-css.page-world-homepage .followers-counter {
+  display: none;
+}
+.user-css.page-world-homepage .world-authors {
+  padding-bottom: 8px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-end;
+}
+.user-css.page-world-homepage .world-authors p {
+  height: 20px;
+  color: white;
+  font-family: proxima-nova;
+  font-style: normal;
+  font-size: 1.1em;
+  text-shadow: 0 0 3px #000000;
+  opacity: 0.8;
+  font-variant-caps: all-small-caps;
+}
+.user-css.page-world-homepage .world-authors .world-owners .author-item,
+.user-css.page-world-homepage .world-authors .world-editors .author-item,
+.user-css.page-world-homepage .world-authors .world-writers .author-item {
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100px;
+  padding-bottom: 10px;
+}
+.user-css.page-world-homepage .world-authors .world-owners .author-item a,
+.user-css.page-world-homepage .world-authors .world-editors .author-item a,
+.user-css.page-world-homepage .world-authors .world-writers .author-item a {
+  color: white;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-style: normal;
+  -webkit-text-stroke: 0.5px;
+  text-shadow: 0 0 3px #000000;
+  line-height: 20px;
+}
+.user-css .sidebar-heading {
+  font-weight: 600;
+  color: white;
+}
+.user-css .user-css {
+  /* Hide the default character image */
+}
+.user-css .user-css.template-person .character-image {
+  position: relative;
+  margin-bottom: 0px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25), 0px 0px 25px 10px rgba(35, 35, 50, 0.05) inset;
+  margin-left: -15px;
+  max-width: 400px;
+}
+.user-css .user-css.template-person .character-image .vignette {
+  display: block;
+  width: calc(100% - 30px);
+  height: calc(100% - 70px);
+  position: absolute;
+  top: 0;
+  margin: 15px;
+  box-shadow: inset 0px 0px 10px 0 #000000, inset 0px 0px 60px 20px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+.user-css .user-css.template-person .character-image .user-css-image-thumbnail {
+  position: relative;
+  padding: 15px;
+}
+.user-css .user-css.template-person .character-image a:after {
+  content: attr(title);
+  text-align: center;
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  padding-top: 10px;
+  font-family: architects-daughter;
+  font-size: 1.4em;
+  color: rgba(0, 0, 0, 0.75);
+}
+.user-css .user-css.page-article.template-person .img-responsive.m-b-20 {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25), 0px 0px 25px 10px rgba(35, 35, 50, 0.05) inset;
+}
+.user-css.page-category .article-list {
+  list-style: none;
+  padding-left: 0;
+  columns: 2;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.user-css.page-category .article-list li {
+  position: relative;
+  opacity: 1;
+  display: inline;
+  clear: none !important;
+  padding: 5px;
+}
+@media (max-width: 767px) {
+  .user-css.page-category .article-list li {
+    width: 100%;
+  }
+}
+.user-css.page-category .article-panel {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px #d4d2c5 solid;
+  margin-bottom: 0px;
+}
+.user-css.page-category .nav-strip {
+  padding: 0;
+  height: 40px;
+  background-color: transparent;
+  box-shadow: none;
+}
+.user-css.page-category .nav-strip a {
+  background: var(--primary_theme);
+  font-family: proxima-nova, roboto, sans-serif;
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #fff;
+  z-index: 2;
+  height: 40px;
+  line-height: 20px;
+  visibility: hidden;
+  top: 0;
+  left: 10px;
+  padding: 0;
+  width: 40px;
+}
+.user-css.page-category .nav-strip a:before {
+  content: url(https://cdn.rawgit.com/Eldaeros/city_of_mist/84b63baf/World%20Anvil/Home-Content.png);
+  position: absolute;
+  padding: 10px 10px;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #fff;
+  z-index: 2;
+  height: 40px;
+  line-height: 20px;
+  visibility: visible;
+  background: var(--primary_theme);
+  font-size: 1.2em;
+  width: 40px;
+  text-align: center;
+  left: 10px;
+  background-image: url(https://cdn.rawgit.com/Eldaeros/city_of_mist/84b63baf/World%20Anvil/Home_white.svg);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.user-css.page-category .nav-strip a:hover:before {
+  background-color: var(--primary_theme_darker);
+}
+.user-css.page-category #header {
+  position: relative;
+  top: -40px;
+}
+.user-css.page-category #header div {
+  width: 100%;
+  margin: 0px;
+  padding: 0px 15px;
+  min-height: var(--banner_height);
+}
+.user-css.page-category #header h1 {
+  font-family: bebas-neue, bebas-neue-regular;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 0 0 3px #000000;
+  text-transform: none;
+  margin: 0px;
+  margin-top: 45px;
+  text-align: left;
+}
+.user-css.page-category #header strong {
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  left: 15px;
+  margin-bottom: 10px !important;
+  opacity: 0.8;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: proxima-nova;
+}
+.user-css.page-category #header a {
+  color: white;
+}
+.user-css.page-category #header p {
+  display: block;
+  padding-top: 160px;
+  margin-bottom: -30px;
+  text-align: left;
+}
+.user-css.page-category :last-child .col-md-4 {
+  width: 100%;
+}
+.user-css .article-title {
+  border-bottom: 7px solid var(--primary_theme);
+  z-index: 10;
+  pointer-events: none;
+  /* To widen the div and have the border stretch across */
+  margin: 0 -10px;
+  padding: 0 25px;
+  width: calc(100% + 20px);
+  height: var(--banner_height);
+  color: white;
+  text-shadow: 0 0 3px #000000;
+}
+.user-css .article-title h1 {
+  font-family: bebas-neue, bebas-neue-regular;
+  font-size: 50px;
+  padding-top: 45px;
+  margin-top: 0px;
+  font-weight: 500;
+}
+.user-css .article-subheading {
+  opacity: 0.9;
+  font-family: special-elite;
+  font-size: 18px;
+}
+.user-css .article-title h1,
+.user-css .article-subheading {
+  color: white;
+  text-transform: none;
+  padding-left: 0px;
+}
+.user-css .article-title-author {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 10px !important;
+  padding-left: 0px;
+  opacity: 0.8;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: proxima-nova;
+}
+.user-css .article-content .col-md-8 {
+  padding-left: 15px;
+}
+.user-css .article-content .col-md-4 {
+  padding-right: 15px;
+}
+.user-css .article-content-left a {
+  font-weight: 600;
+}
+.user-css .article-content-left h2:nth-child(1),
+.user-css .article-content-left p:nth-child(2) {
+  display: none;
+}
+.user-css .article-content-left h3:first-child {
+  text-transform: none;
+  padding-bottom: 5px;
+}
+.user-css .campaign-protagonists .card-box {
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25), 0px 0px 25px 10px rgba(35, 35, 50, 0.05) inset;
+}
+.user-css .campaign-protagonists .card-box img.img-responsive {
+  width: calc(125%);
+  height: calc(125%);
+  margin: -12.5% 0 -12.5% -12.5%;
+  max-width: fit-content;
+}
+.user-css .character-relationship-panel .text-warning,
+.user-css .character-relationship-panel .text-info {
+  display: none;
+}
+.user-css .character-relationship-panel .fa-link {
+  display: none;
+}
+.user-css .character-relationship-panel hr {
+  margin-top: 5px !important;
+}
+.user-css .panel.panel-default:not(.character-relationship-panel) {
+  margin-right: -25px;
+  margin-left: -15px;
+  padding-right: 25px;
+  border-radius: 6px 0px 0px 6px;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-right: none;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  /* background-color: rgba(0, 0, 0, 0.75); */
+  /* Alternate Colours */
+  background-color: var(--secondary_theme);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25), 0px 0px 25px 10px rgba(35, 35, 50, 0.4) inset, -25px 0px 50px 0px rgba(35, 35, 50, 0.4) inset;
+  color: white;
+}
+.user-css .panel.panel-default:not(.character-relationship-panel),
+.user-css .panel.panel-default:not(.character-relationship-panel) a {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+.user-css .panel.panel-default:not(.character-relationship-panel) dt {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: white;
+}
+.user-css .theme.logos {
+  background: #ffeeaa;
+  color: #825a00;
+}
+.user-css .theme.mythos {
+  background: #cbcee2;
+  color: #4a4f6e;
+}
+.user-css .theme.bonus {
+  background: #cce9fb;
+  color: #183e5a;
+}
+.user-css .highlight.tag {
+  background: #fbf5bf;
+  color: #56531d;
+}
+.user-css .highlight.status {
+  background: #dae2cb;
+  color: #3b4a31;
+}
+.user-css .custom-move {
+  background: whitesmoke;
+  box-shadow: 3px 3px 5px #44444420;
+  padding: 20px;
+  margin: 10px;
+  line-height: 1.5em;
+}
+
+.user-css-extended {
+  margin-bottom: calc(5rem + var(--page_top_margin));
+  margin-top: 35px;
+}
+.user-css-extended .dl-horizontal {
+  text-transform: capitalize;
+}
+.user-css-extended .tab-content {
+  color: var(--base_text_colour);
+}
+
+.user-css #cover .nav-tabs,
+.user-css .nav-tabs,
+.user-css-extended #cover .nav-tabs,
+.user-css-extended .nav-tabs {
+  margin-bottom: 5px;
+  z-index: 5;
+  height: 35px;
+  border: none;
+}
+.user-css #cover .nav-tabs li a,
+.user-css .nav-tabs li a,
+.user-css-extended #cover .nav-tabs li a,
+.user-css-extended .nav-tabs li a {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: none;
+  height: 35px;
+  line-height: 34px;
+  border-radius: 3px 3px 0px 0px;
+  min-width: 125px;
+  text-align: center;
+  background-color: rgba(125, 125, 125, 0.3);
+  color: white;
+  font-family: open-sans;
+  border: none;
+  background: var(--primary_theme);
+  text-shadow: 0 0 10px #000000;
+}
+.user-css #cover .nav-tabs li.active a,
+.user-css .nav-tabs li.active a,
+.user-css-extended #cover .nav-tabs li.active a,
+.user-css-extended .nav-tabs li.active a {
+  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.user-css #cover .nav-tabs li:not(.active) a,
+.user-css .nav-tabs li:not(.active) a,
+.user-css-extended #cover .nav-tabs li:not(.active) a,
+.user-css-extended .nav-tabs li:not(.active) a {
+  box-shadow: inset 0px -7px 11px 0px rgba(0, 0, 0, 0.19), 0px -1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.user-css #cover .nav-tabs li:not(.active) a:hover, .user-css #cover .nav-tabs li:not(.active) a:focus,
+.user-css .nav-tabs li:not(.active) a:hover,
+.user-css .nav-tabs li:not(.active) a:focus,
+.user-css-extended #cover .nav-tabs li:not(.active) a:hover,
+.user-css-extended #cover .nav-tabs li:not(.active) a:focus,
+.user-css-extended .nav-tabs li:not(.active) a:hover,
+.user-css-extended .nav-tabs li:not(.active) a:focus {
+  background-color: var(--primary_theme_darker);
+}
+.user-css #cover .nav-tabs .active a:hover, .user-css #cover .nav-tabs .active a:focus,
+.user-css .nav-tabs .active a:hover,
+.user-css .nav-tabs .active a:focus,
+.user-css-extended #cover .nav-tabs .active a:hover,
+.user-css-extended #cover .nav-tabs .active a:focus,
+.user-css-extended .nav-tabs .active a:hover,
+.user-css-extended .nav-tabs .active a:focus {
+  font-family: open-sans;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  text-transform: none;
+  border: none;
+  background: var(--primary_theme);
+  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+.user-css ul.nav.nav-tabs,
+.user-css-extended ul.nav.nav-tabs {
+  position: absolute;
+  top: -35px;
+  margin: 0 10px;
+  left: 8px;
+}
+.user-css #peripheral-content:before,
+.user-css-extended #peripheral-content:before {
+  border-top: 7px solid var(--primary_theme);
+  width: 100%;
+  height: 1px;
+  margin-right: -10px;
+  margin-left: -10px;
+  position: absolute;
+  z-index: 10;
+}
+
+.user-css-map-sidebar .content-title {
+  font-family: bebas-neue, bebas-neue-regular;
+  color: black;
+}
+
+.user-css.page,
+.user-css-extended .page {
+  background: white;
+  top: var(--page_top_margin);
+  margin-bottom: calc(3rem + var(--page_top_margin));
+  font-family: proxima-nova;
+}
+
+/* BACKGROUND */
+.presentation-interface {
+  background-image: url(https://www.worldanvil.com/uploads/images/8c6130ffa1dd3c7f7b343e26018bad07.png);
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+/* FONTS */
+@font-face {
+  font-family: architects-daughter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/architectsdaughter/v8/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvTYlg4w.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v7/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: open-sans;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: special-elite;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/specialelite/v8/XLYgIZbkc4JPUL5CVArUVL0ntnAOSA.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: proxima-nova;
+  src: url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3);
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: proxima-nova;
+  src: url(https://use.typekit.net/af/86b539/00000000000000003b9b093a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3);
+  font-style: italic;
+  font-weight: 700;
+}
+@font-face {
+  font-family: proxima-nova;
+  src: url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: proxima-nova;
+  src: url(https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3);
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: proxima-nova;
+  src: url(https://use.typekit.net/af/3331e6/00000000000000003b9b0936/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3);
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: proxima-nova;
+  src: url(https://use.typekit.net/af/1cd3b2/00000000000000003b9b0937/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3);
+  font-style: italic;
+  font-weight: 500;
+}
+@font-face {
+  font-family: bebas-neue;
+  src: url(https://use.typekit.net/af/2f0e6a/00000000000000003b9b12e6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Caveat;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/caveat/v4/Wnz6HAc5bAfYB2Q7ZjYY.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Overlock SC;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/overlocksc/v6/1cX3aUHKGZrstGAY8nwVzEGHocU.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Vollkorn SC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/vollkornsc/v1/j8_y6-zQ3rXpceZj9cqnVinFG2uta7I.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Bitter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/bitter/v12/rax_HiqOu8IVPmnzxKl8Axhf.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v12/4iCv6KVjbNBYlgoCjC3jsGyN.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Roboto-Condensed;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQ.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/oswald/v16/TK3iWkUHHAIjg752GT8G.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*# sourceMappingURL=root.css.map */

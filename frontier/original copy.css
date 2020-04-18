@@ -1,0 +1,44 @@
+
+.user-css .panel-npcsheet {
+  padding: 0px;
+  border: 0px;
+}
+
+.user-css .character-tag {
+  font-family: architects-daughter;
+  font-size: 14px;
+  line-height: 13.5px;
+  font-style: normal;
+  background: rgba(199, 215, 212, 0.4);
+  color: #4d4d4d;
+  padding: 0 0.25em;
+  font-weight: 600;
+}
+
+.user-css .theme,
+.user-css .highlight {
+  font-weight: 500;
+  padding: 0px 7px 0px;
+  border-radius: 1000px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.user-css .character-relationships h3 {
+  font-size: 23px;
+  border-bottom: 1px solid;
+  color: var(--secondary_theme);
+  font-family: raleway;
+  text-transform: capitalize;
+  column-span: all;
+  margin-bottom: 20px;
+  font-variant-caps: petite-caps;
+}
+
+.user-css .extendedbody-tabs {
+  left: 8px;
+}
+
+#full-layout div.user-css-viewer {
+  background: none;
+}
