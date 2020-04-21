@@ -1,7 +1,10 @@
 /* DIMENSIONS */
+// Grid unit size
+$base-grid-unit: 2rem;
+
 * {
-    --banner_height: 250px;
-    --page_top_margin: 50px;
+    --banner_height: 240px;
+    --page_top_margin: 60px;
 }
 
 // Page Widths

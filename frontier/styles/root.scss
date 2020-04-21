@@ -1,12 +1,33 @@
-$_normalize-exclude: null;
 @import "colors";
 @import "dimensions";
+
+// Reset defaults for vertical-rhythm-reset
+$_vr-is-root-reset: null;
+$vr-modular-scale: null;
+$vr-grid-color: rgb(54, 126, 194);
+$vr-breakpoints: false;
+$vr-helpers: null;
+$_vr-rendered: null;
+
+// Configuration for vertical-rhythm-reset
+$vr-box-sizing: border-box;
+$vr-font-size  : 1rem;
+$vr-line-height: $base-grid-unit;
+@import "../node_modules/vertical-rhythm-reset/dist//vertical-rhythm-reset";
+
+/* Testing Styling */
+// .topbar {
+//     display: none;
+// }
+// .tab-content {
+//     @include vr-grid();
+// }
 
 .user-css,
 .user-css-extended,
 .user-css-map-sidebar {
-    // @import "normalize/import-now";
-    // @import "reset-css";
+    // @import '../node_modules/normalize.css/normalize';
+    @include vr-reset();
     @import "base-styling";
 }
 
@@ -31,6 +52,7 @@ $_normalize-exclude: null;
 .user-css-extended {
     margin-bottom: calc(5rem + var(--page_top_margin));
     margin-top: 35px;
+    background: unset;
 
     .dl-horizontal {
         text-transform: capitalize;

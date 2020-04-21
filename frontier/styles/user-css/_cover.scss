@@ -2,6 +2,7 @@
 #cover {
     position: absolute;
     width: 100%;
+    margin: 0px;
 
     @media (max-width: $page_width_mobile) {
         margin-left: -15px;

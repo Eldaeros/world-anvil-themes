@@ -13,19 +13,1145 @@
 
 /* DIMENSIONS */
 * {
-  --banner_height: 250px;
-  --page_top_margin: 50px;
+  --banner_height: 240px;
+  --page_top_margin: 60px;
 }
 
+/* Testing Styling */
 .user-css,
 .user-css-extended,
 .user-css-map-sidebar {
+  /* Vertical Rhythm Reset: Base */
+  /* Vertical Rhythm Reset: Alignment */
   /* prettier-ignore */
+}
+.user-css *,
+.user-css *:before,
+.user-css *:after,
+.user-css-extended *,
+.user-css-extended *:before,
+.user-css-extended *:after,
+.user-css-map-sidebar *,
+.user-css-map-sidebar *:before,
+.user-css-map-sidebar *:after {
+  box-sizing: inherit;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: inherit;
+  font-size: inherit;
+  vertical-align: bottom;
+}
+.user-css html,
+.user-css-extended html,
+.user-css-map-sidebar html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+.user-css body,
+.user-css-extended body,
+.user-css-map-sidebar body {
+  margin: 0;
+  background: #fff;
+  color: #000;
+}
+.user-css button,
+.user-css fieldset,
+.user-css input:not([type=radio]):not([type=checkbox]),
+.user-css select,
+.user-css textarea,
+.user-css-extended button,
+.user-css-extended fieldset,
+.user-css-extended input:not([type=radio]):not([type=checkbox]),
+.user-css-extended select,
+.user-css-extended textarea,
+.user-css-map-sidebar button,
+.user-css-map-sidebar fieldset,
+.user-css-map-sidebar input:not([type=radio]):not([type=checkbox]),
+.user-css-map-sidebar select,
+.user-css-map-sidebar textarea {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #808080;
+}
+.user-css em,
+.user-css i,
+.user-css-extended em,
+.user-css-extended i,
+.user-css-map-sidebar em,
+.user-css-map-sidebar i {
+  font-style: italic;
+}
+.user-css fieldset,
+.user-css-extended fieldset,
+.user-css-map-sidebar fieldset {
+  padding-top: 0.01em;
+  padding-bottom: 0;
+  min-width: 0;
+}
+body:not(:-moz-handler-blocked) .user-css fieldset,
+body:not(:-moz-handler-blocked) .user-css-extended fieldset,
+body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
+  display: table-cell;
+}
+.user-css iframe,
+.user-css-extended iframe,
+.user-css-map-sidebar iframe {
+  border: 0;
+}
+.user-css small,
+.user-css sub,
+.user-css sup,
+.user-css-extended small,
+.user-css-extended sub,
+.user-css-extended sup,
+.user-css-map-sidebar small,
+.user-css-map-sidebar sub,
+.user-css-map-sidebar sup {
+  font-size: 0.875em;
+}
+.user-css input[type=radio],
+.user-css input[type=checkbox],
+.user-css-extended input[type=radio],
+.user-css-extended input[type=checkbox],
+.user-css-map-sidebar input[type=radio],
+.user-css-map-sidebar input[type=checkbox] {
+  margin-bottom: 0.325em;
+}
+.user-css hr,
+.user-css-extended hr,
+.user-css-map-sidebar hr {
+  position: relative;
+  border: 0;
+}
+.user-css hr:after,
+.user-css-extended hr:after,
+.user-css-map-sidebar hr:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #808080;
+}
+.user-css sub,
+.user-css sup,
+.user-css-extended sub,
+.user-css-extended sup,
+.user-css-map-sidebar sub,
+.user-css-map-sidebar sup {
+  position: relative;
+  line-height: 0;
+}
+.user-css sub,
+.user-css-extended sub,
+.user-css-map-sidebar sub {
+  vertical-align: sub;
+}
+.user-css sup,
+.user-css-extended sup,
+.user-css-map-sidebar sup {
+  vertical-align: super;
+}
+.user-css table,
+.user-css-extended table,
+.user-css-map-sidebar table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.user-css article,
+.user-css aside,
+.user-css details,
+.user-css figcaption,
+.user-css figure,
+.user-css footer,
+.user-css header,
+.user-css main,
+.user-css menu,
+.user-css nav,
+.user-css section,
+.user-css summary,
+.user-css-extended article,
+.user-css-extended aside,
+.user-css-extended details,
+.user-css-extended figcaption,
+.user-css-extended figure,
+.user-css-extended footer,
+.user-css-extended header,
+.user-css-extended main,
+.user-css-extended menu,
+.user-css-extended nav,
+.user-css-extended section,
+.user-css-extended summary,
+.user-css-map-sidebar article,
+.user-css-map-sidebar aside,
+.user-css-map-sidebar details,
+.user-css-map-sidebar figcaption,
+.user-css-map-sidebar figure,
+.user-css-map-sidebar footer,
+.user-css-map-sidebar header,
+.user-css-map-sidebar main,
+.user-css-map-sidebar menu,
+.user-css-map-sidebar nav,
+.user-css-map-sidebar section,
+.user-css-map-sidebar summary {
+  display: block;
+}
+.user-css audio,
+.user-css canvas,
+.user-css progress,
+.user-css video,
+.user-css-extended audio,
+.user-css-extended canvas,
+.user-css-extended progress,
+.user-css-extended video,
+.user-css-map-sidebar audio,
+.user-css-map-sidebar canvas,
+.user-css-map-sidebar progress,
+.user-css-map-sidebar video {
+  display: inline-block;
+}
+.user-css code,
+.user-css kbd,
+.user-css pre,
+.user-css samp,
+.user-css-extended code,
+.user-css-extended kbd,
+.user-css-extended pre,
+.user-css-extended samp,
+.user-css-map-sidebar code,
+.user-css-map-sidebar kbd,
+.user-css-map-sidebar pre,
+.user-css-map-sidebar samp {
+  font-family: monospace, monospace;
+}
+.user-css audio:not([controls]),
+.user-css-extended audio:not([controls]),
+.user-css-map-sidebar audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+.user-css template,
+.user-css [hidden],
+.user-css-extended template,
+.user-css-extended [hidden],
+.user-css-map-sidebar template,
+.user-css-map-sidebar [hidden] {
+  display: none;
+}
+.user-css a,
+.user-css-extended a,
+.user-css-map-sidebar a {
+  background-color: transparent;
+}
+.user-css a:active,
+.user-css a:hover,
+.user-css-extended a:active,
+.user-css-extended a:hover,
+.user-css-map-sidebar a:active,
+.user-css-map-sidebar a:hover {
+  outline-width: 0;
+}
+.user-css abbr[title],
+.user-css-extended abbr[title],
+.user-css-map-sidebar abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+.user-css b,
+.user-css strong,
+.user-css-extended b,
+.user-css-extended strong,
+.user-css-map-sidebar b,
+.user-css-map-sidebar strong {
+  font-weight: bolder;
+}
+.user-css dfn,
+.user-css-extended dfn,
+.user-css-map-sidebar dfn {
+  font-style: italic;
+}
+.user-css mark,
+.user-css-extended mark,
+.user-css-map-sidebar mark {
+  background-color: #ff0;
+  color: #000;
+}
+.user-css img,
+.user-css-extended img,
+.user-css-map-sidebar img {
+  border-style: none;
+}
+.user-css svg:not(:root),
+.user-css-extended svg:not(:root),
+.user-css-map-sidebar svg:not(:root) {
+  overflow: hidden;
+}
+.user-css button,
+.user-css input,
+.user-css select,
+.user-css-extended button,
+.user-css-extended input,
+.user-css-extended select,
+.user-css-map-sidebar button,
+.user-css-map-sidebar input,
+.user-css-map-sidebar select {
+  overflow: visible;
+}
+.user-css button,
+.user-css select,
+.user-css-extended button,
+.user-css-extended select,
+.user-css-map-sidebar button,
+.user-css-map-sidebar select {
+  text-transform: none;
+}
+.user-css button,
+.user-css [type=button],
+.user-css [type=reset],
+.user-css [type=submit],
+.user-css-extended button,
+.user-css-extended [type=button],
+.user-css-extended [type=reset],
+.user-css-extended [type=submit],
+.user-css-map-sidebar button,
+.user-css-map-sidebar [type=button],
+.user-css-map-sidebar [type=reset],
+.user-css-map-sidebar [type=submit] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+.user-css [disabled],
+.user-css-extended [disabled],
+.user-css-map-sidebar [disabled] {
+  cursor: default;
+}
+.user-css button,
+.user-css html [type=button],
+.user-css [type=reset],
+.user-css [type=submit],
+.user-css-extended button,
+.user-css-extended html [type=button],
+.user-css-extended [type=reset],
+.user-css-extended [type=submit],
+.user-css-map-sidebar button,
+.user-css-map-sidebar html [type=button],
+.user-css-map-sidebar [type=reset],
+.user-css-map-sidebar [type=submit] {
+  -webkit-appearance: button;
+}
+.user-css button::-moz-focus-inner,
+.user-css [type=button]::-moz-focus-inner,
+.user-css [type=reset]::-moz-focus-inner,
+.user-css [type=submit]::-moz-focus-inner,
+.user-css-extended button::-moz-focus-inner,
+.user-css-extended [type=button]::-moz-focus-inner,
+.user-css-extended [type=reset]::-moz-focus-inner,
+.user-css-extended [type=submit]::-moz-focus-inner,
+.user-css-map-sidebar button::-moz-focus-inner,
+.user-css-map-sidebar [type=button]::-moz-focus-inner,
+.user-css-map-sidebar [type=reset]::-moz-focus-inner,
+.user-css-map-sidebar [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+.user-css button:-moz-focusring,
+.user-css [type=button]:-moz-focusring,
+.user-css [type=reset]:-moz-focusring,
+.user-css [type=submit]:-moz-focusring,
+.user-css-extended button:-moz-focusring,
+.user-css-extended [type=button]:-moz-focusring,
+.user-css-extended [type=reset]:-moz-focusring,
+.user-css-extended [type=submit]:-moz-focusring,
+.user-css-map-sidebar button:-moz-focusring,
+.user-css-map-sidebar [type=button]:-moz-focusring,
+.user-css-map-sidebar [type=reset]:-moz-focusring,
+.user-css-map-sidebar [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+.user-css legend,
+.user-css-extended legend,
+.user-css-map-sidebar legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+.user-css textarea,
+.user-css-extended textarea,
+.user-css-map-sidebar textarea {
+  overflow: auto;
+}
+.user-css [type=checkbox],
+.user-css [type=radio],
+.user-css-extended [type=checkbox],
+.user-css-extended [type=radio],
+.user-css-map-sidebar [type=checkbox],
+.user-css-map-sidebar [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+.user-css [type=number]::-webkit-inner-spin-button,
+.user-css [type=number]::-webkit-outer-spin-button,
+.user-css-extended [type=number]::-webkit-inner-spin-button,
+.user-css-extended [type=number]::-webkit-outer-spin-button,
+.user-css-map-sidebar [type=number]::-webkit-inner-spin-button,
+.user-css-map-sidebar [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+.user-css [type=search],
+.user-css-extended [type=search],
+.user-css-map-sidebar [type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+.user-css [type=search]::-webkit-search-cancel-button,
+.user-css [type=search]::-webkit-search-decoration,
+.user-css-extended [type=search]::-webkit-search-cancel-button,
+.user-css-extended [type=search]::-webkit-search-decoration,
+.user-css-map-sidebar [type=search]::-webkit-search-cancel-button,
+.user-css-map-sidebar [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.user-css ::-webkit-file-upload-button,
+.user-css-extended ::-webkit-file-upload-button,
+.user-css-map-sidebar ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+.user-css :root,
+.user-css-extended :root,
+.user-css-map-sidebar :root {
+  font-size: 16px;
+}
+.user-css *,
+.user-css *:before,
+.user-css *:after,
+.user-css-extended *,
+.user-css-extended *:before,
+.user-css-extended *:after,
+.user-css-map-sidebar *,
+.user-css-map-sidebar *:before,
+.user-css-map-sidebar *:after {
+  line-height: 2.00001rem;
+}
+.user-css button,
+.user-css input:not([type=radio]):not([type=checkbox]),
+.user-css option,
+.user-css select:not([multiple]),
+.user-css-extended button,
+.user-css-extended input:not([type=radio]):not([type=checkbox]),
+.user-css-extended option,
+.user-css-extended select:not([multiple]),
+.user-css-map-sidebar button,
+.user-css-map-sidebar input:not([type=radio]):not([type=checkbox]),
+.user-css-map-sidebar option,
+.user-css-map-sidebar select:not([multiple]) {
+  height: 2.00001rem;
+}
+.user-css audio,
+.user-css-extended audio,
+.user-css-map-sidebar audio {
+  height: 4.00002rem;
+}
+.user-css hr,
+.user-css-extended hr,
+.user-css-map-sidebar hr {
+  height: 4.00002rem;
+}
+.user-css select[multiple],
+.user-css textarea,
+.user-css-extended select[multiple],
+.user-css-extended textarea,
+.user-css-map-sidebar select[multiple],
+.user-css-map-sidebar textarea {
+  height: 8.00004rem;
+}
+.user-css iframe,
+.user-css video,
+.user-css-extended iframe,
+.user-css-extended video,
+.user-css-map-sidebar iframe,
+.user-css-map-sidebar video {
+  height: 16.00008rem;
+}
+.user-css h1,
+.user-css-extended h1,
+.user-css-map-sidebar h1 {
+  margin-top: 0px;
+  margin-bottom: 2.00001rem;
+}
+.user-css blockquote,
+.user-css dl,
+.user-css form,
+.user-css h2,
+.user-css h3,
+.user-css h4,
+.user-css h5,
+.user-css h6,
+.user-css ol,
+.user-css p,
+.user-css pre,
+.user-css table,
+.user-css ul,
+.user-css-extended blockquote,
+.user-css-extended dl,
+.user-css-extended form,
+.user-css-extended h2,
+.user-css-extended h3,
+.user-css-extended h4,
+.user-css-extended h5,
+.user-css-extended h6,
+.user-css-extended ol,
+.user-css-extended p,
+.user-css-extended pre,
+.user-css-extended table,
+.user-css-extended ul,
+.user-css-map-sidebar blockquote,
+.user-css-map-sidebar dl,
+.user-css-map-sidebar form,
+.user-css-map-sidebar h2,
+.user-css-map-sidebar h3,
+.user-css-map-sidebar h4,
+.user-css-map-sidebar h5,
+.user-css-map-sidebar h6,
+.user-css-map-sidebar ol,
+.user-css-map-sidebar p,
+.user-css-map-sidebar pre,
+.user-css-map-sidebar table,
+.user-css-map-sidebar ul {
+  margin-top: 2.00001rem;
+  margin-bottom: 2.00001rem;
+}
+.user-css fieldset,
+.user-css-extended fieldset,
+.user-css-map-sidebar fieldset {
+  display: inline-block;
+  margin: 2.00001rem 0 calc((2.00001rem) - 1px);
+  width: 100%;
+}
+.user-css h1,
+.user-css-extended h1,
+.user-css-map-sidebar h1 {
+  font-size: 2.0736rem;
+  line-height: 4.00001rem;
+}
+.user-css h2,
+.user-css-extended h2,
+.user-css-map-sidebar h2 {
+  font-size: 1.728rem;
+  line-height: 2.00001rem;
+}
+.user-css h3,
+.user-css-extended h3,
+.user-css-map-sidebar h3 {
+  font-size: 1.44rem;
+  line-height: 2.00001rem;
+}
+.user-css h4,
+.user-css-extended h4,
+.user-css-map-sidebar h4 {
+  font-size: 1.2rem;
+  line-height: 2.00001rem;
+}
+.user-css h5,
+.user-css-extended h5,
+.user-css-map-sidebar h5 {
+  font-size: 1rem;
+  line-height: 2.00001rem;
+}
+.user-css h6,
+.user-css-extended h6,
+.user-css-map-sidebar h6 {
+  font-size: 0.8333333333rem;
+  line-height: 2.00001rem;
+}
+.user-css .vr-font-size-0,
+.user-css-extended .vr-font-size-0,
+.user-css-map-sidebar .vr-font-size-0 {
+  font-size: 1rem;
+  line-height: 2.00001rem;
+}
+.user-css .vr-font-size-1,
+.user-css-extended .vr-font-size-1,
+.user-css-map-sidebar .vr-font-size-1 {
+  font-size: 1.2rem;
+  line-height: 2.00001rem;
+}
+.user-css .vr-font-size-2,
+.user-css-extended .vr-font-size-2,
+.user-css-map-sidebar .vr-font-size-2 {
+  font-size: 1.44rem;
+  line-height: 2.00001rem;
+}
+.user-css .vr-font-size-3,
+.user-css-extended .vr-font-size-3,
+.user-css-map-sidebar .vr-font-size-3 {
+  font-size: 1.728rem;
+  line-height: 2.00001rem;
+}
+.user-css .vr-font-size-4,
+.user-css-extended .vr-font-size-4,
+.user-css-map-sidebar .vr-font-size-4 {
+  font-size: 2.0736rem;
+  line-height: 4.00001rem;
+}
+.user-css .vr-font-size-5,
+.user-css-extended .vr-font-size-5,
+.user-css-map-sidebar .vr-font-size-5 {
+  font-size: 2.48832rem;
+  line-height: 4.00001rem;
+}
+.user-css .vr-line-height-1,
+.user-css-extended .vr-line-height-1,
+.user-css-map-sidebar .vr-line-height-1 {
+  line-height: 2.00001rem;
+}
+.user-css .vr-line-height-2,
+.user-css-extended .vr-line-height-2,
+.user-css-map-sidebar .vr-line-height-2 {
+  line-height: 4.00002rem;
+}
+.user-css .vr-line-height-3,
+.user-css-extended .vr-line-height-3,
+.user-css-map-sidebar .vr-line-height-3 {
+  line-height: 6.00003rem;
+}
+.user-css .vr-line-height-4,
+.user-css-extended .vr-line-height-4,
+.user-css-map-sidebar .vr-line-height-4 {
+  line-height: 8.00004rem;
+}
+.user-css .vr-line-height-5,
+.user-css-extended .vr-line-height-5,
+.user-css-map-sidebar .vr-line-height-5 {
+  line-height: 10.00005rem;
+}
+.user-css .vr-line-height-6,
+.user-css-extended .vr-line-height-6,
+.user-css-map-sidebar .vr-line-height-6 {
+  line-height: 12.00006rem;
+}
+.user-css .vr-line-height-7,
+.user-css-extended .vr-line-height-7,
+.user-css-map-sidebar .vr-line-height-7 {
+  line-height: 14.00007rem;
+}
+.user-css .vr-line-height-8,
+.user-css-extended .vr-line-height-8,
+.user-css-map-sidebar .vr-line-height-8 {
+  line-height: 16.00008rem;
+}
+.user-css .vr-line-height-9,
+.user-css-extended .vr-line-height-9,
+.user-css-map-sidebar .vr-line-height-9 {
+  line-height: 18.00009rem;
+}
+.user-css .vr-line-height-10,
+.user-css-extended .vr-line-height-10,
+.user-css-map-sidebar .vr-line-height-10 {
+  line-height: 20.0001rem;
+}
+.user-css [height="1"],
+.user-css select[multiple][size="1"],
+.user-css textarea[rows="1"],
+.user-css .vr-height-1,
+.user-css-extended [height="1"],
+.user-css-extended select[multiple][size="1"],
+.user-css-extended textarea[rows="1"],
+.user-css-extended .vr-height-1,
+.user-css-map-sidebar [height="1"],
+.user-css-map-sidebar select[multiple][size="1"],
+.user-css-map-sidebar textarea[rows="1"],
+.user-css-map-sidebar .vr-height-1 {
+  height: 2.00001rem;
+}
+.user-css [height="2"],
+.user-css select[multiple][size="2"],
+.user-css textarea[rows="2"],
+.user-css .vr-height-2,
+.user-css-extended [height="2"],
+.user-css-extended select[multiple][size="2"],
+.user-css-extended textarea[rows="2"],
+.user-css-extended .vr-height-2,
+.user-css-map-sidebar [height="2"],
+.user-css-map-sidebar select[multiple][size="2"],
+.user-css-map-sidebar textarea[rows="2"],
+.user-css-map-sidebar .vr-height-2 {
+  height: 4.00002rem;
+}
+.user-css [height="3"],
+.user-css select[multiple][size="3"],
+.user-css textarea[rows="3"],
+.user-css .vr-height-3,
+.user-css-extended [height="3"],
+.user-css-extended select[multiple][size="3"],
+.user-css-extended textarea[rows="3"],
+.user-css-extended .vr-height-3,
+.user-css-map-sidebar [height="3"],
+.user-css-map-sidebar select[multiple][size="3"],
+.user-css-map-sidebar textarea[rows="3"],
+.user-css-map-sidebar .vr-height-3 {
+  height: 6.00003rem;
+}
+.user-css [height="4"],
+.user-css select[multiple][size="4"],
+.user-css textarea[rows="4"],
+.user-css .vr-height-4,
+.user-css-extended [height="4"],
+.user-css-extended select[multiple][size="4"],
+.user-css-extended textarea[rows="4"],
+.user-css-extended .vr-height-4,
+.user-css-map-sidebar [height="4"],
+.user-css-map-sidebar select[multiple][size="4"],
+.user-css-map-sidebar textarea[rows="4"],
+.user-css-map-sidebar .vr-height-4 {
+  height: 8.00004rem;
+}
+.user-css [height="5"],
+.user-css select[multiple][size="5"],
+.user-css textarea[rows="5"],
+.user-css .vr-height-5,
+.user-css-extended [height="5"],
+.user-css-extended select[multiple][size="5"],
+.user-css-extended textarea[rows="5"],
+.user-css-extended .vr-height-5,
+.user-css-map-sidebar [height="5"],
+.user-css-map-sidebar select[multiple][size="5"],
+.user-css-map-sidebar textarea[rows="5"],
+.user-css-map-sidebar .vr-height-5 {
+  height: 10.00005rem;
+}
+.user-css [height="6"],
+.user-css select[multiple][size="6"],
+.user-css textarea[rows="6"],
+.user-css .vr-height-6,
+.user-css-extended [height="6"],
+.user-css-extended select[multiple][size="6"],
+.user-css-extended textarea[rows="6"],
+.user-css-extended .vr-height-6,
+.user-css-map-sidebar [height="6"],
+.user-css-map-sidebar select[multiple][size="6"],
+.user-css-map-sidebar textarea[rows="6"],
+.user-css-map-sidebar .vr-height-6 {
+  height: 12.00006rem;
+}
+.user-css [height="7"],
+.user-css select[multiple][size="7"],
+.user-css textarea[rows="7"],
+.user-css .vr-height-7,
+.user-css-extended [height="7"],
+.user-css-extended select[multiple][size="7"],
+.user-css-extended textarea[rows="7"],
+.user-css-extended .vr-height-7,
+.user-css-map-sidebar [height="7"],
+.user-css-map-sidebar select[multiple][size="7"],
+.user-css-map-sidebar textarea[rows="7"],
+.user-css-map-sidebar .vr-height-7 {
+  height: 14.00007rem;
+}
+.user-css [height="8"],
+.user-css select[multiple][size="8"],
+.user-css textarea[rows="8"],
+.user-css .vr-height-8,
+.user-css-extended [height="8"],
+.user-css-extended select[multiple][size="8"],
+.user-css-extended textarea[rows="8"],
+.user-css-extended .vr-height-8,
+.user-css-map-sidebar [height="8"],
+.user-css-map-sidebar select[multiple][size="8"],
+.user-css-map-sidebar textarea[rows="8"],
+.user-css-map-sidebar .vr-height-8 {
+  height: 16.00008rem;
+}
+.user-css [height="9"],
+.user-css select[multiple][size="9"],
+.user-css textarea[rows="9"],
+.user-css .vr-height-9,
+.user-css-extended [height="9"],
+.user-css-extended select[multiple][size="9"],
+.user-css-extended textarea[rows="9"],
+.user-css-extended .vr-height-9,
+.user-css-map-sidebar [height="9"],
+.user-css-map-sidebar select[multiple][size="9"],
+.user-css-map-sidebar textarea[rows="9"],
+.user-css-map-sidebar .vr-height-9 {
+  height: 18.00009rem;
+}
+.user-css [height="10"],
+.user-css select[multiple][size="10"],
+.user-css textarea[rows="10"],
+.user-css .vr-height-10,
+.user-css-extended [height="10"],
+.user-css-extended select[multiple][size="10"],
+.user-css-extended textarea[rows="10"],
+.user-css-extended .vr-height-10,
+.user-css-map-sidebar [height="10"],
+.user-css-map-sidebar select[multiple][size="10"],
+.user-css-map-sidebar textarea[rows="10"],
+.user-css-map-sidebar .vr-height-10 {
+  height: 20.0001rem;
+}
+.user-css .vr-width-1,
+.user-css-extended .vr-width-1,
+.user-css-map-sidebar .vr-width-1 {
+  width: 2.00001rem;
+}
+.user-css .vr-width-2,
+.user-css-extended .vr-width-2,
+.user-css-map-sidebar .vr-width-2 {
+  width: 4.00002rem;
+}
+.user-css .vr-width-3,
+.user-css-extended .vr-width-3,
+.user-css-map-sidebar .vr-width-3 {
+  width: 6.00003rem;
+}
+.user-css .vr-width-4,
+.user-css-extended .vr-width-4,
+.user-css-map-sidebar .vr-width-4 {
+  width: 8.00004rem;
+}
+.user-css .vr-width-5,
+.user-css-extended .vr-width-5,
+.user-css-map-sidebar .vr-width-5 {
+  width: 10.00005rem;
+}
+.user-css .vr-width-6,
+.user-css-extended .vr-width-6,
+.user-css-map-sidebar .vr-width-6 {
+  width: 12.00006rem;
+}
+.user-css .vr-width-7,
+.user-css-extended .vr-width-7,
+.user-css-map-sidebar .vr-width-7 {
+  width: 14.00007rem;
+}
+.user-css .vr-width-8,
+.user-css-extended .vr-width-8,
+.user-css-map-sidebar .vr-width-8 {
+  width: 16.00008rem;
+}
+.user-css .vr-width-9,
+.user-css-extended .vr-width-9,
+.user-css-map-sidebar .vr-width-9 {
+  width: 18.00009rem;
+}
+.user-css .vr-width-10,
+.user-css-extended .vr-width-10,
+.user-css-map-sidebar .vr-width-10 {
+  width: 20.0001rem;
+}
+.user-css .vr-margin-1,
+.user-css-extended .vr-margin-1,
+.user-css-map-sidebar .vr-margin-1 {
+  margin: 2.00001rem;
+}
+.user-css .vr-margin-2,
+.user-css-extended .vr-margin-2,
+.user-css-map-sidebar .vr-margin-2 {
+  margin: 4.00002rem;
+}
+.user-css .vr-margin-3,
+.user-css-extended .vr-margin-3,
+.user-css-map-sidebar .vr-margin-3 {
+  margin: 6.00003rem;
+}
+.user-css .vr-margin-4,
+.user-css-extended .vr-margin-4,
+.user-css-map-sidebar .vr-margin-4 {
+  margin: 8.00004rem;
+}
+.user-css .vr-margin-5,
+.user-css-extended .vr-margin-5,
+.user-css-map-sidebar .vr-margin-5 {
+  margin: 10.00005rem;
+}
+.user-css .vr-margin-top-1,
+.user-css-extended .vr-margin-top-1,
+.user-css-map-sidebar .vr-margin-top-1 {
+  margin-top: 2.00001rem;
+}
+.user-css .vr-margin-top-2,
+.user-css-extended .vr-margin-top-2,
+.user-css-map-sidebar .vr-margin-top-2 {
+  margin-top: 4.00002rem;
+}
+.user-css .vr-margin-top-3,
+.user-css-extended .vr-margin-top-3,
+.user-css-map-sidebar .vr-margin-top-3 {
+  margin-top: 6.00003rem;
+}
+.user-css .vr-margin-top-4,
+.user-css-extended .vr-margin-top-4,
+.user-css-map-sidebar .vr-margin-top-4 {
+  margin-top: 8.00004rem;
+}
+.user-css .vr-margin-top-5,
+.user-css-extended .vr-margin-top-5,
+.user-css-map-sidebar .vr-margin-top-5 {
+  margin-top: 10.00005rem;
+}
+.user-css .vr-margin-bottom-1,
+.user-css-extended .vr-margin-bottom-1,
+.user-css-map-sidebar .vr-margin-bottom-1 {
+  margin-bottom: 2.00001rem;
+}
+.user-css .vr-margin-bottom-2,
+.user-css-extended .vr-margin-bottom-2,
+.user-css-map-sidebar .vr-margin-bottom-2 {
+  margin-bottom: 4.00002rem;
+}
+.user-css .vr-margin-bottom-3,
+.user-css-extended .vr-margin-bottom-3,
+.user-css-map-sidebar .vr-margin-bottom-3 {
+  margin-bottom: 6.00003rem;
+}
+.user-css .vr-margin-bottom-4,
+.user-css-extended .vr-margin-bottom-4,
+.user-css-map-sidebar .vr-margin-bottom-4 {
+  margin-bottom: 8.00004rem;
+}
+.user-css .vr-margin-bottom-5,
+.user-css-extended .vr-margin-bottom-5,
+.user-css-map-sidebar .vr-margin-bottom-5 {
+  margin-bottom: 10.00005rem;
+}
+.user-css .vr-padding-1,
+.user-css-extended .vr-padding-1,
+.user-css-map-sidebar .vr-padding-1 {
+  padding: 2.00001rem;
+}
+.user-css .vr-padding-2,
+.user-css-extended .vr-padding-2,
+.user-css-map-sidebar .vr-padding-2 {
+  padding: 4.00002rem;
+}
+.user-css .vr-padding-3,
+.user-css-extended .vr-padding-3,
+.user-css-map-sidebar .vr-padding-3 {
+  padding: 6.00003rem;
+}
+.user-css .vr-padding-4,
+.user-css-extended .vr-padding-4,
+.user-css-map-sidebar .vr-padding-4 {
+  padding: 8.00004rem;
+}
+.user-css .vr-padding-5,
+.user-css-extended .vr-padding-5,
+.user-css-map-sidebar .vr-padding-5 {
+  padding: 10.00005rem;
+}
+.user-css .vr-padding-top-1,
+.user-css-extended .vr-padding-top-1,
+.user-css-map-sidebar .vr-padding-top-1 {
+  padding-top: 2.00001rem;
+}
+.user-css .vr-padding-top-2,
+.user-css-extended .vr-padding-top-2,
+.user-css-map-sidebar .vr-padding-top-2 {
+  padding-top: 4.00002rem;
+}
+.user-css .vr-padding-top-3,
+.user-css-extended .vr-padding-top-3,
+.user-css-map-sidebar .vr-padding-top-3 {
+  padding-top: 6.00003rem;
+}
+.user-css .vr-padding-top-4,
+.user-css-extended .vr-padding-top-4,
+.user-css-map-sidebar .vr-padding-top-4 {
+  padding-top: 8.00004rem;
+}
+.user-css .vr-padding-top-5,
+.user-css-extended .vr-padding-top-5,
+.user-css-map-sidebar .vr-padding-top-5 {
+  padding-top: 10.00005rem;
+}
+.user-css .vr-padding-bottom-1,
+.user-css-extended .vr-padding-bottom-1,
+.user-css-map-sidebar .vr-padding-bottom-1 {
+  padding-bottom: 2.00001rem;
+}
+.user-css .vr-padding-bottom-2,
+.user-css-extended .vr-padding-bottom-2,
+.user-css-map-sidebar .vr-padding-bottom-2 {
+  padding-bottom: 4.00002rem;
+}
+.user-css .vr-padding-bottom-3,
+.user-css-extended .vr-padding-bottom-3,
+.user-css-map-sidebar .vr-padding-bottom-3 {
+  padding-bottom: 6.00003rem;
+}
+.user-css .vr-padding-bottom-4,
+.user-css-extended .vr-padding-bottom-4,
+.user-css-map-sidebar .vr-padding-bottom-4 {
+  padding-bottom: 8.00004rem;
+}
+.user-css .vr-padding-bottom-5,
+.user-css-extended .vr-padding-bottom-5,
+.user-css-map-sidebar .vr-padding-bottom-5 {
+  padding-bottom: 10.00005rem;
+}
+.user-css .vr-offset-1,
+.user-css-extended .vr-offset-1,
+.user-css-map-sidebar .vr-offset-1 {
+  -webkit-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
+  margin-bottom: -2px;
+}
+.user-css .vr-offset-2,
+.user-css-extended .vr-offset-2,
+.user-css-map-sidebar .vr-offset-2 {
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+  margin-bottom: -4px;
+}
+.user-css .vr-offset-3,
+.user-css-extended .vr-offset-3,
+.user-css-map-sidebar .vr-offset-3 {
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+  margin-bottom: -6px;
+}
+.user-css .vr-offset-4,
+.user-css-extended .vr-offset-4,
+.user-css-map-sidebar .vr-offset-4 {
+  -webkit-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
+  margin-bottom: -8px;
+}
+.user-css .vr-offset-5,
+.user-css-extended .vr-offset-5,
+.user-css-map-sidebar .vr-offset-5 {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+  margin-bottom: -10px;
+}
+.user-css .vr-offset-top-1,
+.user-css-extended .vr-offset-top-1,
+.user-css-map-sidebar .vr-offset-top-1 {
+  -webkit-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
+  margin-bottom: -1px;
+}
+.user-css .vr-offset-top-2,
+.user-css-extended .vr-offset-top-2,
+.user-css-map-sidebar .vr-offset-top-2 {
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+  margin-bottom: -2px;
+}
+.user-css .vr-offset-top-3,
+.user-css-extended .vr-offset-top-3,
+.user-css-map-sidebar .vr-offset-top-3 {
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+  margin-bottom: -3px;
+}
+.user-css .vr-offset-top-4,
+.user-css-extended .vr-offset-top-4,
+.user-css-map-sidebar .vr-offset-top-4 {
+  -webkit-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
+  margin-bottom: -4px;
+}
+.user-css .vr-offset-top-5,
+.user-css-extended .vr-offset-top-5,
+.user-css-map-sidebar .vr-offset-top-5 {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+  margin-bottom: -5px;
+}
+.user-css .vr-offset-bottom-1,
+.user-css-extended .vr-offset-bottom-1,
+.user-css-map-sidebar .vr-offset-bottom-1 {
+  margin-bottom: -1px;
+}
+.user-css .vr-offset-bottom-2,
+.user-css-extended .vr-offset-bottom-2,
+.user-css-map-sidebar .vr-offset-bottom-2 {
+  margin-bottom: -2px;
+}
+.user-css .vr-offset-bottom-3,
+.user-css-extended .vr-offset-bottom-3,
+.user-css-map-sidebar .vr-offset-bottom-3 {
+  margin-bottom: -3px;
+}
+.user-css .vr-offset-bottom-4,
+.user-css-extended .vr-offset-bottom-4,
+.user-css-map-sidebar .vr-offset-bottom-4 {
+  margin-bottom: -4px;
+}
+.user-css .vr-offset-bottom-5,
+.user-css-extended .vr-offset-bottom-5,
+.user-css-map-sidebar .vr-offset-bottom-5 {
+  margin-bottom: -5px;
+}
+@media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .user-css,
+.user-css-extended,
+.user-css-map-sidebar {
+    /* Vertical Rhythm Reset: Fix for mobile select[multiple] elements */
+  }
+  .user-css select[multiple],
+.user-css select[multiple][size],
+.user-css-extended select[multiple],
+.user-css-extended select[multiple][size],
+.user-css-map-sidebar select[multiple],
+.user-css-map-sidebar select[multiple][size] {
+    height: 2.00001rem;
+  }
 }
 .user-css,
 .user-css-extended,
 .user-css-map-sidebar {
   font-family: proxima-nova, open-sans, sans-serif;
+}
+.user-css.page,
+.user-css-extended.page,
+.user-css-map-sidebar.page {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px;
+}
+@media (min-width: 768px) {
+  .user-css.page,
+.user-css-extended.page,
+.user-css-map-sidebar.page {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .user-css.page,
+.user-css-extended.page,
+.user-css-map-sidebar.page {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .user-css.page,
+.user-css-extended.page,
+.user-css-map-sidebar.page {
+    width: 1200px;
+  }
 }
 .user-css h1, .user-css h2, .user-css h3, .user-css h4, .user-css h5, .user-css h6,
 .user-css-extended h1,
@@ -43,37 +1169,53 @@
   font-family: proxima-nova;
   text-transform: capitalize;
 }
+.user-css h1,
+.user-css-extended h1,
+.user-css-map-sidebar h1 {
+  font-size: 2.48832rem;
+  line-height: 4.00001rem;
+  margin: 0px 0;
+}
 .user-css h2,
 .user-css-extended h2,
 .user-css-map-sidebar h2 {
   color: var(--secondary_theme);
-  font-size: 1.5em;
+  font-size: 2.0736rem;
+  line-height: 4.00001rem;
+  display: inline-block;
+  margin: 0px 0 calc((2.00001rem) - 1px);
   font-family: raleway, sans-serif;
   font-variant-caps: petite-caps;
   font-weight: 600;
   border-bottom-color: var(--secondary_theme);
+  width: 100%;
 }
 .user-css h3,
 .user-css-extended h3,
 .user-css-map-sidebar h3 {
-  color: var(--secondary_theme_darker);
-  font-size: 1.8rem;
+  font-size: 1.728rem;
+  line-height: 2.00001rem;
+  margin: 0px 0;
   font-family: open-sans;
   font-weight: 600;
+  color: var(--secondary_theme_darker);
 }
 .user-css h4,
 .user-css-extended h4,
 .user-css-map-sidebar h4 {
-  font-size: 1.5rem;
+  font-size: 1.44rem;
+  line-height: 2.00001rem;
+  margin: 0px 0;
   font-weight: 500;
   color: var(--secondary_theme_darker);
 }
 .user-css h5,
 .user-css-extended h5,
 .user-css-map-sidebar h5 {
+  font-size: 1.44rem;
+  line-height: 2.00001rem;
   font-weight: 600;
   text-transform: none;
-  font-size: 15px;
 }
 .user-css a,
 .user-css-extended a,
@@ -96,6 +1238,46 @@
 .user-css-map-sidebar b {
   font-weight: 600;
 }
+.user-css em,
+.user-css-extended em,
+.user-css-map-sidebar em {
+  font-style: italic;
+}
+.user-css u,
+.user-css-extended u,
+.user-css-map-sidebar u {
+  text-decoration: underline;
+}
+.user-css sub,
+.user-css sup,
+.user-css-extended sub,
+.user-css-extended sup,
+.user-css-map-sidebar sub,
+.user-css-map-sidebar sup {
+  font-size: 1rem;
+  line-height: 2.00001rem;
+  margin: 0px 0;
+  position: relative;
+  line-height: 0;
+  vertical-align: baseline;
+}
+.user-css sub,
+.user-css-extended sub,
+.user-css-map-sidebar sub {
+  bottom: -0.25em;
+}
+.user-css sup,
+.user-css-extended sup,
+.user-css-map-sidebar sup {
+  top: -0.5em;
+}
+.user-css small,
+.user-css-extended small,
+.user-css-map-sidebar small {
+  font-size: 1.2rem;
+  line-height: 2.00001rem;
+  margin: 0px 0;
+}
 .user-css p,
 .user-css #profile,
 .user-css-extended p,
@@ -103,22 +1285,49 @@
 .user-css-map-sidebar p,
 .user-css-map-sidebar #profile {
   font-family: proxima-nova, open-sans, sans-serif;
-  font-size: 14px;
-  line-height: 1.5em;
   color: var(--base_text_colour);
+}
+.user-css p,
+.user-css-extended p,
+.user-css-map-sidebar p {
+  font-size: 1.44rem;
+  line-height: 2.00001rem;
+  margin: 0px 0;
+  padding: 0px 0 2.00001rem;
+}
+.user-css #profile,
+.user-css-extended #profile,
+.user-css-map-sidebar #profile {
+  font-size: 1.44rem;
+  line-height: 2.00001rem;
+  margin: 0px 0;
+  padding: 0px 0;
 }
 .user-css blockquote,
 .user-css-extended blockquote,
 .user-css-map-sidebar blockquote {
+  font-size: 1.44rem;
+  line-height: 2.00001rem;
+  margin: 1.000005rem 0;
+  padding: 1.000005rem;
   background: whitesmoke;
   border-left: 10px var(--secondary_theme) solid;
   font-family: architects-daughter;
-  font-size: 1.6rem;
+}
+.user-css blockquote + blockquote,
+.user-css-extended blockquote + blockquote,
+.user-css-map-sidebar blockquote + blockquote {
+  margin-top: 2.00001rem;
 }
 .user-css hr,
 .user-css-extended hr,
 .user-css-map-sidebar hr {
   border-color: var(--secondary_theme);
+}
+.user-css .line-spacer.d-block,
+.user-css-extended .line-spacer.d-block,
+.user-css-map-sidebar .line-spacer.d-block {
+  display: none;
 }
 
 .user-css {
@@ -127,6 +1336,7 @@
 .user-css #cover {
   position: absolute;
   width: 100%;
+  margin: 0px;
 }
 @media (max-width: 767px) {
   .user-css #cover {
@@ -186,6 +1396,9 @@
 }
 .user-css .panel-greatgm a.text-danger:hover {
   color: var(--link_new);
+}
+.user-css #header {
+  margin: 0px;
 }
 .user-css .backtoworld a {
   /* Home Button */
@@ -526,62 +1739,60 @@
 .user-css.page-category :last-child .col-md-4 {
   width: 100%;
 }
-.user-css .article-title {
+.user-css .article-content {
+  margin: 0px;
+}
+.user-css .article-content .article-title {
   border-bottom: 7px solid var(--primary_theme);
   z-index: 10;
   pointer-events: none;
-  /* To widen the div and have the border stretch across */
-  margin: 0 -10px;
-  padding: 0 25px;
-  width: calc(100% + 20px);
+  padding: 0 2rem;
+  width: 100%;
   height: var(--banner_height);
   color: white;
   text-shadow: 0 0 3px #000000;
 }
-.user-css .article-title h1 {
+.user-css .article-content .article-title h1 {
+  font-size: 5.159780352rem;
+  line-height: 6.00001rem;
+  margin: 0px 0;
+  padding: 4.00002rem 1.000005rem 1.000005rem;
   font-family: bebas-neue, bebas-neue-regular;
-  font-size: 50px;
-  padding-top: 45px;
-  margin-top: 0px;
   font-weight: 500;
-}
-.user-css .article-subheading {
-  opacity: 0.9;
-  font-family: special-elite;
-  font-size: 18px;
-}
-.user-css .article-title h1,
-.user-css .article-subheading {
   color: white;
   text-transform: none;
-  padding-left: 0px;
 }
-.user-css .article-title-author {
+.user-css .article-content .article-title h4 {
+  font-size: 1.728rem;
+  line-height: 2.00001rem;
+  margin: 0px 0;
+  padding: 0px 1.000005rem;
+  color: white;
+  text-transform: none;
+  opacity: 0.9;
+  font-family: special-elite;
+}
+.user-css .article-content .article-title .article-title-author {
+  font-size: 1.2rem;
+  line-height: 2.00001rem;
+  margin: 0px 0;
+  padding: 0px 1.000005rem;
   position: absolute;
   bottom: 0px;
-  margin-bottom: 10px !important;
-  padding-left: 0px;
   opacity: 0.8;
-  font-size: 1.25rem;
   font-weight: 600;
   font-family: proxima-nova;
 }
-.user-css .article-content .col-md-8 {
-  padding-left: 15px;
+.user-css .article-content .article-content-left {
+  margin: 0px 0;
+  padding: 0px 4.00002rem;
 }
-.user-css .article-content .col-md-4 {
-  padding-right: 15px;
+.user-css .article-content .article-content-right {
+  margin: 0px 0;
+  padding: 0px 4.00002rem;
 }
-.user-css .article-content-left a {
-  font-weight: 600;
-}
-.user-css .article-content-left h2:nth-child(1),
-.user-css .article-content-left p:nth-child(2) {
-  display: none;
-}
-.user-css .article-content-left h3:first-child {
-  text-transform: none;
-  padding-bottom: 5px;
+.user-css .character-article-portrait {
+  height: 32rem;
 }
 .user-css .campaign-protagonists .card-box {
   width: 100%;
@@ -659,6 +1870,7 @@
 .user-css-extended {
   margin-bottom: calc(5rem + var(--page_top_margin));
   margin-top: 35px;
+  background: unset;
 }
 .user-css-extended .dl-horizontal {
   text-transform: capitalize;
