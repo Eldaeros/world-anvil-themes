@@ -11,17 +11,29 @@ $_vr-rendered: null;
 
 // Configuration for vertical-rhythm-reset
 $vr-box-sizing: border-box;
-$vr-font-size  : 1rem;
+$vr-font-size: 1rem;
 $vr-line-height: $base-grid-unit;
 @import "../node_modules/vertical-rhythm-reset/dist//vertical-rhythm-reset";
 
-/* Testing Styling */
-// .topbar {
-//     display: none;
-// }
-// .tab-content {
-//     @include vr-grid();
-// }
+$DEBUG_MODE: false;
+
+@if $DEBUG_MODE {
+    div#content,
+    .article-title,
+    .page-world-homepage .row.heading {
+        background-image: linear-gradient(
+                to right,
+                rgba(177, 209, 247, 0.25) 1px,
+                transparent 1px
+            ),
+            linear-gradient(rgba(70, 134, 206, 0.25) 1px, transparent 1px);
+        background-size: 20px 20px;
+    }
+    .page-world-homepage #cover {
+        opacity: 0.1;
+    }
+}
+
 
 .user-css,
 .user-css-extended,

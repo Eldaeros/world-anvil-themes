@@ -1,7 +1,7 @@
 @import "../../node_modules/vertical-rhythm-reset/dist//vertical-rhythm-reset";
 
 .article-content {
-    margin: 0px;
+    margin: 0;
 
     .article-title {
         border-bottom: 7px solid var(--primary_theme);
@@ -14,7 +14,7 @@
         text-shadow: 0 0 3px #000000;
 
         h1 {
-            @include vr($font-size: 9, $padding: 2 0.5 0.5 0.5, $margin: 0);
+            @include vr($font-size: 9, $padding: 2 0.5 0 0.5, $margin: 0);
             font-family: bebas-neue, bebas-neue-regular;
             font-weight: 500;
             color: white;
@@ -22,7 +22,7 @@
         }
 
         h4 {
-            @include vr($font-size: 3, $padding: 0 0.5 0 0.5, $margin: 0);
+            @include vr($font-size: 3, $padding: 0 0.5 0 0.5);
             color: white;
             text-transform: none;
             opacity: 0.9;
@@ -30,25 +30,31 @@
         }
 
         .article-title-author {
-            @include vr($font-size: 1, $padding: 0 0.5 0 0.5, $margin: 0);
+            @include vr($font-size: 1, $padding: 0 0.5 0 0.5, $margin: 4 0 0 0);
             position: absolute;
-            bottom: 0px;
             opacity: 0.8;
             font-weight: 600;
             font-family: proxima-nova;
+            // Override important value from base CSS
+            margin-bottom: 0px !important;
         }
     }
     :not(.article-title) {
 
     }
 
-    .article-content-left {
-        @include vr($padding: 0 2, $margin: 0)
-        // padding-left: 20px;
-    }
+    .article-content-left,
     .article-content-right {
-        @include vr($padding: 0 2, $margin: 0)
+        @include vr($padding: 0 2, $margin: 1 0 0 0)
     }
+
+    // .article-content-left {
+    //     @include vr($padding: 0 2, $margin: 0)
+    //     // padding-left: 20px;
+    // }
+    // .article-content-right {
+    //     @include vr($padding: 0 2, $margin: 0)
+    // }
 }
 
 // .article-content-left {
@@ -68,5 +74,10 @@
 // }
 
 .character-article-portrait {
-    height: 16 * $base-grid-unit;
+    @include vr($height: 16, $width: 16);
+    // height: 16 * $base-grid-unit;
+
+    @media (min-width: $page_width_standard) {
+        @include vr($height: 12, $width: 12);
+    }
 }
