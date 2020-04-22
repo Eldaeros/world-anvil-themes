@@ -1,15 +1,26 @@
 @import "../../node_modules/vertical-rhythm-reset/dist//vertical-rhythm-reset";
 
+@mixin sidebar {
+    .panel.panel-default {
+        @include vr($width: 13, $margin: 1 0);
+    }
+}
+
+@mixin portrait {
+    margin-bottom: unset !important;
+    @include vr($height: 13, $width: 13);
+}
+
 .article-content {
     margin: 0;
 
     .article-title {
+        @include vr($height: 12);
         border-bottom: 7px solid var(--primary_theme);
         z-index: 10;
         pointer-events: none;
         padding: 0 $base-grid-unit;
         width: 100%;
-        height: var(--banner_height);
         color: white;
         text-shadow: 0 0 3px #000000;
 
@@ -39,45 +50,42 @@
             margin-bottom: 0px !important;
         }
     }
-    :not(.article-title) {
+    .article-title + div {
+        @include vr($padding: 0);
 
-    }
+        .row {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-    .article-content-left,
-    .article-content-right {
-        @include vr($padding: 0 2, $margin: 1 0 0 0)
-    }
+        .article-content-left,
+        .article-content-right {
+            @include vr($padding: 1, $margin: 0);
+        }
 
-    // .article-content-left {
-    //     @include vr($padding: 0 2, $margin: 0)
-    //     // padding-left: 20px;
-    // }
-    // .article-content-right {
-    //     @include vr($padding: 0 2, $margin: 0)
-    // }
-}
+        .article-content-left {
+            @include vr($padding-left: 2);
+            @media (max-width: $page_width_standard) {
+                @include vr($padding: 1);
+            }
 
-// .article-content-left {
-//     a {
-//         font-weight: 600;
-//     }
+            p:first-child {
+                display: none;
+            }
+        }
 
-//     h2:nth-child(1),
-//     p:nth-child(2) {
-//         display: none;
-//     }
+        .article-content-right {
+            @include sidebar();
+            @include vr($padding-right: 2);
+            @media (max-width: $page_width_standard) {
+                @include vr($padding: 1);
+            }
+        }
 
-//     h3:first-child {
-//         text-transform: none;
-//         padding-bottom: 5px;
-//     }
-// }
-
-.character-article-portrait {
-    @include vr($height: 16, $width: 16);
-    // height: 16 * $base-grid-unit;
-
-    @media (min-width: $page_width_standard) {
-        @include vr($height: 12, $width: 12);
+        .character-article-portrait {
+            @include portrait();
+        }
     }
 }

@@ -1,0 +1,36 @@
+@if $DEBUG_MODE {
+    div#content,
+    .article-title,
+    .page-world-homepage .row.heading {
+        background-position: -1px 0;
+        background-image: linear-gradient(
+                to right,
+                rgba(199, 247, 177, 0.25) 1px,
+                transparent 1px
+            ),
+            linear-gradient(rgba(199, 247, 177, 0.25) 1px, transparent 1px);
+        background-size: 2rem 2rem;
+
+        @media (min-width: $page_width_standard) {
+            background-image: linear-gradient(
+                    to right,
+                    rgba(177, 209, 247, 0.25) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(rgba(177, 209, 247, 0.25) 1px, transparent 1px);
+            background-size: 2rem 2rem;
+        }
+        @media (min-width: $page_width_wide) {
+            background-image: linear-gradient(
+                    to right,
+                    rgba(247, 177, 177, 0.25) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(rgba(247, 177, 177, 0.25) 1px, transparent 1px);
+            background-size: 2.5rem 2.5rem;
+        }
+    }
+    .page-world-homepage #cover {
+        opacity: 0.1;
+    }
+}

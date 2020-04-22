@@ -4,11 +4,6 @@
     width: 100%;
     margin: 0px;
 
-    @media (max-width: $page_width_mobile) {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-
     img {
         height: 500px;
         object-fit: cover;
@@ -21,7 +16,7 @@
 &.page-article,
 &.page-category {
     #cover img {
-        height: var(--banner_height);
+        @include vr($height: 12);
         object-fit: cover;
         object-position: 50% 50%;
         width: 100%;

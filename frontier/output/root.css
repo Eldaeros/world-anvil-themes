@@ -13,8 +13,35 @@
 
 /* DIMENSIONS */
 * {
-  --banner_height: 240px;
   --page_top_margin: 60px;
+}
+
+div#content,
+.article-title,
+.page-world-homepage .row.heading {
+  background-position: -1px 0;
+  background-image: linear-gradient(to right, rgba(199, 247, 177, 0.25) 1px, transparent 1px), linear-gradient(rgba(199, 247, 177, 0.25) 1px, transparent 1px);
+  background-size: 2rem 2rem;
+}
+@media (min-width: 992px) {
+  div#content,
+.article-title,
+.page-world-homepage .row.heading {
+    background-image: linear-gradient(to right, rgba(177, 209, 247, 0.25) 1px, transparent 1px), linear-gradient(rgba(177, 209, 247, 0.25) 1px, transparent 1px);
+    background-size: 2rem 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  div#content,
+.article-title,
+.page-world-homepage .row.heading {
+    background-image: linear-gradient(to right, rgba(247, 177, 177, 0.25) 1px, transparent 1px), linear-gradient(rgba(247, 177, 177, 0.25) 1px, transparent 1px);
+    background-size: 2.5rem 2.5rem;
+  }
+}
+
+.page-world-homepage #cover {
+  opacity: 0.1;
 }
 
 .user-css,
@@ -1104,6 +1131,686 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar .vr-offset-bottom-5 {
   margin-bottom: -5px;
 }
+@media (min-width: 1200px) {
+  .user-css,
+.user-css-extended,
+.user-css-map-sidebar {
+    /* Vertical Rhythm Reset: Breakpoint Alignment */
+  }
+  .user-css *,
+.user-css *:before,
+.user-css *:after,
+.user-css-extended *,
+.user-css-extended *:before,
+.user-css-extended *:after,
+.user-css-map-sidebar *,
+.user-css-map-sidebar *:before,
+.user-css-map-sidebar *:after {
+    line-height: 2.50001rem;
+  }
+  .user-css button,
+.user-css input:not([type=radio]):not([type=checkbox]),
+.user-css option,
+.user-css select:not([multiple]),
+.user-css-extended button,
+.user-css-extended input:not([type=radio]):not([type=checkbox]),
+.user-css-extended option,
+.user-css-extended select:not([multiple]),
+.user-css-map-sidebar button,
+.user-css-map-sidebar input:not([type=radio]):not([type=checkbox]),
+.user-css-map-sidebar option,
+.user-css-map-sidebar select:not([multiple]) {
+    height: 2.50001rem;
+  }
+  .user-css audio,
+.user-css-extended audio,
+.user-css-map-sidebar audio {
+    height: 5.00002rem;
+  }
+  .user-css hr,
+.user-css-extended hr,
+.user-css-map-sidebar hr {
+    height: 5.00002rem;
+  }
+  .user-css select[multiple],
+.user-css textarea,
+.user-css-extended select[multiple],
+.user-css-extended textarea,
+.user-css-map-sidebar select[multiple],
+.user-css-map-sidebar textarea {
+    height: 10.00004rem;
+  }
+  .user-css iframe,
+.user-css video,
+.user-css-extended iframe,
+.user-css-extended video,
+.user-css-map-sidebar iframe,
+.user-css-map-sidebar video {
+    height: 20.00008rem;
+  }
+  .user-css h1,
+.user-css-extended h1,
+.user-css-map-sidebar h1 {
+    margin-top: 0px;
+    margin-bottom: 2.50001rem;
+  }
+  .user-css blockquote,
+.user-css dl,
+.user-css form,
+.user-css h2,
+.user-css h3,
+.user-css h4,
+.user-css h5,
+.user-css h6,
+.user-css ol,
+.user-css p,
+.user-css pre,
+.user-css table,
+.user-css ul,
+.user-css-extended blockquote,
+.user-css-extended dl,
+.user-css-extended form,
+.user-css-extended h2,
+.user-css-extended h3,
+.user-css-extended h4,
+.user-css-extended h5,
+.user-css-extended h6,
+.user-css-extended ol,
+.user-css-extended p,
+.user-css-extended pre,
+.user-css-extended table,
+.user-css-extended ul,
+.user-css-map-sidebar blockquote,
+.user-css-map-sidebar dl,
+.user-css-map-sidebar form,
+.user-css-map-sidebar h2,
+.user-css-map-sidebar h3,
+.user-css-map-sidebar h4,
+.user-css-map-sidebar h5,
+.user-css-map-sidebar h6,
+.user-css-map-sidebar ol,
+.user-css-map-sidebar p,
+.user-css-map-sidebar pre,
+.user-css-map-sidebar table,
+.user-css-map-sidebar ul {
+    margin-top: 2.50001rem;
+    margin-bottom: 2.50001rem;
+  }
+  .user-css fieldset,
+.user-css-extended fieldset,
+.user-css-map-sidebar fieldset {
+    display: inline-block;
+    margin: 2.50001rem 0 calc((2.50001rem) - 1px);
+    width: 100%;
+  }
+  .user-css h1,
+.user-css-extended h1,
+.user-css-map-sidebar h1 {
+    font-size: 2.44140625rem;
+    line-height: 2.50001rem;
+  }
+  .user-css h2,
+.user-css-extended h2,
+.user-css-map-sidebar h2 {
+    font-size: 1.953125rem;
+    line-height: 2.50001rem;
+  }
+  .user-css h3,
+.user-css-extended h3,
+.user-css-map-sidebar h3 {
+    font-size: 1.5625rem;
+    line-height: 2.50001rem;
+  }
+  .user-css h4,
+.user-css-extended h4,
+.user-css-map-sidebar h4 {
+    font-size: 1.25rem;
+    line-height: 2.50001rem;
+  }
+  .user-css h5,
+.user-css-extended h5,
+.user-css-map-sidebar h5 {
+    font-size: 1rem;
+    line-height: 2.50001rem;
+  }
+  .user-css h6,
+.user-css-extended h6,
+.user-css-map-sidebar h6 {
+    font-size: 0.8rem;
+    line-height: 2.50001rem;
+  }
+  .user-css .vr-font-size-0,
+.user-css-extended .vr-font-size-0,
+.user-css-map-sidebar .vr-font-size-0 {
+    font-size: 1rem;
+    line-height: 2.50001rem;
+  }
+  .user-css .vr-font-size-1,
+.user-css-extended .vr-font-size-1,
+.user-css-map-sidebar .vr-font-size-1 {
+    font-size: 1.25rem;
+    line-height: 2.50001rem;
+  }
+  .user-css .vr-font-size-2,
+.user-css-extended .vr-font-size-2,
+.user-css-map-sidebar .vr-font-size-2 {
+    font-size: 1.5625rem;
+    line-height: 2.50001rem;
+  }
+  .user-css .vr-font-size-3,
+.user-css-extended .vr-font-size-3,
+.user-css-map-sidebar .vr-font-size-3 {
+    font-size: 1.953125rem;
+    line-height: 2.50001rem;
+  }
+  .user-css .vr-font-size-4,
+.user-css-extended .vr-font-size-4,
+.user-css-map-sidebar .vr-font-size-4 {
+    font-size: 2.44140625rem;
+    line-height: 2.50001rem;
+  }
+  .user-css .vr-font-size-5,
+.user-css-extended .vr-font-size-5,
+.user-css-map-sidebar .vr-font-size-5 {
+    font-size: 3.0517578125rem;
+    line-height: 5.00001rem;
+  }
+  .user-css .vr-line-height-1,
+.user-css-extended .vr-line-height-1,
+.user-css-map-sidebar .vr-line-height-1 {
+    line-height: 2.50001rem;
+  }
+  .user-css .vr-line-height-2,
+.user-css-extended .vr-line-height-2,
+.user-css-map-sidebar .vr-line-height-2 {
+    line-height: 5.00002rem;
+  }
+  .user-css .vr-line-height-3,
+.user-css-extended .vr-line-height-3,
+.user-css-map-sidebar .vr-line-height-3 {
+    line-height: 7.50003rem;
+  }
+  .user-css .vr-line-height-4,
+.user-css-extended .vr-line-height-4,
+.user-css-map-sidebar .vr-line-height-4 {
+    line-height: 10.00004rem;
+  }
+  .user-css .vr-line-height-5,
+.user-css-extended .vr-line-height-5,
+.user-css-map-sidebar .vr-line-height-5 {
+    line-height: 12.50005rem;
+  }
+  .user-css .vr-line-height-6,
+.user-css-extended .vr-line-height-6,
+.user-css-map-sidebar .vr-line-height-6 {
+    line-height: 15.00006rem;
+  }
+  .user-css .vr-line-height-7,
+.user-css-extended .vr-line-height-7,
+.user-css-map-sidebar .vr-line-height-7 {
+    line-height: 17.50007rem;
+  }
+  .user-css .vr-line-height-8,
+.user-css-extended .vr-line-height-8,
+.user-css-map-sidebar .vr-line-height-8 {
+    line-height: 20.00008rem;
+  }
+  .user-css .vr-line-height-9,
+.user-css-extended .vr-line-height-9,
+.user-css-map-sidebar .vr-line-height-9 {
+    line-height: 22.50009rem;
+  }
+  .user-css .vr-line-height-10,
+.user-css-extended .vr-line-height-10,
+.user-css-map-sidebar .vr-line-height-10 {
+    line-height: 25.0001rem;
+  }
+  .user-css [height="1"],
+.user-css select[multiple][size="1"],
+.user-css textarea[rows="1"],
+.user-css .vr-height-1,
+.user-css-extended [height="1"],
+.user-css-extended select[multiple][size="1"],
+.user-css-extended textarea[rows="1"],
+.user-css-extended .vr-height-1,
+.user-css-map-sidebar [height="1"],
+.user-css-map-sidebar select[multiple][size="1"],
+.user-css-map-sidebar textarea[rows="1"],
+.user-css-map-sidebar .vr-height-1 {
+    height: 2.50001rem;
+  }
+  .user-css [height="2"],
+.user-css select[multiple][size="2"],
+.user-css textarea[rows="2"],
+.user-css .vr-height-2,
+.user-css-extended [height="2"],
+.user-css-extended select[multiple][size="2"],
+.user-css-extended textarea[rows="2"],
+.user-css-extended .vr-height-2,
+.user-css-map-sidebar [height="2"],
+.user-css-map-sidebar select[multiple][size="2"],
+.user-css-map-sidebar textarea[rows="2"],
+.user-css-map-sidebar .vr-height-2 {
+    height: 5.00002rem;
+  }
+  .user-css [height="3"],
+.user-css select[multiple][size="3"],
+.user-css textarea[rows="3"],
+.user-css .vr-height-3,
+.user-css-extended [height="3"],
+.user-css-extended select[multiple][size="3"],
+.user-css-extended textarea[rows="3"],
+.user-css-extended .vr-height-3,
+.user-css-map-sidebar [height="3"],
+.user-css-map-sidebar select[multiple][size="3"],
+.user-css-map-sidebar textarea[rows="3"],
+.user-css-map-sidebar .vr-height-3 {
+    height: 7.50003rem;
+  }
+  .user-css [height="4"],
+.user-css select[multiple][size="4"],
+.user-css textarea[rows="4"],
+.user-css .vr-height-4,
+.user-css-extended [height="4"],
+.user-css-extended select[multiple][size="4"],
+.user-css-extended textarea[rows="4"],
+.user-css-extended .vr-height-4,
+.user-css-map-sidebar [height="4"],
+.user-css-map-sidebar select[multiple][size="4"],
+.user-css-map-sidebar textarea[rows="4"],
+.user-css-map-sidebar .vr-height-4 {
+    height: 10.00004rem;
+  }
+  .user-css [height="5"],
+.user-css select[multiple][size="5"],
+.user-css textarea[rows="5"],
+.user-css .vr-height-5,
+.user-css-extended [height="5"],
+.user-css-extended select[multiple][size="5"],
+.user-css-extended textarea[rows="5"],
+.user-css-extended .vr-height-5,
+.user-css-map-sidebar [height="5"],
+.user-css-map-sidebar select[multiple][size="5"],
+.user-css-map-sidebar textarea[rows="5"],
+.user-css-map-sidebar .vr-height-5 {
+    height: 12.50005rem;
+  }
+  .user-css [height="6"],
+.user-css select[multiple][size="6"],
+.user-css textarea[rows="6"],
+.user-css .vr-height-6,
+.user-css-extended [height="6"],
+.user-css-extended select[multiple][size="6"],
+.user-css-extended textarea[rows="6"],
+.user-css-extended .vr-height-6,
+.user-css-map-sidebar [height="6"],
+.user-css-map-sidebar select[multiple][size="6"],
+.user-css-map-sidebar textarea[rows="6"],
+.user-css-map-sidebar .vr-height-6 {
+    height: 15.00006rem;
+  }
+  .user-css [height="7"],
+.user-css select[multiple][size="7"],
+.user-css textarea[rows="7"],
+.user-css .vr-height-7,
+.user-css-extended [height="7"],
+.user-css-extended select[multiple][size="7"],
+.user-css-extended textarea[rows="7"],
+.user-css-extended .vr-height-7,
+.user-css-map-sidebar [height="7"],
+.user-css-map-sidebar select[multiple][size="7"],
+.user-css-map-sidebar textarea[rows="7"],
+.user-css-map-sidebar .vr-height-7 {
+    height: 17.50007rem;
+  }
+  .user-css [height="8"],
+.user-css select[multiple][size="8"],
+.user-css textarea[rows="8"],
+.user-css .vr-height-8,
+.user-css-extended [height="8"],
+.user-css-extended select[multiple][size="8"],
+.user-css-extended textarea[rows="8"],
+.user-css-extended .vr-height-8,
+.user-css-map-sidebar [height="8"],
+.user-css-map-sidebar select[multiple][size="8"],
+.user-css-map-sidebar textarea[rows="8"],
+.user-css-map-sidebar .vr-height-8 {
+    height: 20.00008rem;
+  }
+  .user-css [height="9"],
+.user-css select[multiple][size="9"],
+.user-css textarea[rows="9"],
+.user-css .vr-height-9,
+.user-css-extended [height="9"],
+.user-css-extended select[multiple][size="9"],
+.user-css-extended textarea[rows="9"],
+.user-css-extended .vr-height-9,
+.user-css-map-sidebar [height="9"],
+.user-css-map-sidebar select[multiple][size="9"],
+.user-css-map-sidebar textarea[rows="9"],
+.user-css-map-sidebar .vr-height-9 {
+    height: 22.50009rem;
+  }
+  .user-css [height="10"],
+.user-css select[multiple][size="10"],
+.user-css textarea[rows="10"],
+.user-css .vr-height-10,
+.user-css-extended [height="10"],
+.user-css-extended select[multiple][size="10"],
+.user-css-extended textarea[rows="10"],
+.user-css-extended .vr-height-10,
+.user-css-map-sidebar [height="10"],
+.user-css-map-sidebar select[multiple][size="10"],
+.user-css-map-sidebar textarea[rows="10"],
+.user-css-map-sidebar .vr-height-10 {
+    height: 25.0001rem;
+  }
+  .user-css .vr-width-1,
+.user-css-extended .vr-width-1,
+.user-css-map-sidebar .vr-width-1 {
+    width: 2.50001rem;
+  }
+  .user-css .vr-width-2,
+.user-css-extended .vr-width-2,
+.user-css-map-sidebar .vr-width-2 {
+    width: 5.00002rem;
+  }
+  .user-css .vr-width-3,
+.user-css-extended .vr-width-3,
+.user-css-map-sidebar .vr-width-3 {
+    width: 7.50003rem;
+  }
+  .user-css .vr-width-4,
+.user-css-extended .vr-width-4,
+.user-css-map-sidebar .vr-width-4 {
+    width: 10.00004rem;
+  }
+  .user-css .vr-width-5,
+.user-css-extended .vr-width-5,
+.user-css-map-sidebar .vr-width-5 {
+    width: 12.50005rem;
+  }
+  .user-css .vr-width-6,
+.user-css-extended .vr-width-6,
+.user-css-map-sidebar .vr-width-6 {
+    width: 15.00006rem;
+  }
+  .user-css .vr-width-7,
+.user-css-extended .vr-width-7,
+.user-css-map-sidebar .vr-width-7 {
+    width: 17.50007rem;
+  }
+  .user-css .vr-width-8,
+.user-css-extended .vr-width-8,
+.user-css-map-sidebar .vr-width-8 {
+    width: 20.00008rem;
+  }
+  .user-css .vr-width-9,
+.user-css-extended .vr-width-9,
+.user-css-map-sidebar .vr-width-9 {
+    width: 22.50009rem;
+  }
+  .user-css .vr-width-10,
+.user-css-extended .vr-width-10,
+.user-css-map-sidebar .vr-width-10 {
+    width: 25.0001rem;
+  }
+  .user-css .vr-margin-1,
+.user-css-extended .vr-margin-1,
+.user-css-map-sidebar .vr-margin-1 {
+    margin: 2.50001rem;
+  }
+  .user-css .vr-margin-2,
+.user-css-extended .vr-margin-2,
+.user-css-map-sidebar .vr-margin-2 {
+    margin: 5.00002rem;
+  }
+  .user-css .vr-margin-3,
+.user-css-extended .vr-margin-3,
+.user-css-map-sidebar .vr-margin-3 {
+    margin: 7.50003rem;
+  }
+  .user-css .vr-margin-4,
+.user-css-extended .vr-margin-4,
+.user-css-map-sidebar .vr-margin-4 {
+    margin: 10.00004rem;
+  }
+  .user-css .vr-margin-5,
+.user-css-extended .vr-margin-5,
+.user-css-map-sidebar .vr-margin-5 {
+    margin: 12.50005rem;
+  }
+  .user-css .vr-margin-top-1,
+.user-css-extended .vr-margin-top-1,
+.user-css-map-sidebar .vr-margin-top-1 {
+    margin-top: 2.50001rem;
+  }
+  .user-css .vr-margin-top-2,
+.user-css-extended .vr-margin-top-2,
+.user-css-map-sidebar .vr-margin-top-2 {
+    margin-top: 5.00002rem;
+  }
+  .user-css .vr-margin-top-3,
+.user-css-extended .vr-margin-top-3,
+.user-css-map-sidebar .vr-margin-top-3 {
+    margin-top: 7.50003rem;
+  }
+  .user-css .vr-margin-top-4,
+.user-css-extended .vr-margin-top-4,
+.user-css-map-sidebar .vr-margin-top-4 {
+    margin-top: 10.00004rem;
+  }
+  .user-css .vr-margin-top-5,
+.user-css-extended .vr-margin-top-5,
+.user-css-map-sidebar .vr-margin-top-5 {
+    margin-top: 12.50005rem;
+  }
+  .user-css .vr-margin-bottom-1,
+.user-css-extended .vr-margin-bottom-1,
+.user-css-map-sidebar .vr-margin-bottom-1 {
+    margin-bottom: 2.50001rem;
+  }
+  .user-css .vr-margin-bottom-2,
+.user-css-extended .vr-margin-bottom-2,
+.user-css-map-sidebar .vr-margin-bottom-2 {
+    margin-bottom: 5.00002rem;
+  }
+  .user-css .vr-margin-bottom-3,
+.user-css-extended .vr-margin-bottom-3,
+.user-css-map-sidebar .vr-margin-bottom-3 {
+    margin-bottom: 7.50003rem;
+  }
+  .user-css .vr-margin-bottom-4,
+.user-css-extended .vr-margin-bottom-4,
+.user-css-map-sidebar .vr-margin-bottom-4 {
+    margin-bottom: 10.00004rem;
+  }
+  .user-css .vr-margin-bottom-5,
+.user-css-extended .vr-margin-bottom-5,
+.user-css-map-sidebar .vr-margin-bottom-5 {
+    margin-bottom: 12.50005rem;
+  }
+  .user-css .vr-padding-1,
+.user-css-extended .vr-padding-1,
+.user-css-map-sidebar .vr-padding-1 {
+    padding: 2.50001rem;
+  }
+  .user-css .vr-padding-2,
+.user-css-extended .vr-padding-2,
+.user-css-map-sidebar .vr-padding-2 {
+    padding: 5.00002rem;
+  }
+  .user-css .vr-padding-3,
+.user-css-extended .vr-padding-3,
+.user-css-map-sidebar .vr-padding-3 {
+    padding: 7.50003rem;
+  }
+  .user-css .vr-padding-4,
+.user-css-extended .vr-padding-4,
+.user-css-map-sidebar .vr-padding-4 {
+    padding: 10.00004rem;
+  }
+  .user-css .vr-padding-5,
+.user-css-extended .vr-padding-5,
+.user-css-map-sidebar .vr-padding-5 {
+    padding: 12.50005rem;
+  }
+  .user-css .vr-padding-top-1,
+.user-css-extended .vr-padding-top-1,
+.user-css-map-sidebar .vr-padding-top-1 {
+    padding-top: 2.50001rem;
+  }
+  .user-css .vr-padding-top-2,
+.user-css-extended .vr-padding-top-2,
+.user-css-map-sidebar .vr-padding-top-2 {
+    padding-top: 5.00002rem;
+  }
+  .user-css .vr-padding-top-3,
+.user-css-extended .vr-padding-top-3,
+.user-css-map-sidebar .vr-padding-top-3 {
+    padding-top: 7.50003rem;
+  }
+  .user-css .vr-padding-top-4,
+.user-css-extended .vr-padding-top-4,
+.user-css-map-sidebar .vr-padding-top-4 {
+    padding-top: 10.00004rem;
+  }
+  .user-css .vr-padding-top-5,
+.user-css-extended .vr-padding-top-5,
+.user-css-map-sidebar .vr-padding-top-5 {
+    padding-top: 12.50005rem;
+  }
+  .user-css .vr-padding-bottom-1,
+.user-css-extended .vr-padding-bottom-1,
+.user-css-map-sidebar .vr-padding-bottom-1 {
+    padding-bottom: 2.50001rem;
+  }
+  .user-css .vr-padding-bottom-2,
+.user-css-extended .vr-padding-bottom-2,
+.user-css-map-sidebar .vr-padding-bottom-2 {
+    padding-bottom: 5.00002rem;
+  }
+  .user-css .vr-padding-bottom-3,
+.user-css-extended .vr-padding-bottom-3,
+.user-css-map-sidebar .vr-padding-bottom-3 {
+    padding-bottom: 7.50003rem;
+  }
+  .user-css .vr-padding-bottom-4,
+.user-css-extended .vr-padding-bottom-4,
+.user-css-map-sidebar .vr-padding-bottom-4 {
+    padding-bottom: 10.00004rem;
+  }
+  .user-css .vr-padding-bottom-5,
+.user-css-extended .vr-padding-bottom-5,
+.user-css-map-sidebar .vr-padding-bottom-5 {
+    padding-bottom: 12.50005rem;
+  }
+  .user-css .vr-offset-1,
+.user-css-extended .vr-offset-1,
+.user-css-map-sidebar .vr-offset-1 {
+    -webkit-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    transform: translateY(-1px);
+    margin-bottom: -2px;
+  }
+  .user-css .vr-offset-2,
+.user-css-extended .vr-offset-2,
+.user-css-map-sidebar .vr-offset-2 {
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+    margin-bottom: -4px;
+  }
+  .user-css .vr-offset-3,
+.user-css-extended .vr-offset-3,
+.user-css-map-sidebar .vr-offset-3 {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    margin-bottom: -6px;
+  }
+  .user-css .vr-offset-4,
+.user-css-extended .vr-offset-4,
+.user-css-map-sidebar .vr-offset-4 {
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+    margin-bottom: -8px;
+  }
+  .user-css .vr-offset-5,
+.user-css-extended .vr-offset-5,
+.user-css-map-sidebar .vr-offset-5 {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    margin-bottom: -10px;
+  }
+  .user-css .vr-offset-top-1,
+.user-css-extended .vr-offset-top-1,
+.user-css-map-sidebar .vr-offset-top-1 {
+    -webkit-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    transform: translateY(-1px);
+    margin-bottom: -1px;
+  }
+  .user-css .vr-offset-top-2,
+.user-css-extended .vr-offset-top-2,
+.user-css-map-sidebar .vr-offset-top-2 {
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+    margin-bottom: -2px;
+  }
+  .user-css .vr-offset-top-3,
+.user-css-extended .vr-offset-top-3,
+.user-css-map-sidebar .vr-offset-top-3 {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    margin-bottom: -3px;
+  }
+  .user-css .vr-offset-top-4,
+.user-css-extended .vr-offset-top-4,
+.user-css-map-sidebar .vr-offset-top-4 {
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+    margin-bottom: -4px;
+  }
+  .user-css .vr-offset-top-5,
+.user-css-extended .vr-offset-top-5,
+.user-css-map-sidebar .vr-offset-top-5 {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    margin-bottom: -5px;
+  }
+  .user-css .vr-offset-bottom-1,
+.user-css-extended .vr-offset-bottom-1,
+.user-css-map-sidebar .vr-offset-bottom-1 {
+    margin-bottom: -1px;
+  }
+  .user-css .vr-offset-bottom-2,
+.user-css-extended .vr-offset-bottom-2,
+.user-css-map-sidebar .vr-offset-bottom-2 {
+    margin-bottom: -2px;
+  }
+  .user-css .vr-offset-bottom-3,
+.user-css-extended .vr-offset-bottom-3,
+.user-css-map-sidebar .vr-offset-bottom-3 {
+    margin-bottom: -3px;
+  }
+  .user-css .vr-offset-bottom-4,
+.user-css-extended .vr-offset-bottom-4,
+.user-css-map-sidebar .vr-offset-bottom-4 {
+    margin-bottom: -4px;
+  }
+  .user-css .vr-offset-bottom-5,
+.user-css-extended .vr-offset-bottom-5,
+.user-css-map-sidebar .vr-offset-bottom-5 {
+    margin-bottom: -5px;
+  }
+}
 @media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .user-css,
 .user-css-extended,
@@ -1135,21 +1842,28 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   .user-css.page,
 .user-css-extended.page,
 .user-css-map-sidebar.page {
-    width: 720px;
+    width: 72.00036rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .user-css.page,
+.user-css-extended.page,
+.user-css-map-sidebar.page {
+    width: 90.00036rem;
   }
 }
 @media (min-width: 992px) {
   .user-css.page,
 .user-css-extended.page,
 .user-css-map-sidebar.page {
-    width: 960px;
+    width: 96.00048rem;
   }
 }
 @media (min-width: 1200px) {
   .user-css.page,
 .user-css-extended.page,
 .user-css-map-sidebar.page {
-    width: 1200px;
+    width: 120.0006rem;
   }
 }
 .user-css h1, .user-css h2, .user-css h3, .user-css h4, .user-css h5, .user-css h6,
@@ -1175,6 +1889,15 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   line-height: 4.00001rem;
   margin: 0px 0;
 }
+@media (min-width: 1200px) {
+  .user-css h1,
+.user-css-extended h1,
+.user-css-map-sidebar h1 {
+    font-size: 3.0517578125rem;
+    line-height: 5.00001rem;
+    margin: 0px 0;
+  }
+}
 .user-css h2,
 .user-css-extended h2,
 .user-css-map-sidebar h2 {
@@ -1189,6 +1912,16 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   border-bottom-color: var(--secondary_theme);
   width: 100%;
 }
+@media (min-width: 1200px) {
+  .user-css h2,
+.user-css-extended h2,
+.user-css-map-sidebar h2 {
+    font-size: 2.44140625rem;
+    line-height: 2.50001rem;
+    display: inline-block;
+    margin: 0px 0 calc((2.50001rem) - 1px);
+  }
+}
 .user-css h3,
 .user-css-extended h3,
 .user-css-map-sidebar h3 {
@@ -1199,6 +1932,15 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   font-weight: 600;
   color: var(--secondary_theme_darker);
 }
+@media (min-width: 1200px) {
+  .user-css h3,
+.user-css-extended h3,
+.user-css-map-sidebar h3 {
+    font-size: 1.953125rem;
+    line-height: 2.50001rem;
+    margin: 0px 0;
+  }
+}
 .user-css h4,
 .user-css-extended h4,
 .user-css-map-sidebar h4 {
@@ -1208,6 +1950,15 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   font-weight: 500;
   color: var(--secondary_theme_darker);
 }
+@media (min-width: 1200px) {
+  .user-css h4,
+.user-css-extended h4,
+.user-css-map-sidebar h4 {
+    font-size: 1.5625rem;
+    line-height: 2.50001rem;
+    margin: 0px 0;
+  }
+}
 .user-css h5,
 .user-css-extended h5,
 .user-css-map-sidebar h5 {
@@ -1215,6 +1966,14 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   line-height: 2.00001rem;
   font-weight: 600;
   text-transform: none;
+}
+@media (min-width: 1200px) {
+  .user-css h5,
+.user-css-extended h5,
+.user-css-map-sidebar h5 {
+    font-size: 1.5625rem;
+    line-height: 2.50001rem;
+  }
 }
 .user-css a,
 .user-css-extended a,
@@ -1260,6 +2019,18 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   line-height: 0;
   vertical-align: baseline;
 }
+@media (min-width: 1200px) {
+  .user-css sub,
+.user-css sup,
+.user-css-extended sub,
+.user-css-extended sup,
+.user-css-map-sidebar sub,
+.user-css-map-sidebar sup {
+    font-size: 1rem;
+    line-height: 2.50001rem;
+    margin: 0px 0;
+  }
+}
 .user-css sub,
 .user-css-extended sub,
 .user-css-map-sidebar sub {
@@ -1276,6 +2047,15 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   font-size: 1.2rem;
   line-height: 2.00001rem;
   margin: 0px 0;
+}
+@media (min-width: 1200px) {
+  .user-css small,
+.user-css-extended small,
+.user-css-map-sidebar small {
+    font-size: 1.25rem;
+    line-height: 2.50001rem;
+    margin: 0px 0;
+  }
 }
 .user-css p,
 .user-css #profile,
@@ -1294,6 +2074,16 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   margin: 0px 0;
   padding: 0px 0 2.00001rem;
 }
+@media (min-width: 1200px) {
+  .user-css p,
+.user-css-extended p,
+.user-css-map-sidebar p {
+    font-size: 1.5625rem;
+    line-height: 2.50001rem;
+    margin: 0px 0;
+    padding: 0px 0 2.50001rem;
+  }
+}
 .user-css #profile,
 .user-css-extended #profile,
 .user-css-map-sidebar #profile {
@@ -1301,6 +2091,16 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   line-height: 2.00001rem;
   margin: 0px 0;
   padding: 0px 0;
+}
+@media (min-width: 1200px) {
+  .user-css #profile,
+.user-css-extended #profile,
+.user-css-map-sidebar #profile {
+    font-size: 1.5625rem;
+    line-height: 2.50001rem;
+    margin: 0px 0;
+    padding: 0px 0;
+  }
 }
 .user-css blockquote,
 .user-css-extended blockquote,
@@ -1313,10 +2113,27 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   border-left: 10px var(--secondary_theme) solid;
   font-family: architects-daughter;
 }
+@media (min-width: 1200px) {
+  .user-css blockquote,
+.user-css-extended blockquote,
+.user-css-map-sidebar blockquote {
+    font-size: 1.5625rem;
+    line-height: 2.50001rem;
+    margin: 1.250005rem 0;
+    padding: 1.250005rem;
+  }
+}
 .user-css blockquote + blockquote,
 .user-css-extended blockquote + blockquote,
 .user-css-map-sidebar blockquote + blockquote {
   margin-top: 2.00001rem;
+}
+@media (min-width: 1200px) {
+  .user-css blockquote + blockquote,
+.user-css-extended blockquote + blockquote,
+.user-css-map-sidebar blockquote + blockquote {
+    margin-top: 2.50001rem;
+  }
 }
 .user-css hr,
 .user-css-extended hr,
@@ -1337,12 +2154,6 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   width: 100%;
   margin: 0px;
 }
-@media (max-width: 767px) {
-  .user-css #cover {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-}
 .user-css #cover img {
   height: 500px;
   object-fit: cover;
@@ -1350,10 +2161,15 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   width: 100%;
 }
 .user-css.page-article #cover img, .user-css.page-category #cover img {
-  height: var(--banner_height);
+  height: 24.00012rem;
   object-fit: cover;
   object-position: 50% 50%;
   width: 100%;
+}
+@media (min-width: 1200px) {
+  .user-css.page-article #cover img, .user-css.page-category #cover img {
+    height: 30.00012rem;
+  }
 }
 .user-css.page-articlediv#cover:after, .user-css.page-categorydiv#cover:after, .user-cssdiv#cover:after {
   display: block;
@@ -1401,20 +2217,30 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css .backtoworld a {
   /* Home Button */
+  font-size: 1.2rem;
+  line-height: 2.00001rem;
+  line-height: 2.00001rem;
+  height: 4.00002rem;
+  width: 4.00002rem;
   background: var(--primary_theme);
   font-family: proxima-nova, roboto, sans-serif;
   position: absolute;
-  font-size: 0.8em;
   font-weight: 600;
   color: #fff;
   z-index: 2;
-  height: 40px;
-  line-height: 20px;
   visibility: hidden;
   top: 0;
   left: 0;
   padding: 0;
-  width: 40px;
+}
+@media (min-width: 1200px) {
+  .user-css .backtoworld a {
+    font-size: 1.25rem;
+    line-height: 2.50001rem;
+    line-height: 2.50001rem;
+    height: 5.00002rem;
+    width: 5.00002rem;
+  }
 }
 @media (max-width: 767px) {
   .user-css .backtoworld a {
@@ -1422,23 +2248,23 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   }
 }
 .user-css .backtoworld a:before {
+  font-size: 1.2rem;
+  line-height: 2.00001rem;
+  line-height: 2.00001rem;
+  height: 4.00002rem;
+  width: 4.00002rem;
+  padding: 1.000005rem;
   content: url(https://cdn.rawgit.com/Eldaeros/city_of_mist/84b63baf/World%20Anvil/Home-Content.png);
   position: absolute;
-  padding: 10px 10px;
-  font-size: 0.8em;
   font-weight: 600;
   color: #fff;
   z-index: 2;
-  height: 40px;
-  line-height: 20px;
   visibility: visible;
   background: var(--primary_theme);
-  font-size: 1.2em;
-  width: 40px;
   text-align: center;
   left: 10px;
   background-image: url(https://cdn.rawgit.com/Eldaeros/city_of_mist/84b63baf/World%20Anvil/Home_white.svg);
-  background-size: 40px;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   border-bottom-left-radius: 3px;
@@ -1446,6 +2272,16 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 1200px) {
+  .user-css .backtoworld a:before {
+    font-size: 1.25rem;
+    line-height: 2.50001rem;
+    line-height: 2.50001rem;
+    height: 5.00002rem;
+    width: 5.00002rem;
+    padding: 1.250005rem;
+  }
 }
 .user-css .backtoworld a:hover:before {
   background-color: var(--primary_theme_darker);
@@ -1702,7 +2538,7 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   width: 100%;
   margin: 0px;
   padding: 0px 15px;
-  min-height: var(--banner_height);
+  min-height: 240px;
 }
 .user-css.page-category #header h1 {
   font-family: bebas-neue, bebas-neue-regular;
@@ -1742,14 +2578,19 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   margin: 0;
 }
 .user-css .article-content .article-title {
+  height: 24.00012rem;
   border-bottom: 7px solid var(--primary_theme);
   z-index: 10;
   pointer-events: none;
   padding: 0 2rem;
   width: 100%;
-  height: var(--banner_height);
   color: white;
   text-shadow: 0 0 3px #000000;
+}
+@media (min-width: 1200px) {
+  .user-css .article-content .article-title {
+    height: 30.00012rem;
+  }
 }
 .user-css .article-content .article-title h1 {
   font-size: 5.159780352rem;
@@ -1761,6 +2602,14 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   color: white;
   text-transform: none;
 }
+@media (min-width: 1200px) {
+  .user-css .article-content .article-title h1 {
+    font-size: 7.4505805969rem;
+    line-height: 7.50001rem;
+    margin: 0px 0;
+    padding: 5.00002rem 1.250005rem 0px;
+  }
+}
 .user-css .article-content .article-title h4 {
   font-size: 1.728rem;
   line-height: 2.00001rem;
@@ -1769,6 +2618,13 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   text-transform: none;
   opacity: 0.9;
   font-family: special-elite;
+}
+@media (min-width: 1200px) {
+  .user-css .article-content .article-title h4 {
+    font-size: 1.953125rem;
+    line-height: 2.50001rem;
+    padding: 0px 1.250005rem;
+  }
 }
 .user-css .article-content .article-title .article-title-author {
   font-size: 1.2rem;
@@ -1781,19 +2637,98 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   font-family: proxima-nova;
   margin-bottom: 0px !important;
 }
-.user-css .article-content .article-content-left,
-.user-css .article-content .article-content-right {
-  margin: 2.00001rem 0 0px;
-  padding: 0px 4.00002rem;
+@media (min-width: 1200px) {
+  .user-css .article-content .article-title .article-title-author {
+    font-size: 1.25rem;
+    line-height: 2.50001rem;
+    margin: 10.00004rem 0 0px;
+    padding: 0px 1.250005rem;
+  }
 }
-.user-css .character-article-portrait {
-  height: 32.00016rem;
-  width: 32.00016rem;
+.user-css .article-content .article-title + div {
+  padding: 0px 0;
 }
-@media (min-width: 992px) {
-  .user-css .character-article-portrait {
-    height: 24.00012rem;
-    width: 24.00012rem;
+@media (min-width: 1200px) {
+  .user-css .article-content .article-title + div {
+    padding: 0px 0;
+  }
+}
+.user-css .article-content .article-title + div .row {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.user-css .article-content .article-title + div .article-content-left,
+.user-css .article-content .article-title + div .article-content-right {
+  margin: 0px 0;
+  padding: 2.00001rem;
+}
+@media (min-width: 1200px) {
+  .user-css .article-content .article-title + div .article-content-left,
+.user-css .article-content .article-title + div .article-content-right {
+    margin: 0px 0;
+    padding: 2.50001rem;
+  }
+}
+.user-css .article-content .article-title + div .article-content-left {
+  padding-left: 4.00002rem;
+}
+@media (min-width: 1200px) {
+  .user-css .article-content .article-title + div .article-content-left {
+    padding-left: 5.00002rem;
+  }
+}
+@media (max-width: 992px) {
+  .user-css .article-content .article-title + div .article-content-left {
+    padding: 2.00001rem;
+  }
+}
+@media (max-width: 992px) and (min-width: 1200px) {
+  .user-css .article-content .article-title + div .article-content-left {
+    padding: 2.50001rem;
+  }
+}
+.user-css .article-content .article-title + div .article-content-left p:first-child {
+  display: none;
+}
+.user-css .article-content .article-title + div .article-content-right {
+  padding-right: 4.00002rem;
+}
+.user-css .article-content .article-title + div .article-content-right .panel.panel-default {
+  width: 26.00013rem;
+  margin: 2.00001rem 0;
+}
+@media (min-width: 1200px) {
+  .user-css .article-content .article-title + div .article-content-right .panel.panel-default {
+    width: 32.50013rem;
+    margin: 2.50001rem 0;
+  }
+}
+@media (min-width: 1200px) {
+  .user-css .article-content .article-title + div .article-content-right {
+    padding-right: 5.00002rem;
+  }
+}
+@media (max-width: 992px) {
+  .user-css .article-content .article-title + div .article-content-right {
+    padding: 2.00001rem;
+  }
+}
+@media (max-width: 992px) and (min-width: 1200px) {
+  .user-css .article-content .article-title + div .article-content-right {
+    padding: 2.50001rem;
+  }
+}
+.user-css .article-content .article-title + div .character-article-portrait {
+  margin-bottom: unset !important;
+  height: 26.00013rem;
+  width: 26.00013rem;
+}
+@media (min-width: 1200px) {
+  .user-css .article-content .article-title + div .character-article-portrait {
+    height: 32.50013rem;
+    width: 32.50013rem;
   }
 }
 .user-css .campaign-protagonists .card-box {
@@ -1816,30 +2751,6 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css .character-relationship-panel hr {
   margin-top: 5px !important;
-}
-.user-css .panel.panel-default:not(.character-relationship-panel) {
-  margin-right: -25px;
-  margin-left: -15px;
-  padding-right: 25px;
-  border-radius: 6px 0px 0px 6px;
-  border-color: rgba(255, 255, 255, 0.5);
-  border-right: none;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
-  /* background-color: rgba(0, 0, 0, 0.75); */
-  /* Alternate Colours */
-  background-color: var(--secondary_theme);
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25), 0px 0px 25px 10px rgba(35, 35, 50, 0.4) inset, -25px 0px 50px 0px rgba(35, 35, 50, 0.4) inset;
-  color: white;
-}
-.user-css .panel.panel-default:not(.character-relationship-panel),
-.user-css .panel.panel-default:not(.character-relationship-panel) a {
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 400;
-}
-.user-css .panel.panel-default:not(.character-relationship-panel) dt {
-  text-transform: capitalize;
-  font-weight: 600;
-  color: white;
 }
 .user-css .theme.logos {
   background: #ffeeaa;
@@ -1991,6 +2902,27 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/architectsdaughter/v8/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvTYlg4w.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwN4rWqZPANqczVs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsWqZPANqczVs.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {

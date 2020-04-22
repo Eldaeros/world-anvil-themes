@@ -4,41 +4,29 @@
 // Reset defaults for vertical-rhythm-reset
 $_vr-is-root-reset: null;
 $vr-modular-scale: null;
-$vr-grid-color: rgb(54, 126, 194);
-$vr-breakpoints: false;
 $vr-helpers: null;
 $_vr-rendered: null;
 
 // Configuration for vertical-rhythm-reset
 $vr-box-sizing: border-box;
+$vr-grid-color: rgba(70, 134, 206, 0.25);
 $vr-font-size: 1rem;
-$vr-line-height: $base-grid-unit;
+$vr-line-height: 2;
+$vr-breakpoints: (
+    $page_width_wide: (
+        modular-scale: major-third,
+        line-height: 2.5,
+    )
+);
 @import "../node_modules/vertical-rhythm-reset/dist//vertical-rhythm-reset";
 
-$DEBUG_MODE: false;
-
-@if $DEBUG_MODE {
-    div#content,
-    .article-title,
-    .page-world-homepage .row.heading {
-        background-image: linear-gradient(
-                to right,
-                rgba(177, 209, 247, 0.25) 1px,
-                transparent 1px
-            ),
-            linear-gradient(rgba(70, 134, 206, 0.25) 1px, transparent 1px);
-        background-size: 20px 20px;
-    }
-    .page-world-homepage #cover {
-        opacity: 0.1;
-    }
-}
+$DEBUG_MODE: true;
+@import "debug-grid";
 
 
 .user-css,
 .user-css-extended,
 .user-css-map-sidebar {
-    // @import '../node_modules/normalize.css/normalize';
     @include vr-reset();
     @import "base-styling";
 }
@@ -57,7 +45,7 @@ $DEBUG_MODE: false;
     @import "user-css/article";
     @import "user-css/campaign";
     @import "user-css/character-relationship-panel";
-    @import "user-css/panel";
+    // @import "user-css/panel";
     @import "user-css/custom/theme-tags";
 }
 
