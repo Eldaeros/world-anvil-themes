@@ -18,9 +18,9 @@ $vr-breakpoints: (
         line-height: 2.5,
     )
 );
-@import "../node_modules/vertical-rhythm-reset/dist//vertical-rhythm-reset";
+@import "modules/vertical-rhythm-reset";
 
-$DEBUG_MODE: true;
+$DEBUG_MODE: false;
 @import "debug-grid";
 
 

@@ -20,7 +20,7 @@
     padding: 0;
 
     @media (max-width: $page_width_mobile) {
-        left: 10px;
+        left: 1rem;
     }
 
     &:before {
@@ -31,7 +31,7 @@
             $padding: 0.5,
             $font-size: 1
         );
-        content: url(https://cdn.rawgit.com/Eldaeros/city_of_mist/84b63baf/World%20Anvil/Home-Content.png);
+        content: url(https://raw.githubusercontent.com/Eldaeros/world-anvil-themes/master/assets/Home-Content.png);
         position: absolute;
         font-weight: 600;
         color: #fff;
@@ -40,7 +40,7 @@
         background: var(--primary_theme);
         text-align: center;
         left: 10px;
-        background-image: url(https://cdn.rawgit.com/Eldaeros/city_of_mist/84b63baf/World%20Anvil/Home_white.svg);
+        background-image: url(https://raw.githubusercontent.com/Eldaeros/world-anvil-themes/master/assets/Home_white.svg);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -91,17 +91,58 @@
 }
 
 .search-form {
+    @include vr($height: 2);
+    margin: 0px;
     position: absolute;
-    top: -50px;
     z-index: 1;
+    top: 0;
     right: 0;
 
+    .typeahead-input {
+        background-color: rgba(255, 255, 255, 0.5);
+
+        &:focus {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    }
+
     @media (max-width: $page_width_mobile) {
-        right: 20px;
+        right: 1rem;
     }
 
     .form-group {
+        @include vr($height: 2, $line-height: 1, $font-size: 1, $padding: 0.5);
+
         position: absolute;
         right: 0;
+    }
+
+    #search-button {
+        visibility: hidden;
+        padding: 0;
+        @include vr(
+            $height: 1,
+            $width: 1,
+            $margin-top: 0.5,
+            $margin-right: 1
+        );
+
+        &:before {
+            @include vr(
+                $height: 1,
+                $width: 1,
+                $line-height: 1,
+                $padding: 0.5,
+                $font-size: 1
+            );
+            content: url(https://raw.githubusercontent.com/Eldaeros/world-anvil-themes/master/assets/Home-Content.png);
+            position: absolute;
+            z-index: 2;
+            visibility: visible;
+            background-image: url(https://raw.githubusercontent.com/Eldaeros/world-anvil-themes/master/assets/search.svg);
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
 }

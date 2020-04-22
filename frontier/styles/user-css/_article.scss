@@ -3,12 +3,18 @@
 @mixin sidebar {
     .panel.panel-default {
         @include vr($width: 13, $margin: 1 0);
+        @media (max-width: $page_width_standard) {
+            @include vr($width: 14);
+        }
     }
 }
 
 @mixin portrait {
     margin-bottom: unset !important;
     @include vr($height: 13, $width: 13);
+    @media (max-width: $page_width_standard) {
+        @include vr($height: 14, $width: 14);
+    }
 }
 
 .article-content {
@@ -41,13 +47,14 @@
         }
 
         .article-title-author {
-            @include vr($font-size: 1, $padding: 0 0.5 0 0.5, $margin: 4 0 0 0);
+            @include vr($font-size: 1, $padding: 0 0.5 0 0.5);
             position: absolute;
             opacity: 0.8;
             font-weight: 600;
             font-family: proxima-nova;
             // Override important value from base CSS
             margin-bottom: 0px !important;
+            bottom: calc(2rem - 7px);
         }
     }
     .article-title + div {
@@ -72,7 +79,7 @@
             }
 
             p:first-child {
-                display: none;
+                padding: 0px;
             }
         }
 
