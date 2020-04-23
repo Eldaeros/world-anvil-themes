@@ -23,7 +23,6 @@ $vr-breakpoints: (
 $DEBUG_MODE: false;
 @import "debug-grid";
 
-
 .user-css,
 .user-css-extended,
 .user-css-map-sidebar {
@@ -50,9 +49,12 @@ $DEBUG_MODE: false;
 }
 
 .user-css-extended {
-    margin-bottom: calc(5rem + var(--page_top_margin));
-    margin-top: 35px;
+    @import "user-css/metadata";
     background: unset;
+
+    .extendedbody-comments {
+        display: none;
+    }
 
     .dl-horizontal {
         text-transform: capitalize;
@@ -66,28 +68,10 @@ $DEBUG_MODE: false;
 .user-css,
 .user-css-extended {
     @import "user-css/nav-tabs";
-
-    #peripheral-content:before {
-        border-top: 7px solid var(--primary_theme);
-        width: 100%;
-        height: 1px;
-        margin-right: -10px;
-        margin-left: -10px;
-        position: absolute;
-        z-index: 10;
-    }
 }
 
 .user-css-map-sidebar {
     @import "user-css-map-sidebar/map";
-}
-
-.user-css.page,
-.user-css-extended .page {
-    background: white;
-    top: var(--page_top_margin);
-    margin-bottom: calc(3rem + var(--page_top_margin));
-    font-family: proxima-nova;
 }
 
 /* BACKGROUND */

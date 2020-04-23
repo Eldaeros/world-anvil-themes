@@ -5,7 +5,7 @@
     margin: 0px;
 
     img {
-        height: 500px;
+        @include vr($height: 25);
         object-fit: cover;
         object-position: 50% 50%;
         width: 100%;

@@ -1,5 +1,23 @@
 // HOMEPAGE
 &.page-world-homepage {
+    .row.heading {
+        margin: 0;
+
+        .text-center {
+            padding: 0;
+            margin: 0;
+
+            // SMALL
+            @media (min-width: $page_width_small) {
+                @include vr($width: 36);
+            }
+
+            // STANDARD
+            @media (min-width: $page_width_standard) {
+                @include vr($width: 48);
+            }
+        }
+    }
     // Title
     .world-title {
         color: transparent;
@@ -14,37 +32,25 @@
 
         // MOBILE
         @media (max-width: $page_width_mobile) {
-            & {
-                width: 100vw;
-                background-size: 750px;
-            }
+            width: 100vw;
+            background-size: 750px;
         }
 
         // SMALL
         @media (min-width: $page_width_small) {
-            & {
-                width: 750px;
-                margin-left: calc((-750px / 2) + 50%);
+                @include vr($width: 36);
                 background-size: 1000px;
-            }
         }
 
         // STANDARD
         @media (min-width: $page_width_standard) {
-            & {
-                width: 970px;
-                margin-left: calc((-970px / 2) + 50%);
+                @include vr($width: 48);
                 background-size: 1000px;
-            }
         }
 
         // WIDE
         @media (min-width: $page_width_wide) {
-            & {
-                width: 1170px;
-                margin-left: calc((-1170px / 2) + 50%);
                 background-size: 1200px;
-            }
         }
     }
 
@@ -55,7 +61,25 @@
 
     // Subheading
     .subheading {
-        margin-top: 16px;
+        @include vr($margin: 1);
+        // SMALL
+        @media (min-width: $page_width_small) {
+            @include vr($padding: 0);
+        }
+
+        // STANDARD
+        @media (min-width: $page_width_standard) {
+            @include vr($padding: 0 7);
+        }
+
+        // WIDE
+        @media (min-width: $page_width_wide) {
+            @include vr($padding: 0 7);
+        }
+
+        blockquote {
+            @include vr($padding: 1, $margin: 1 0);
+        }
     }
 
     // Hide Followers Counter
@@ -63,21 +87,22 @@
         display: none;
     }
 
+    .world-currentDate {
+        @include vr($height: 13, $padding: 0 0 1 0);
+    }
+
     // Authors
     .world-authors {
-        padding-bottom: 8px;
-        height: 250px;
+        @include vr($height: 12, $padding: 0 0 1 0);
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: flex-end;
 
         p {
-            height: 20px;
             color: white;
             font-family: proxima-nova;
             font-style: normal;
-            font-size: 1.1em;
             text-shadow: 0 0 3px #000000;
             opacity: 0.8;
             font-variant-caps: all-small-caps;
@@ -87,29 +112,24 @@
         .world-editors,
         .world-writers {
             .author-item {
+                @include vr($width: 5);
                 text-transform: uppercase;
                 font-weight: 700;
-                width: 100px;
-                padding-bottom: 10px;
 
                 a {
+                    @include vr($font-size: 3);
                     color: white;
                     font-weight: 300;
                     text-transform: capitalize;
                     font-style: normal;
                     -webkit-text-stroke: 0.5px;
                     text-shadow: 0 0 3px #000000;
-                    line-height: 20px;
                 }
             }
         }
+
+        .world-writers {
+            @include vr($padding-top: 1);
+        }
     }
 }
-
-// .subheading {
-//     font-family: architects-daughter;
-//     font-size: 15px;
-//     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-//     padding: 30px;
-//     margin-top: 30px;
-// }

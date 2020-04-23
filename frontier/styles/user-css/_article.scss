@@ -4,7 +4,7 @@
     .panel.panel-default {
         @include vr($width: 13, $margin: 1 0);
         @media (max-width: $page_width_standard) {
-            @include vr($width: 14);
+            @include vr($width: 100%);
         }
     }
 }
@@ -13,7 +13,8 @@
     margin-bottom: unset !important;
     @include vr($height: 13, $width: 13);
     @media (max-width: $page_width_standard) {
-        @include vr($height: 14, $width: 14);
+        @include vr($height: 16, $width: 16);
+        margin: 0 auto;
     }
 }
 
@@ -87,7 +88,7 @@
             @include sidebar();
             @include vr($padding-right: 2);
             @media (max-width: $page_width_standard) {
-                @include vr($padding: 1);
+                @include vr($width: 100%, $padding: 1);
             }
         }
 

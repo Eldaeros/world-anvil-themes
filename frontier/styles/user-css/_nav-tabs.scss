@@ -58,7 +58,10 @@
 
 ul.nav.nav-tabs {
     position: absolute;
-    top: -35px;
-    margin: 0 10px;
-    left: 8px;
+    top: calc(-35px - 7px);
+    left: 0;
+    @include vr($margin: 0 1);
+    @media (min-width: $page_width_small) {
+        @include vr($width: 36);
+    }
 }

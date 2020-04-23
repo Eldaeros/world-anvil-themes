@@ -1,0 +1,35 @@
+.page {
+    @include vr($margin-top: 4);
+
+    #peripheral-content {
+        margin: 0;
+
+        &:before {
+            border-top: 7px solid var(--primary_theme);
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            z-index: 10;
+            top: -7px;
+        }
+
+        #metadata {
+            // .col-md-12 {
+            //     padding: 0;
+            // }
+
+            .row {
+                margin: 0;
+
+                > div {
+                    padding: 0;
+
+                    > div {
+                        @include vr($padding: 1 2);
+                    }
+                }
+            }
+        }
+    }
+}
+
