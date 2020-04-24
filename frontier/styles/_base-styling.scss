@@ -39,6 +39,10 @@ h2 {
     font-weight: 600;
     border-bottom-color: var(--secondary_theme);
     width: 100%;
+
+    @media (min-width: $page_width_wide) {
+        @include vr($height: 2);
+    }
 }
 
 h3 {

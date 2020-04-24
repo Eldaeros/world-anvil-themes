@@ -18,7 +18,8 @@
 
 .user-css,
 .user-css-extended,
-.user-css-map-sidebar {
+.user-css-map-sidebar,
+.tooltipster-box {
   /* Vertical Rhythm Reset: Base */
   /* Vertical Rhythm Reset: Alignment */
   /* prettier-ignore */
@@ -31,7 +32,10 @@
 .user-css-extended *:after,
 .user-css-map-sidebar *,
 .user-css-map-sidebar *:before,
-.user-css-map-sidebar *:after {
+.user-css-map-sidebar *:after,
+.tooltipster-box *,
+.tooltipster-box *:before,
+.tooltipster-box *:after {
   box-sizing: inherit;
   margin-top: 0;
   margin-bottom: 0;
@@ -42,7 +46,8 @@
 }
 .user-css html,
 .user-css-extended html,
-.user-css-map-sidebar html {
+.user-css-map-sidebar html,
+.tooltipster-box html {
   box-sizing: border-box;
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -51,7 +56,8 @@
 }
 .user-css body,
 .user-css-extended body,
-.user-css-map-sidebar body {
+.user-css-map-sidebar body,
+.tooltipster-box body {
   margin: 0;
   background: #fff;
   color: #000;
@@ -70,7 +76,12 @@
 .user-css-map-sidebar fieldset,
 .user-css-map-sidebar input:not([type=radio]):not([type=checkbox]),
 .user-css-map-sidebar select,
-.user-css-map-sidebar textarea {
+.user-css-map-sidebar textarea,
+.tooltipster-box button,
+.tooltipster-box fieldset,
+.tooltipster-box input:not([type=radio]):not([type=checkbox]),
+.tooltipster-box select,
+.tooltipster-box textarea {
   border-width: 1px;
   border-style: solid;
   border-color: #808080;
@@ -80,24 +91,29 @@
 .user-css-extended em,
 .user-css-extended i,
 .user-css-map-sidebar em,
-.user-css-map-sidebar i {
+.user-css-map-sidebar i,
+.tooltipster-box em,
+.tooltipster-box i {
   font-style: italic;
 }
 .user-css fieldset,
 .user-css-extended fieldset,
-.user-css-map-sidebar fieldset {
+.user-css-map-sidebar fieldset,
+.tooltipster-box fieldset {
   padding-top: 0.01em;
   padding-bottom: 0;
   min-width: 0;
 }
 body:not(:-moz-handler-blocked) .user-css fieldset,
 body:not(:-moz-handler-blocked) .user-css-extended fieldset,
-body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
+body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset,
+body:not(:-moz-handler-blocked) .tooltipster-box fieldset {
   display: table-cell;
 }
 .user-css iframe,
 .user-css-extended iframe,
-.user-css-map-sidebar iframe {
+.user-css-map-sidebar iframe,
+.tooltipster-box iframe {
   border: 0;
 }
 .user-css small,
@@ -108,7 +124,10 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended sup,
 .user-css-map-sidebar small,
 .user-css-map-sidebar sub,
-.user-css-map-sidebar sup {
+.user-css-map-sidebar sup,
+.tooltipster-box small,
+.tooltipster-box sub,
+.tooltipster-box sup {
   font-size: 0.875em;
 }
 .user-css input[type=radio],
@@ -116,18 +135,22 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended input[type=radio],
 .user-css-extended input[type=checkbox],
 .user-css-map-sidebar input[type=radio],
-.user-css-map-sidebar input[type=checkbox] {
+.user-css-map-sidebar input[type=checkbox],
+.tooltipster-box input[type=radio],
+.tooltipster-box input[type=checkbox] {
   margin-bottom: 0.325em;
 }
 .user-css hr,
 .user-css-extended hr,
-.user-css-map-sidebar hr {
+.user-css-map-sidebar hr,
+.tooltipster-box hr {
   position: relative;
   border: 0;
 }
 .user-css hr:after,
 .user-css-extended hr:after,
-.user-css-map-sidebar hr:after {
+.user-css-map-sidebar hr:after,
+.tooltipster-box hr:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -141,23 +164,28 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended sub,
 .user-css-extended sup,
 .user-css-map-sidebar sub,
-.user-css-map-sidebar sup {
+.user-css-map-sidebar sup,
+.tooltipster-box sub,
+.tooltipster-box sup {
   position: relative;
   line-height: 0;
 }
 .user-css sub,
 .user-css-extended sub,
-.user-css-map-sidebar sub {
+.user-css-map-sidebar sub,
+.tooltipster-box sub {
   vertical-align: sub;
 }
 .user-css sup,
 .user-css-extended sup,
-.user-css-map-sidebar sup {
+.user-css-map-sidebar sup,
+.tooltipster-box sup {
   vertical-align: super;
 }
 .user-css table,
 .user-css-extended table,
-.user-css-map-sidebar table {
+.user-css-map-sidebar table,
+.tooltipster-box table {
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -196,7 +224,19 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar menu,
 .user-css-map-sidebar nav,
 .user-css-map-sidebar section,
-.user-css-map-sidebar summary {
+.user-css-map-sidebar summary,
+.tooltipster-box article,
+.tooltipster-box aside,
+.tooltipster-box details,
+.tooltipster-box figcaption,
+.tooltipster-box figure,
+.tooltipster-box footer,
+.tooltipster-box header,
+.tooltipster-box main,
+.tooltipster-box menu,
+.tooltipster-box nav,
+.tooltipster-box section,
+.tooltipster-box summary {
   display: block;
 }
 .user-css audio,
@@ -210,7 +250,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar audio,
 .user-css-map-sidebar canvas,
 .user-css-map-sidebar progress,
-.user-css-map-sidebar video {
+.user-css-map-sidebar video,
+.tooltipster-box audio,
+.tooltipster-box canvas,
+.tooltipster-box progress,
+.tooltipster-box video {
   display: inline-block;
 }
 .user-css code,
@@ -224,12 +268,17 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar code,
 .user-css-map-sidebar kbd,
 .user-css-map-sidebar pre,
-.user-css-map-sidebar samp {
+.user-css-map-sidebar samp,
+.tooltipster-box code,
+.tooltipster-box kbd,
+.tooltipster-box pre,
+.tooltipster-box samp {
   font-family: monospace, monospace;
 }
 .user-css audio:not([controls]),
 .user-css-extended audio:not([controls]),
-.user-css-map-sidebar audio:not([controls]) {
+.user-css-map-sidebar audio:not([controls]),
+.tooltipster-box audio:not([controls]) {
   display: none;
   height: 0;
 }
@@ -238,12 +287,15 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended template,
 .user-css-extended [hidden],
 .user-css-map-sidebar template,
-.user-css-map-sidebar [hidden] {
+.user-css-map-sidebar [hidden],
+.tooltipster-box template,
+.tooltipster-box [hidden] {
   display: none;
 }
 .user-css a,
 .user-css-extended a,
-.user-css-map-sidebar a {
+.user-css-map-sidebar a,
+.tooltipster-box a {
   background-color: transparent;
 }
 .user-css a:active,
@@ -251,12 +303,15 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended a:active,
 .user-css-extended a:hover,
 .user-css-map-sidebar a:active,
-.user-css-map-sidebar a:hover {
+.user-css-map-sidebar a:hover,
+.tooltipster-box a:active,
+.tooltipster-box a:hover {
   outline-width: 0;
 }
 .user-css abbr[title],
 .user-css-extended abbr[title],
-.user-css-map-sidebar abbr[title] {
+.user-css-map-sidebar abbr[title],
+.tooltipster-box abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
@@ -266,28 +321,34 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended b,
 .user-css-extended strong,
 .user-css-map-sidebar b,
-.user-css-map-sidebar strong {
+.user-css-map-sidebar strong,
+.tooltipster-box b,
+.tooltipster-box strong {
   font-weight: bolder;
 }
 .user-css dfn,
 .user-css-extended dfn,
-.user-css-map-sidebar dfn {
+.user-css-map-sidebar dfn,
+.tooltipster-box dfn {
   font-style: italic;
 }
 .user-css mark,
 .user-css-extended mark,
-.user-css-map-sidebar mark {
+.user-css-map-sidebar mark,
+.tooltipster-box mark {
   background-color: #ff0;
   color: #000;
 }
 .user-css img,
 .user-css-extended img,
-.user-css-map-sidebar img {
+.user-css-map-sidebar img,
+.tooltipster-box img {
   border-style: none;
 }
 .user-css svg:not(:root),
 .user-css-extended svg:not(:root),
-.user-css-map-sidebar svg:not(:root) {
+.user-css-map-sidebar svg:not(:root),
+.tooltipster-box svg:not(:root) {
   overflow: hidden;
 }
 .user-css button,
@@ -298,7 +359,10 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended select,
 .user-css-map-sidebar button,
 .user-css-map-sidebar input,
-.user-css-map-sidebar select {
+.user-css-map-sidebar select,
+.tooltipster-box button,
+.tooltipster-box input,
+.tooltipster-box select {
   overflow: visible;
 }
 .user-css button,
@@ -306,7 +370,9 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended button,
 .user-css-extended select,
 .user-css-map-sidebar button,
-.user-css-map-sidebar select {
+.user-css-map-sidebar select,
+.tooltipster-box button,
+.tooltipster-box select {
   text-transform: none;
 }
 .user-css button,
@@ -320,13 +386,18 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar button,
 .user-css-map-sidebar [type=button],
 .user-css-map-sidebar [type=reset],
-.user-css-map-sidebar [type=submit] {
+.user-css-map-sidebar [type=submit],
+.tooltipster-box button,
+.tooltipster-box [type=button],
+.tooltipster-box [type=reset],
+.tooltipster-box [type=submit] {
   cursor: pointer;
   -webkit-appearance: button;
 }
 .user-css [disabled],
 .user-css-extended [disabled],
-.user-css-map-sidebar [disabled] {
+.user-css-map-sidebar [disabled],
+.tooltipster-box [disabled] {
   cursor: default;
 }
 .user-css button,
@@ -340,7 +411,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar button,
 .user-css-map-sidebar html [type=button],
 .user-css-map-sidebar [type=reset],
-.user-css-map-sidebar [type=submit] {
+.user-css-map-sidebar [type=submit],
+.tooltipster-box button,
+.tooltipster-box html [type=button],
+.tooltipster-box [type=reset],
+.tooltipster-box [type=submit] {
   -webkit-appearance: button;
 }
 .user-css button::-moz-focus-inner,
@@ -354,7 +429,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar button::-moz-focus-inner,
 .user-css-map-sidebar [type=button]::-moz-focus-inner,
 .user-css-map-sidebar [type=reset]::-moz-focus-inner,
-.user-css-map-sidebar [type=submit]::-moz-focus-inner {
+.user-css-map-sidebar [type=submit]::-moz-focus-inner,
+.tooltipster-box button::-moz-focus-inner,
+.tooltipster-box [type=button]::-moz-focus-inner,
+.tooltipster-box [type=reset]::-moz-focus-inner,
+.tooltipster-box [type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -369,12 +448,17 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar button:-moz-focusring,
 .user-css-map-sidebar [type=button]:-moz-focusring,
 .user-css-map-sidebar [type=reset]:-moz-focusring,
-.user-css-map-sidebar [type=submit]:-moz-focusring {
+.user-css-map-sidebar [type=submit]:-moz-focusring,
+.tooltipster-box button:-moz-focusring,
+.tooltipster-box [type=button]:-moz-focusring,
+.tooltipster-box [type=reset]:-moz-focusring,
+.tooltipster-box [type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 .user-css legend,
 .user-css-extended legend,
-.user-css-map-sidebar legend {
+.user-css-map-sidebar legend,
+.tooltipster-box legend {
   box-sizing: border-box;
   color: inherit;
   display: table;
@@ -384,7 +468,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css textarea,
 .user-css-extended textarea,
-.user-css-map-sidebar textarea {
+.user-css-map-sidebar textarea,
+.tooltipster-box textarea {
   overflow: auto;
 }
 .user-css [type=checkbox],
@@ -392,7 +477,9 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended [type=checkbox],
 .user-css-extended [type=radio],
 .user-css-map-sidebar [type=checkbox],
-.user-css-map-sidebar [type=radio] {
+.user-css-map-sidebar [type=radio],
+.tooltipster-box [type=checkbox],
+.tooltipster-box [type=radio] {
   box-sizing: border-box;
   padding: 0;
 }
@@ -401,12 +488,15 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended [type=number]::-webkit-inner-spin-button,
 .user-css-extended [type=number]::-webkit-outer-spin-button,
 .user-css-map-sidebar [type=number]::-webkit-inner-spin-button,
-.user-css-map-sidebar [type=number]::-webkit-outer-spin-button {
+.user-css-map-sidebar [type=number]::-webkit-outer-spin-button,
+.tooltipster-box [type=number]::-webkit-inner-spin-button,
+.tooltipster-box [type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 .user-css [type=search],
 .user-css-extended [type=search],
-.user-css-map-sidebar [type=search] {
+.user-css-map-sidebar [type=search],
+.tooltipster-box [type=search] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -415,18 +505,22 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended [type=search]::-webkit-search-cancel-button,
 .user-css-extended [type=search]::-webkit-search-decoration,
 .user-css-map-sidebar [type=search]::-webkit-search-cancel-button,
-.user-css-map-sidebar [type=search]::-webkit-search-decoration {
+.user-css-map-sidebar [type=search]::-webkit-search-decoration,
+.tooltipster-box [type=search]::-webkit-search-cancel-button,
+.tooltipster-box [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 .user-css ::-webkit-file-upload-button,
 .user-css-extended ::-webkit-file-upload-button,
-.user-css-map-sidebar ::-webkit-file-upload-button {
+.user-css-map-sidebar ::-webkit-file-upload-button,
+.tooltipster-box ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
 }
 .user-css :root,
 .user-css-extended :root,
-.user-css-map-sidebar :root {
+.user-css-map-sidebar :root,
+.tooltipster-box :root {
   font-size: 16px;
 }
 .user-css *,
@@ -437,7 +531,10 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended *:after,
 .user-css-map-sidebar *,
 .user-css-map-sidebar *:before,
-.user-css-map-sidebar *:after {
+.user-css-map-sidebar *:after,
+.tooltipster-box *,
+.tooltipster-box *:before,
+.tooltipster-box *:after {
   line-height: 2.00001rem;
 }
 .user-css button,
@@ -451,17 +548,23 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar button,
 .user-css-map-sidebar input:not([type=radio]):not([type=checkbox]),
 .user-css-map-sidebar option,
-.user-css-map-sidebar select:not([multiple]) {
+.user-css-map-sidebar select:not([multiple]),
+.tooltipster-box button,
+.tooltipster-box input:not([type=radio]):not([type=checkbox]),
+.tooltipster-box option,
+.tooltipster-box select:not([multiple]) {
   height: 2.00001rem;
 }
 .user-css audio,
 .user-css-extended audio,
-.user-css-map-sidebar audio {
+.user-css-map-sidebar audio,
+.tooltipster-box audio {
   height: 4.00002rem;
 }
 .user-css hr,
 .user-css-extended hr,
-.user-css-map-sidebar hr {
+.user-css-map-sidebar hr,
+.tooltipster-box hr {
   height: 4.00002rem;
 }
 .user-css select[multiple],
@@ -469,7 +572,9 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended select[multiple],
 .user-css-extended textarea,
 .user-css-map-sidebar select[multiple],
-.user-css-map-sidebar textarea {
+.user-css-map-sidebar textarea,
+.tooltipster-box select[multiple],
+.tooltipster-box textarea {
   height: 8.00004rem;
 }
 .user-css iframe,
@@ -477,12 +582,15 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended iframe,
 .user-css-extended video,
 .user-css-map-sidebar iframe,
-.user-css-map-sidebar video {
+.user-css-map-sidebar video,
+.tooltipster-box iframe,
+.tooltipster-box video {
   height: 16.00008rem;
 }
 .user-css h1,
 .user-css-extended h1,
-.user-css-map-sidebar h1 {
+.user-css-map-sidebar h1,
+.tooltipster-box h1 {
   margin-top: 0px;
   margin-bottom: 2.00001rem;
 }
@@ -524,137 +632,173 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar p,
 .user-css-map-sidebar pre,
 .user-css-map-sidebar table,
-.user-css-map-sidebar ul {
+.user-css-map-sidebar ul,
+.tooltipster-box blockquote,
+.tooltipster-box dl,
+.tooltipster-box form,
+.tooltipster-box h2,
+.tooltipster-box h3,
+.tooltipster-box h4,
+.tooltipster-box h5,
+.tooltipster-box h6,
+.tooltipster-box ol,
+.tooltipster-box p,
+.tooltipster-box pre,
+.tooltipster-box table,
+.tooltipster-box ul {
   margin-top: 2.00001rem;
   margin-bottom: 2.00001rem;
 }
 .user-css fieldset,
 .user-css-extended fieldset,
-.user-css-map-sidebar fieldset {
+.user-css-map-sidebar fieldset,
+.tooltipster-box fieldset {
   display: inline-block;
   margin: 2.00001rem 0 calc((2.00001rem) - 1px);
   width: 100%;
 }
 .user-css h1,
 .user-css-extended h1,
-.user-css-map-sidebar h1 {
+.user-css-map-sidebar h1,
+.tooltipster-box h1 {
   font-size: 2.0736rem;
   line-height: 4.00001rem;
 }
 .user-css h2,
 .user-css-extended h2,
-.user-css-map-sidebar h2 {
+.user-css-map-sidebar h2,
+.tooltipster-box h2 {
   font-size: 1.728rem;
   line-height: 2.00001rem;
 }
 .user-css h3,
 .user-css-extended h3,
-.user-css-map-sidebar h3 {
+.user-css-map-sidebar h3,
+.tooltipster-box h3 {
   font-size: 1.44rem;
   line-height: 2.00001rem;
 }
 .user-css h4,
 .user-css-extended h4,
-.user-css-map-sidebar h4 {
+.user-css-map-sidebar h4,
+.tooltipster-box h4 {
   font-size: 1.2rem;
   line-height: 2.00001rem;
 }
 .user-css h5,
 .user-css-extended h5,
-.user-css-map-sidebar h5 {
+.user-css-map-sidebar h5,
+.tooltipster-box h5 {
   font-size: 1rem;
   line-height: 2.00001rem;
 }
 .user-css h6,
 .user-css-extended h6,
-.user-css-map-sidebar h6 {
+.user-css-map-sidebar h6,
+.tooltipster-box h6 {
   font-size: 0.8333333333rem;
   line-height: 2.00001rem;
 }
 .user-css .vr-font-size-0,
 .user-css-extended .vr-font-size-0,
-.user-css-map-sidebar .vr-font-size-0 {
+.user-css-map-sidebar .vr-font-size-0,
+.tooltipster-box .vr-font-size-0 {
   font-size: 1rem;
   line-height: 2.00001rem;
 }
 .user-css .vr-font-size-1,
 .user-css-extended .vr-font-size-1,
-.user-css-map-sidebar .vr-font-size-1 {
+.user-css-map-sidebar .vr-font-size-1,
+.tooltipster-box .vr-font-size-1 {
   font-size: 1.2rem;
   line-height: 2.00001rem;
 }
 .user-css .vr-font-size-2,
 .user-css-extended .vr-font-size-2,
-.user-css-map-sidebar .vr-font-size-2 {
+.user-css-map-sidebar .vr-font-size-2,
+.tooltipster-box .vr-font-size-2 {
   font-size: 1.44rem;
   line-height: 2.00001rem;
 }
 .user-css .vr-font-size-3,
 .user-css-extended .vr-font-size-3,
-.user-css-map-sidebar .vr-font-size-3 {
+.user-css-map-sidebar .vr-font-size-3,
+.tooltipster-box .vr-font-size-3 {
   font-size: 1.728rem;
   line-height: 2.00001rem;
 }
 .user-css .vr-font-size-4,
 .user-css-extended .vr-font-size-4,
-.user-css-map-sidebar .vr-font-size-4 {
+.user-css-map-sidebar .vr-font-size-4,
+.tooltipster-box .vr-font-size-4 {
   font-size: 2.0736rem;
   line-height: 4.00001rem;
 }
 .user-css .vr-font-size-5,
 .user-css-extended .vr-font-size-5,
-.user-css-map-sidebar .vr-font-size-5 {
+.user-css-map-sidebar .vr-font-size-5,
+.tooltipster-box .vr-font-size-5 {
   font-size: 2.48832rem;
   line-height: 4.00001rem;
 }
 .user-css .vr-line-height-1,
 .user-css-extended .vr-line-height-1,
-.user-css-map-sidebar .vr-line-height-1 {
+.user-css-map-sidebar .vr-line-height-1,
+.tooltipster-box .vr-line-height-1 {
   line-height: 2.00001rem;
 }
 .user-css .vr-line-height-2,
 .user-css-extended .vr-line-height-2,
-.user-css-map-sidebar .vr-line-height-2 {
+.user-css-map-sidebar .vr-line-height-2,
+.tooltipster-box .vr-line-height-2 {
   line-height: 4.00002rem;
 }
 .user-css .vr-line-height-3,
 .user-css-extended .vr-line-height-3,
-.user-css-map-sidebar .vr-line-height-3 {
+.user-css-map-sidebar .vr-line-height-3,
+.tooltipster-box .vr-line-height-3 {
   line-height: 6.00003rem;
 }
 .user-css .vr-line-height-4,
 .user-css-extended .vr-line-height-4,
-.user-css-map-sidebar .vr-line-height-4 {
+.user-css-map-sidebar .vr-line-height-4,
+.tooltipster-box .vr-line-height-4 {
   line-height: 8.00004rem;
 }
 .user-css .vr-line-height-5,
 .user-css-extended .vr-line-height-5,
-.user-css-map-sidebar .vr-line-height-5 {
+.user-css-map-sidebar .vr-line-height-5,
+.tooltipster-box .vr-line-height-5 {
   line-height: 10.00005rem;
 }
 .user-css .vr-line-height-6,
 .user-css-extended .vr-line-height-6,
-.user-css-map-sidebar .vr-line-height-6 {
+.user-css-map-sidebar .vr-line-height-6,
+.tooltipster-box .vr-line-height-6 {
   line-height: 12.00006rem;
 }
 .user-css .vr-line-height-7,
 .user-css-extended .vr-line-height-7,
-.user-css-map-sidebar .vr-line-height-7 {
+.user-css-map-sidebar .vr-line-height-7,
+.tooltipster-box .vr-line-height-7 {
   line-height: 14.00007rem;
 }
 .user-css .vr-line-height-8,
 .user-css-extended .vr-line-height-8,
-.user-css-map-sidebar .vr-line-height-8 {
+.user-css-map-sidebar .vr-line-height-8,
+.tooltipster-box .vr-line-height-8 {
   line-height: 16.00008rem;
 }
 .user-css .vr-line-height-9,
 .user-css-extended .vr-line-height-9,
-.user-css-map-sidebar .vr-line-height-9 {
+.user-css-map-sidebar .vr-line-height-9,
+.tooltipster-box .vr-line-height-9 {
   line-height: 18.00009rem;
 }
 .user-css .vr-line-height-10,
 .user-css-extended .vr-line-height-10,
-.user-css-map-sidebar .vr-line-height-10 {
+.user-css-map-sidebar .vr-line-height-10,
+.tooltipster-box .vr-line-height-10 {
   line-height: 20.0001rem;
 }
 .user-css [height="1"],
@@ -668,7 +812,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="1"],
 .user-css-map-sidebar select[multiple][size="1"],
 .user-css-map-sidebar textarea[rows="1"],
-.user-css-map-sidebar .vr-height-1 {
+.user-css-map-sidebar .vr-height-1,
+.tooltipster-box [height="1"],
+.tooltipster-box select[multiple][size="1"],
+.tooltipster-box textarea[rows="1"],
+.tooltipster-box .vr-height-1 {
   height: 2.00001rem;
 }
 .user-css [height="2"],
@@ -682,7 +830,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="2"],
 .user-css-map-sidebar select[multiple][size="2"],
 .user-css-map-sidebar textarea[rows="2"],
-.user-css-map-sidebar .vr-height-2 {
+.user-css-map-sidebar .vr-height-2,
+.tooltipster-box [height="2"],
+.tooltipster-box select[multiple][size="2"],
+.tooltipster-box textarea[rows="2"],
+.tooltipster-box .vr-height-2 {
   height: 4.00002rem;
 }
 .user-css [height="3"],
@@ -696,7 +848,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="3"],
 .user-css-map-sidebar select[multiple][size="3"],
 .user-css-map-sidebar textarea[rows="3"],
-.user-css-map-sidebar .vr-height-3 {
+.user-css-map-sidebar .vr-height-3,
+.tooltipster-box [height="3"],
+.tooltipster-box select[multiple][size="3"],
+.tooltipster-box textarea[rows="3"],
+.tooltipster-box .vr-height-3 {
   height: 6.00003rem;
 }
 .user-css [height="4"],
@@ -710,7 +866,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="4"],
 .user-css-map-sidebar select[multiple][size="4"],
 .user-css-map-sidebar textarea[rows="4"],
-.user-css-map-sidebar .vr-height-4 {
+.user-css-map-sidebar .vr-height-4,
+.tooltipster-box [height="4"],
+.tooltipster-box select[multiple][size="4"],
+.tooltipster-box textarea[rows="4"],
+.tooltipster-box .vr-height-4 {
   height: 8.00004rem;
 }
 .user-css [height="5"],
@@ -724,7 +884,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="5"],
 .user-css-map-sidebar select[multiple][size="5"],
 .user-css-map-sidebar textarea[rows="5"],
-.user-css-map-sidebar .vr-height-5 {
+.user-css-map-sidebar .vr-height-5,
+.tooltipster-box [height="5"],
+.tooltipster-box select[multiple][size="5"],
+.tooltipster-box textarea[rows="5"],
+.tooltipster-box .vr-height-5 {
   height: 10.00005rem;
 }
 .user-css [height="6"],
@@ -738,7 +902,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="6"],
 .user-css-map-sidebar select[multiple][size="6"],
 .user-css-map-sidebar textarea[rows="6"],
-.user-css-map-sidebar .vr-height-6 {
+.user-css-map-sidebar .vr-height-6,
+.tooltipster-box [height="6"],
+.tooltipster-box select[multiple][size="6"],
+.tooltipster-box textarea[rows="6"],
+.tooltipster-box .vr-height-6 {
   height: 12.00006rem;
 }
 .user-css [height="7"],
@@ -752,7 +920,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="7"],
 .user-css-map-sidebar select[multiple][size="7"],
 .user-css-map-sidebar textarea[rows="7"],
-.user-css-map-sidebar .vr-height-7 {
+.user-css-map-sidebar .vr-height-7,
+.tooltipster-box [height="7"],
+.tooltipster-box select[multiple][size="7"],
+.tooltipster-box textarea[rows="7"],
+.tooltipster-box .vr-height-7 {
   height: 14.00007rem;
 }
 .user-css [height="8"],
@@ -766,7 +938,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="8"],
 .user-css-map-sidebar select[multiple][size="8"],
 .user-css-map-sidebar textarea[rows="8"],
-.user-css-map-sidebar .vr-height-8 {
+.user-css-map-sidebar .vr-height-8,
+.tooltipster-box [height="8"],
+.tooltipster-box select[multiple][size="8"],
+.tooltipster-box textarea[rows="8"],
+.tooltipster-box .vr-height-8 {
   height: 16.00008rem;
 }
 .user-css [height="9"],
@@ -780,7 +956,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="9"],
 .user-css-map-sidebar select[multiple][size="9"],
 .user-css-map-sidebar textarea[rows="9"],
-.user-css-map-sidebar .vr-height-9 {
+.user-css-map-sidebar .vr-height-9,
+.tooltipster-box [height="9"],
+.tooltipster-box select[multiple][size="9"],
+.tooltipster-box textarea[rows="9"],
+.tooltipster-box .vr-height-9 {
   height: 18.00009rem;
 }
 .user-css [height="10"],
@@ -794,212 +974,257 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="10"],
 .user-css-map-sidebar select[multiple][size="10"],
 .user-css-map-sidebar textarea[rows="10"],
-.user-css-map-sidebar .vr-height-10 {
+.user-css-map-sidebar .vr-height-10,
+.tooltipster-box [height="10"],
+.tooltipster-box select[multiple][size="10"],
+.tooltipster-box textarea[rows="10"],
+.tooltipster-box .vr-height-10 {
   height: 20.0001rem;
 }
 .user-css .vr-width-1,
 .user-css-extended .vr-width-1,
-.user-css-map-sidebar .vr-width-1 {
+.user-css-map-sidebar .vr-width-1,
+.tooltipster-box .vr-width-1 {
   width: 2.00001rem;
 }
 .user-css .vr-width-2,
 .user-css-extended .vr-width-2,
-.user-css-map-sidebar .vr-width-2 {
+.user-css-map-sidebar .vr-width-2,
+.tooltipster-box .vr-width-2 {
   width: 4.00002rem;
 }
 .user-css .vr-width-3,
 .user-css-extended .vr-width-3,
-.user-css-map-sidebar .vr-width-3 {
+.user-css-map-sidebar .vr-width-3,
+.tooltipster-box .vr-width-3 {
   width: 6.00003rem;
 }
 .user-css .vr-width-4,
 .user-css-extended .vr-width-4,
-.user-css-map-sidebar .vr-width-4 {
+.user-css-map-sidebar .vr-width-4,
+.tooltipster-box .vr-width-4 {
   width: 8.00004rem;
 }
 .user-css .vr-width-5,
 .user-css-extended .vr-width-5,
-.user-css-map-sidebar .vr-width-5 {
+.user-css-map-sidebar .vr-width-5,
+.tooltipster-box .vr-width-5 {
   width: 10.00005rem;
 }
 .user-css .vr-width-6,
 .user-css-extended .vr-width-6,
-.user-css-map-sidebar .vr-width-6 {
+.user-css-map-sidebar .vr-width-6,
+.tooltipster-box .vr-width-6 {
   width: 12.00006rem;
 }
 .user-css .vr-width-7,
 .user-css-extended .vr-width-7,
-.user-css-map-sidebar .vr-width-7 {
+.user-css-map-sidebar .vr-width-7,
+.tooltipster-box .vr-width-7 {
   width: 14.00007rem;
 }
 .user-css .vr-width-8,
 .user-css-extended .vr-width-8,
-.user-css-map-sidebar .vr-width-8 {
+.user-css-map-sidebar .vr-width-8,
+.tooltipster-box .vr-width-8 {
   width: 16.00008rem;
 }
 .user-css .vr-width-9,
 .user-css-extended .vr-width-9,
-.user-css-map-sidebar .vr-width-9 {
+.user-css-map-sidebar .vr-width-9,
+.tooltipster-box .vr-width-9 {
   width: 18.00009rem;
 }
 .user-css .vr-width-10,
 .user-css-extended .vr-width-10,
-.user-css-map-sidebar .vr-width-10 {
+.user-css-map-sidebar .vr-width-10,
+.tooltipster-box .vr-width-10 {
   width: 20.0001rem;
 }
 .user-css .vr-margin-1,
 .user-css-extended .vr-margin-1,
-.user-css-map-sidebar .vr-margin-1 {
+.user-css-map-sidebar .vr-margin-1,
+.tooltipster-box .vr-margin-1 {
   margin: 2.00001rem;
 }
 .user-css .vr-margin-2,
 .user-css-extended .vr-margin-2,
-.user-css-map-sidebar .vr-margin-2 {
+.user-css-map-sidebar .vr-margin-2,
+.tooltipster-box .vr-margin-2 {
   margin: 4.00002rem;
 }
 .user-css .vr-margin-3,
 .user-css-extended .vr-margin-3,
-.user-css-map-sidebar .vr-margin-3 {
+.user-css-map-sidebar .vr-margin-3,
+.tooltipster-box .vr-margin-3 {
   margin: 6.00003rem;
 }
 .user-css .vr-margin-4,
 .user-css-extended .vr-margin-4,
-.user-css-map-sidebar .vr-margin-4 {
+.user-css-map-sidebar .vr-margin-4,
+.tooltipster-box .vr-margin-4 {
   margin: 8.00004rem;
 }
 .user-css .vr-margin-5,
 .user-css-extended .vr-margin-5,
-.user-css-map-sidebar .vr-margin-5 {
+.user-css-map-sidebar .vr-margin-5,
+.tooltipster-box .vr-margin-5 {
   margin: 10.00005rem;
 }
 .user-css .vr-margin-top-1,
 .user-css-extended .vr-margin-top-1,
-.user-css-map-sidebar .vr-margin-top-1 {
+.user-css-map-sidebar .vr-margin-top-1,
+.tooltipster-box .vr-margin-top-1 {
   margin-top: 2.00001rem;
 }
 .user-css .vr-margin-top-2,
 .user-css-extended .vr-margin-top-2,
-.user-css-map-sidebar .vr-margin-top-2 {
+.user-css-map-sidebar .vr-margin-top-2,
+.tooltipster-box .vr-margin-top-2 {
   margin-top: 4.00002rem;
 }
 .user-css .vr-margin-top-3,
 .user-css-extended .vr-margin-top-3,
-.user-css-map-sidebar .vr-margin-top-3 {
+.user-css-map-sidebar .vr-margin-top-3,
+.tooltipster-box .vr-margin-top-3 {
   margin-top: 6.00003rem;
 }
 .user-css .vr-margin-top-4,
 .user-css-extended .vr-margin-top-4,
-.user-css-map-sidebar .vr-margin-top-4 {
+.user-css-map-sidebar .vr-margin-top-4,
+.tooltipster-box .vr-margin-top-4 {
   margin-top: 8.00004rem;
 }
 .user-css .vr-margin-top-5,
 .user-css-extended .vr-margin-top-5,
-.user-css-map-sidebar .vr-margin-top-5 {
+.user-css-map-sidebar .vr-margin-top-5,
+.tooltipster-box .vr-margin-top-5 {
   margin-top: 10.00005rem;
 }
 .user-css .vr-margin-bottom-1,
 .user-css-extended .vr-margin-bottom-1,
-.user-css-map-sidebar .vr-margin-bottom-1 {
+.user-css-map-sidebar .vr-margin-bottom-1,
+.tooltipster-box .vr-margin-bottom-1 {
   margin-bottom: 2.00001rem;
 }
 .user-css .vr-margin-bottom-2,
 .user-css-extended .vr-margin-bottom-2,
-.user-css-map-sidebar .vr-margin-bottom-2 {
+.user-css-map-sidebar .vr-margin-bottom-2,
+.tooltipster-box .vr-margin-bottom-2 {
   margin-bottom: 4.00002rem;
 }
 .user-css .vr-margin-bottom-3,
 .user-css-extended .vr-margin-bottom-3,
-.user-css-map-sidebar .vr-margin-bottom-3 {
+.user-css-map-sidebar .vr-margin-bottom-3,
+.tooltipster-box .vr-margin-bottom-3 {
   margin-bottom: 6.00003rem;
 }
 .user-css .vr-margin-bottom-4,
 .user-css-extended .vr-margin-bottom-4,
-.user-css-map-sidebar .vr-margin-bottom-4 {
+.user-css-map-sidebar .vr-margin-bottom-4,
+.tooltipster-box .vr-margin-bottom-4 {
   margin-bottom: 8.00004rem;
 }
 .user-css .vr-margin-bottom-5,
 .user-css-extended .vr-margin-bottom-5,
-.user-css-map-sidebar .vr-margin-bottom-5 {
+.user-css-map-sidebar .vr-margin-bottom-5,
+.tooltipster-box .vr-margin-bottom-5 {
   margin-bottom: 10.00005rem;
 }
 .user-css .vr-padding-1,
 .user-css-extended .vr-padding-1,
-.user-css-map-sidebar .vr-padding-1 {
+.user-css-map-sidebar .vr-padding-1,
+.tooltipster-box .vr-padding-1 {
   padding: 2.00001rem;
 }
 .user-css .vr-padding-2,
 .user-css-extended .vr-padding-2,
-.user-css-map-sidebar .vr-padding-2 {
+.user-css-map-sidebar .vr-padding-2,
+.tooltipster-box .vr-padding-2 {
   padding: 4.00002rem;
 }
 .user-css .vr-padding-3,
 .user-css-extended .vr-padding-3,
-.user-css-map-sidebar .vr-padding-3 {
+.user-css-map-sidebar .vr-padding-3,
+.tooltipster-box .vr-padding-3 {
   padding: 6.00003rem;
 }
 .user-css .vr-padding-4,
 .user-css-extended .vr-padding-4,
-.user-css-map-sidebar .vr-padding-4 {
+.user-css-map-sidebar .vr-padding-4,
+.tooltipster-box .vr-padding-4 {
   padding: 8.00004rem;
 }
 .user-css .vr-padding-5,
 .user-css-extended .vr-padding-5,
-.user-css-map-sidebar .vr-padding-5 {
+.user-css-map-sidebar .vr-padding-5,
+.tooltipster-box .vr-padding-5 {
   padding: 10.00005rem;
 }
 .user-css .vr-padding-top-1,
 .user-css-extended .vr-padding-top-1,
-.user-css-map-sidebar .vr-padding-top-1 {
+.user-css-map-sidebar .vr-padding-top-1,
+.tooltipster-box .vr-padding-top-1 {
   padding-top: 2.00001rem;
 }
 .user-css .vr-padding-top-2,
 .user-css-extended .vr-padding-top-2,
-.user-css-map-sidebar .vr-padding-top-2 {
+.user-css-map-sidebar .vr-padding-top-2,
+.tooltipster-box .vr-padding-top-2 {
   padding-top: 4.00002rem;
 }
 .user-css .vr-padding-top-3,
 .user-css-extended .vr-padding-top-3,
-.user-css-map-sidebar .vr-padding-top-3 {
+.user-css-map-sidebar .vr-padding-top-3,
+.tooltipster-box .vr-padding-top-3 {
   padding-top: 6.00003rem;
 }
 .user-css .vr-padding-top-4,
 .user-css-extended .vr-padding-top-4,
-.user-css-map-sidebar .vr-padding-top-4 {
+.user-css-map-sidebar .vr-padding-top-4,
+.tooltipster-box .vr-padding-top-4 {
   padding-top: 8.00004rem;
 }
 .user-css .vr-padding-top-5,
 .user-css-extended .vr-padding-top-5,
-.user-css-map-sidebar .vr-padding-top-5 {
+.user-css-map-sidebar .vr-padding-top-5,
+.tooltipster-box .vr-padding-top-5 {
   padding-top: 10.00005rem;
 }
 .user-css .vr-padding-bottom-1,
 .user-css-extended .vr-padding-bottom-1,
-.user-css-map-sidebar .vr-padding-bottom-1 {
+.user-css-map-sidebar .vr-padding-bottom-1,
+.tooltipster-box .vr-padding-bottom-1 {
   padding-bottom: 2.00001rem;
 }
 .user-css .vr-padding-bottom-2,
 .user-css-extended .vr-padding-bottom-2,
-.user-css-map-sidebar .vr-padding-bottom-2 {
+.user-css-map-sidebar .vr-padding-bottom-2,
+.tooltipster-box .vr-padding-bottom-2 {
   padding-bottom: 4.00002rem;
 }
 .user-css .vr-padding-bottom-3,
 .user-css-extended .vr-padding-bottom-3,
-.user-css-map-sidebar .vr-padding-bottom-3 {
+.user-css-map-sidebar .vr-padding-bottom-3,
+.tooltipster-box .vr-padding-bottom-3 {
   padding-bottom: 6.00003rem;
 }
 .user-css .vr-padding-bottom-4,
 .user-css-extended .vr-padding-bottom-4,
-.user-css-map-sidebar .vr-padding-bottom-4 {
+.user-css-map-sidebar .vr-padding-bottom-4,
+.tooltipster-box .vr-padding-bottom-4 {
   padding-bottom: 8.00004rem;
 }
 .user-css .vr-padding-bottom-5,
 .user-css-extended .vr-padding-bottom-5,
-.user-css-map-sidebar .vr-padding-bottom-5 {
+.user-css-map-sidebar .vr-padding-bottom-5,
+.tooltipster-box .vr-padding-bottom-5 {
   padding-bottom: 10.00005rem;
 }
 .user-css .vr-offset-1,
 .user-css-extended .vr-offset-1,
-.user-css-map-sidebar .vr-offset-1 {
+.user-css-map-sidebar .vr-offset-1,
+.tooltipster-box .vr-offset-1 {
   -webkit-transform: translateY(-1px);
   -ms-transform: translateY(-1px);
   transform: translateY(-1px);
@@ -1007,7 +1232,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css .vr-offset-2,
 .user-css-extended .vr-offset-2,
-.user-css-map-sidebar .vr-offset-2 {
+.user-css-map-sidebar .vr-offset-2,
+.tooltipster-box .vr-offset-2 {
   -webkit-transform: translateY(-2px);
   -ms-transform: translateY(-2px);
   transform: translateY(-2px);
@@ -1015,7 +1241,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css .vr-offset-3,
 .user-css-extended .vr-offset-3,
-.user-css-map-sidebar .vr-offset-3 {
+.user-css-map-sidebar .vr-offset-3,
+.tooltipster-box .vr-offset-3 {
   -webkit-transform: translateY(-3px);
   -ms-transform: translateY(-3px);
   transform: translateY(-3px);
@@ -1023,7 +1250,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css .vr-offset-4,
 .user-css-extended .vr-offset-4,
-.user-css-map-sidebar .vr-offset-4 {
+.user-css-map-sidebar .vr-offset-4,
+.tooltipster-box .vr-offset-4 {
   -webkit-transform: translateY(-4px);
   -ms-transform: translateY(-4px);
   transform: translateY(-4px);
@@ -1031,7 +1259,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css .vr-offset-5,
 .user-css-extended .vr-offset-5,
-.user-css-map-sidebar .vr-offset-5 {
+.user-css-map-sidebar .vr-offset-5,
+.tooltipster-box .vr-offset-5 {
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
@@ -1039,7 +1268,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css .vr-offset-top-1,
 .user-css-extended .vr-offset-top-1,
-.user-css-map-sidebar .vr-offset-top-1 {
+.user-css-map-sidebar .vr-offset-top-1,
+.tooltipster-box .vr-offset-top-1 {
   -webkit-transform: translateY(-1px);
   -ms-transform: translateY(-1px);
   transform: translateY(-1px);
@@ -1047,7 +1277,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css .vr-offset-top-2,
 .user-css-extended .vr-offset-top-2,
-.user-css-map-sidebar .vr-offset-top-2 {
+.user-css-map-sidebar .vr-offset-top-2,
+.tooltipster-box .vr-offset-top-2 {
   -webkit-transform: translateY(-2px);
   -ms-transform: translateY(-2px);
   transform: translateY(-2px);
@@ -1055,7 +1286,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css .vr-offset-top-3,
 .user-css-extended .vr-offset-top-3,
-.user-css-map-sidebar .vr-offset-top-3 {
+.user-css-map-sidebar .vr-offset-top-3,
+.tooltipster-box .vr-offset-top-3 {
   -webkit-transform: translateY(-3px);
   -ms-transform: translateY(-3px);
   transform: translateY(-3px);
@@ -1063,7 +1295,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css .vr-offset-top-4,
 .user-css-extended .vr-offset-top-4,
-.user-css-map-sidebar .vr-offset-top-4 {
+.user-css-map-sidebar .vr-offset-top-4,
+.tooltipster-box .vr-offset-top-4 {
   -webkit-transform: translateY(-4px);
   -ms-transform: translateY(-4px);
   transform: translateY(-4px);
@@ -1071,7 +1304,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css .vr-offset-top-5,
 .user-css-extended .vr-offset-top-5,
-.user-css-map-sidebar .vr-offset-top-5 {
+.user-css-map-sidebar .vr-offset-top-5,
+.tooltipster-box .vr-offset-top-5 {
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
@@ -1079,33 +1313,39 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css .vr-offset-bottom-1,
 .user-css-extended .vr-offset-bottom-1,
-.user-css-map-sidebar .vr-offset-bottom-1 {
+.user-css-map-sidebar .vr-offset-bottom-1,
+.tooltipster-box .vr-offset-bottom-1 {
   margin-bottom: -1px;
 }
 .user-css .vr-offset-bottom-2,
 .user-css-extended .vr-offset-bottom-2,
-.user-css-map-sidebar .vr-offset-bottom-2 {
+.user-css-map-sidebar .vr-offset-bottom-2,
+.tooltipster-box .vr-offset-bottom-2 {
   margin-bottom: -2px;
 }
 .user-css .vr-offset-bottom-3,
 .user-css-extended .vr-offset-bottom-3,
-.user-css-map-sidebar .vr-offset-bottom-3 {
+.user-css-map-sidebar .vr-offset-bottom-3,
+.tooltipster-box .vr-offset-bottom-3 {
   margin-bottom: -3px;
 }
 .user-css .vr-offset-bottom-4,
 .user-css-extended .vr-offset-bottom-4,
-.user-css-map-sidebar .vr-offset-bottom-4 {
+.user-css-map-sidebar .vr-offset-bottom-4,
+.tooltipster-box .vr-offset-bottom-4 {
   margin-bottom: -4px;
 }
 .user-css .vr-offset-bottom-5,
 .user-css-extended .vr-offset-bottom-5,
-.user-css-map-sidebar .vr-offset-bottom-5 {
+.user-css-map-sidebar .vr-offset-bottom-5,
+.tooltipster-box .vr-offset-bottom-5 {
   margin-bottom: -5px;
 }
 @media (min-width: 1200px) {
   .user-css,
 .user-css-extended,
-.user-css-map-sidebar {
+.user-css-map-sidebar,
+.tooltipster-box {
     /* Vertical Rhythm Reset: Breakpoint Alignment */
   }
   .user-css *,
@@ -1116,7 +1356,10 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended *:after,
 .user-css-map-sidebar *,
 .user-css-map-sidebar *:before,
-.user-css-map-sidebar *:after {
+.user-css-map-sidebar *:after,
+.tooltipster-box *,
+.tooltipster-box *:before,
+.tooltipster-box *:after {
     line-height: 2.50001rem;
   }
   .user-css button,
@@ -1130,17 +1373,23 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar button,
 .user-css-map-sidebar input:not([type=radio]):not([type=checkbox]),
 .user-css-map-sidebar option,
-.user-css-map-sidebar select:not([multiple]) {
+.user-css-map-sidebar select:not([multiple]),
+.tooltipster-box button,
+.tooltipster-box input:not([type=radio]):not([type=checkbox]),
+.tooltipster-box option,
+.tooltipster-box select:not([multiple]) {
     height: 2.50001rem;
   }
   .user-css audio,
 .user-css-extended audio,
-.user-css-map-sidebar audio {
+.user-css-map-sidebar audio,
+.tooltipster-box audio {
     height: 5.00002rem;
   }
   .user-css hr,
 .user-css-extended hr,
-.user-css-map-sidebar hr {
+.user-css-map-sidebar hr,
+.tooltipster-box hr {
     height: 5.00002rem;
   }
   .user-css select[multiple],
@@ -1148,7 +1397,9 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended select[multiple],
 .user-css-extended textarea,
 .user-css-map-sidebar select[multiple],
-.user-css-map-sidebar textarea {
+.user-css-map-sidebar textarea,
+.tooltipster-box select[multiple],
+.tooltipster-box textarea {
     height: 10.00004rem;
   }
   .user-css iframe,
@@ -1156,12 +1407,15 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended iframe,
 .user-css-extended video,
 .user-css-map-sidebar iframe,
-.user-css-map-sidebar video {
+.user-css-map-sidebar video,
+.tooltipster-box iframe,
+.tooltipster-box video {
     height: 20.00008rem;
   }
   .user-css h1,
 .user-css-extended h1,
-.user-css-map-sidebar h1 {
+.user-css-map-sidebar h1,
+.tooltipster-box h1 {
     margin-top: 0px;
     margin-bottom: 2.50001rem;
   }
@@ -1203,137 +1457,173 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar p,
 .user-css-map-sidebar pre,
 .user-css-map-sidebar table,
-.user-css-map-sidebar ul {
+.user-css-map-sidebar ul,
+.tooltipster-box blockquote,
+.tooltipster-box dl,
+.tooltipster-box form,
+.tooltipster-box h2,
+.tooltipster-box h3,
+.tooltipster-box h4,
+.tooltipster-box h5,
+.tooltipster-box h6,
+.tooltipster-box ol,
+.tooltipster-box p,
+.tooltipster-box pre,
+.tooltipster-box table,
+.tooltipster-box ul {
     margin-top: 2.50001rem;
     margin-bottom: 2.50001rem;
   }
   .user-css fieldset,
 .user-css-extended fieldset,
-.user-css-map-sidebar fieldset {
+.user-css-map-sidebar fieldset,
+.tooltipster-box fieldset {
     display: inline-block;
     margin: 2.50001rem 0 calc((2.50001rem) - 1px);
     width: 100%;
   }
   .user-css h1,
 .user-css-extended h1,
-.user-css-map-sidebar h1 {
+.user-css-map-sidebar h1,
+.tooltipster-box h1 {
     font-size: 2.44140625rem;
     line-height: 2.50001rem;
   }
   .user-css h2,
 .user-css-extended h2,
-.user-css-map-sidebar h2 {
+.user-css-map-sidebar h2,
+.tooltipster-box h2 {
     font-size: 1.953125rem;
     line-height: 2.50001rem;
   }
   .user-css h3,
 .user-css-extended h3,
-.user-css-map-sidebar h3 {
+.user-css-map-sidebar h3,
+.tooltipster-box h3 {
     font-size: 1.5625rem;
     line-height: 2.50001rem;
   }
   .user-css h4,
 .user-css-extended h4,
-.user-css-map-sidebar h4 {
+.user-css-map-sidebar h4,
+.tooltipster-box h4 {
     font-size: 1.25rem;
     line-height: 2.50001rem;
   }
   .user-css h5,
 .user-css-extended h5,
-.user-css-map-sidebar h5 {
+.user-css-map-sidebar h5,
+.tooltipster-box h5 {
     font-size: 1rem;
     line-height: 2.50001rem;
   }
   .user-css h6,
 .user-css-extended h6,
-.user-css-map-sidebar h6 {
+.user-css-map-sidebar h6,
+.tooltipster-box h6 {
     font-size: 0.8rem;
     line-height: 2.50001rem;
   }
   .user-css .vr-font-size-0,
 .user-css-extended .vr-font-size-0,
-.user-css-map-sidebar .vr-font-size-0 {
+.user-css-map-sidebar .vr-font-size-0,
+.tooltipster-box .vr-font-size-0 {
     font-size: 1rem;
     line-height: 2.50001rem;
   }
   .user-css .vr-font-size-1,
 .user-css-extended .vr-font-size-1,
-.user-css-map-sidebar .vr-font-size-1 {
+.user-css-map-sidebar .vr-font-size-1,
+.tooltipster-box .vr-font-size-1 {
     font-size: 1.25rem;
     line-height: 2.50001rem;
   }
   .user-css .vr-font-size-2,
 .user-css-extended .vr-font-size-2,
-.user-css-map-sidebar .vr-font-size-2 {
+.user-css-map-sidebar .vr-font-size-2,
+.tooltipster-box .vr-font-size-2 {
     font-size: 1.5625rem;
     line-height: 2.50001rem;
   }
   .user-css .vr-font-size-3,
 .user-css-extended .vr-font-size-3,
-.user-css-map-sidebar .vr-font-size-3 {
+.user-css-map-sidebar .vr-font-size-3,
+.tooltipster-box .vr-font-size-3 {
     font-size: 1.953125rem;
     line-height: 2.50001rem;
   }
   .user-css .vr-font-size-4,
 .user-css-extended .vr-font-size-4,
-.user-css-map-sidebar .vr-font-size-4 {
+.user-css-map-sidebar .vr-font-size-4,
+.tooltipster-box .vr-font-size-4 {
     font-size: 2.44140625rem;
     line-height: 2.50001rem;
   }
   .user-css .vr-font-size-5,
 .user-css-extended .vr-font-size-5,
-.user-css-map-sidebar .vr-font-size-5 {
+.user-css-map-sidebar .vr-font-size-5,
+.tooltipster-box .vr-font-size-5 {
     font-size: 3.0517578125rem;
     line-height: 5.00001rem;
   }
   .user-css .vr-line-height-1,
 .user-css-extended .vr-line-height-1,
-.user-css-map-sidebar .vr-line-height-1 {
+.user-css-map-sidebar .vr-line-height-1,
+.tooltipster-box .vr-line-height-1 {
     line-height: 2.50001rem;
   }
   .user-css .vr-line-height-2,
 .user-css-extended .vr-line-height-2,
-.user-css-map-sidebar .vr-line-height-2 {
+.user-css-map-sidebar .vr-line-height-2,
+.tooltipster-box .vr-line-height-2 {
     line-height: 5.00002rem;
   }
   .user-css .vr-line-height-3,
 .user-css-extended .vr-line-height-3,
-.user-css-map-sidebar .vr-line-height-3 {
+.user-css-map-sidebar .vr-line-height-3,
+.tooltipster-box .vr-line-height-3 {
     line-height: 7.50003rem;
   }
   .user-css .vr-line-height-4,
 .user-css-extended .vr-line-height-4,
-.user-css-map-sidebar .vr-line-height-4 {
+.user-css-map-sidebar .vr-line-height-4,
+.tooltipster-box .vr-line-height-4 {
     line-height: 10.00004rem;
   }
   .user-css .vr-line-height-5,
 .user-css-extended .vr-line-height-5,
-.user-css-map-sidebar .vr-line-height-5 {
+.user-css-map-sidebar .vr-line-height-5,
+.tooltipster-box .vr-line-height-5 {
     line-height: 12.50005rem;
   }
   .user-css .vr-line-height-6,
 .user-css-extended .vr-line-height-6,
-.user-css-map-sidebar .vr-line-height-6 {
+.user-css-map-sidebar .vr-line-height-6,
+.tooltipster-box .vr-line-height-6 {
     line-height: 15.00006rem;
   }
   .user-css .vr-line-height-7,
 .user-css-extended .vr-line-height-7,
-.user-css-map-sidebar .vr-line-height-7 {
+.user-css-map-sidebar .vr-line-height-7,
+.tooltipster-box .vr-line-height-7 {
     line-height: 17.50007rem;
   }
   .user-css .vr-line-height-8,
 .user-css-extended .vr-line-height-8,
-.user-css-map-sidebar .vr-line-height-8 {
+.user-css-map-sidebar .vr-line-height-8,
+.tooltipster-box .vr-line-height-8 {
     line-height: 20.00008rem;
   }
   .user-css .vr-line-height-9,
 .user-css-extended .vr-line-height-9,
-.user-css-map-sidebar .vr-line-height-9 {
+.user-css-map-sidebar .vr-line-height-9,
+.tooltipster-box .vr-line-height-9 {
     line-height: 22.50009rem;
   }
   .user-css .vr-line-height-10,
 .user-css-extended .vr-line-height-10,
-.user-css-map-sidebar .vr-line-height-10 {
+.user-css-map-sidebar .vr-line-height-10,
+.tooltipster-box .vr-line-height-10 {
     line-height: 25.0001rem;
   }
   .user-css [height="1"],
@@ -1347,7 +1637,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="1"],
 .user-css-map-sidebar select[multiple][size="1"],
 .user-css-map-sidebar textarea[rows="1"],
-.user-css-map-sidebar .vr-height-1 {
+.user-css-map-sidebar .vr-height-1,
+.tooltipster-box [height="1"],
+.tooltipster-box select[multiple][size="1"],
+.tooltipster-box textarea[rows="1"],
+.tooltipster-box .vr-height-1 {
     height: 2.50001rem;
   }
   .user-css [height="2"],
@@ -1361,7 +1655,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="2"],
 .user-css-map-sidebar select[multiple][size="2"],
 .user-css-map-sidebar textarea[rows="2"],
-.user-css-map-sidebar .vr-height-2 {
+.user-css-map-sidebar .vr-height-2,
+.tooltipster-box [height="2"],
+.tooltipster-box select[multiple][size="2"],
+.tooltipster-box textarea[rows="2"],
+.tooltipster-box .vr-height-2 {
     height: 5.00002rem;
   }
   .user-css [height="3"],
@@ -1375,7 +1673,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="3"],
 .user-css-map-sidebar select[multiple][size="3"],
 .user-css-map-sidebar textarea[rows="3"],
-.user-css-map-sidebar .vr-height-3 {
+.user-css-map-sidebar .vr-height-3,
+.tooltipster-box [height="3"],
+.tooltipster-box select[multiple][size="3"],
+.tooltipster-box textarea[rows="3"],
+.tooltipster-box .vr-height-3 {
     height: 7.50003rem;
   }
   .user-css [height="4"],
@@ -1389,7 +1691,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="4"],
 .user-css-map-sidebar select[multiple][size="4"],
 .user-css-map-sidebar textarea[rows="4"],
-.user-css-map-sidebar .vr-height-4 {
+.user-css-map-sidebar .vr-height-4,
+.tooltipster-box [height="4"],
+.tooltipster-box select[multiple][size="4"],
+.tooltipster-box textarea[rows="4"],
+.tooltipster-box .vr-height-4 {
     height: 10.00004rem;
   }
   .user-css [height="5"],
@@ -1403,7 +1709,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="5"],
 .user-css-map-sidebar select[multiple][size="5"],
 .user-css-map-sidebar textarea[rows="5"],
-.user-css-map-sidebar .vr-height-5 {
+.user-css-map-sidebar .vr-height-5,
+.tooltipster-box [height="5"],
+.tooltipster-box select[multiple][size="5"],
+.tooltipster-box textarea[rows="5"],
+.tooltipster-box .vr-height-5 {
     height: 12.50005rem;
   }
   .user-css [height="6"],
@@ -1417,7 +1727,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="6"],
 .user-css-map-sidebar select[multiple][size="6"],
 .user-css-map-sidebar textarea[rows="6"],
-.user-css-map-sidebar .vr-height-6 {
+.user-css-map-sidebar .vr-height-6,
+.tooltipster-box [height="6"],
+.tooltipster-box select[multiple][size="6"],
+.tooltipster-box textarea[rows="6"],
+.tooltipster-box .vr-height-6 {
     height: 15.00006rem;
   }
   .user-css [height="7"],
@@ -1431,7 +1745,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="7"],
 .user-css-map-sidebar select[multiple][size="7"],
 .user-css-map-sidebar textarea[rows="7"],
-.user-css-map-sidebar .vr-height-7 {
+.user-css-map-sidebar .vr-height-7,
+.tooltipster-box [height="7"],
+.tooltipster-box select[multiple][size="7"],
+.tooltipster-box textarea[rows="7"],
+.tooltipster-box .vr-height-7 {
     height: 17.50007rem;
   }
   .user-css [height="8"],
@@ -1445,7 +1763,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="8"],
 .user-css-map-sidebar select[multiple][size="8"],
 .user-css-map-sidebar textarea[rows="8"],
-.user-css-map-sidebar .vr-height-8 {
+.user-css-map-sidebar .vr-height-8,
+.tooltipster-box [height="8"],
+.tooltipster-box select[multiple][size="8"],
+.tooltipster-box textarea[rows="8"],
+.tooltipster-box .vr-height-8 {
     height: 20.00008rem;
   }
   .user-css [height="9"],
@@ -1459,7 +1781,11 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="9"],
 .user-css-map-sidebar select[multiple][size="9"],
 .user-css-map-sidebar textarea[rows="9"],
-.user-css-map-sidebar .vr-height-9 {
+.user-css-map-sidebar .vr-height-9,
+.tooltipster-box [height="9"],
+.tooltipster-box select[multiple][size="9"],
+.tooltipster-box textarea[rows="9"],
+.tooltipster-box .vr-height-9 {
     height: 22.50009rem;
   }
   .user-css [height="10"],
@@ -1473,212 +1799,257 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar [height="10"],
 .user-css-map-sidebar select[multiple][size="10"],
 .user-css-map-sidebar textarea[rows="10"],
-.user-css-map-sidebar .vr-height-10 {
+.user-css-map-sidebar .vr-height-10,
+.tooltipster-box [height="10"],
+.tooltipster-box select[multiple][size="10"],
+.tooltipster-box textarea[rows="10"],
+.tooltipster-box .vr-height-10 {
     height: 25.0001rem;
   }
   .user-css .vr-width-1,
 .user-css-extended .vr-width-1,
-.user-css-map-sidebar .vr-width-1 {
+.user-css-map-sidebar .vr-width-1,
+.tooltipster-box .vr-width-1 {
     width: 2.50001rem;
   }
   .user-css .vr-width-2,
 .user-css-extended .vr-width-2,
-.user-css-map-sidebar .vr-width-2 {
+.user-css-map-sidebar .vr-width-2,
+.tooltipster-box .vr-width-2 {
     width: 5.00002rem;
   }
   .user-css .vr-width-3,
 .user-css-extended .vr-width-3,
-.user-css-map-sidebar .vr-width-3 {
+.user-css-map-sidebar .vr-width-3,
+.tooltipster-box .vr-width-3 {
     width: 7.50003rem;
   }
   .user-css .vr-width-4,
 .user-css-extended .vr-width-4,
-.user-css-map-sidebar .vr-width-4 {
+.user-css-map-sidebar .vr-width-4,
+.tooltipster-box .vr-width-4 {
     width: 10.00004rem;
   }
   .user-css .vr-width-5,
 .user-css-extended .vr-width-5,
-.user-css-map-sidebar .vr-width-5 {
+.user-css-map-sidebar .vr-width-5,
+.tooltipster-box .vr-width-5 {
     width: 12.50005rem;
   }
   .user-css .vr-width-6,
 .user-css-extended .vr-width-6,
-.user-css-map-sidebar .vr-width-6 {
+.user-css-map-sidebar .vr-width-6,
+.tooltipster-box .vr-width-6 {
     width: 15.00006rem;
   }
   .user-css .vr-width-7,
 .user-css-extended .vr-width-7,
-.user-css-map-sidebar .vr-width-7 {
+.user-css-map-sidebar .vr-width-7,
+.tooltipster-box .vr-width-7 {
     width: 17.50007rem;
   }
   .user-css .vr-width-8,
 .user-css-extended .vr-width-8,
-.user-css-map-sidebar .vr-width-8 {
+.user-css-map-sidebar .vr-width-8,
+.tooltipster-box .vr-width-8 {
     width: 20.00008rem;
   }
   .user-css .vr-width-9,
 .user-css-extended .vr-width-9,
-.user-css-map-sidebar .vr-width-9 {
+.user-css-map-sidebar .vr-width-9,
+.tooltipster-box .vr-width-9 {
     width: 22.50009rem;
   }
   .user-css .vr-width-10,
 .user-css-extended .vr-width-10,
-.user-css-map-sidebar .vr-width-10 {
+.user-css-map-sidebar .vr-width-10,
+.tooltipster-box .vr-width-10 {
     width: 25.0001rem;
   }
   .user-css .vr-margin-1,
 .user-css-extended .vr-margin-1,
-.user-css-map-sidebar .vr-margin-1 {
+.user-css-map-sidebar .vr-margin-1,
+.tooltipster-box .vr-margin-1 {
     margin: 2.50001rem;
   }
   .user-css .vr-margin-2,
 .user-css-extended .vr-margin-2,
-.user-css-map-sidebar .vr-margin-2 {
+.user-css-map-sidebar .vr-margin-2,
+.tooltipster-box .vr-margin-2 {
     margin: 5.00002rem;
   }
   .user-css .vr-margin-3,
 .user-css-extended .vr-margin-3,
-.user-css-map-sidebar .vr-margin-3 {
+.user-css-map-sidebar .vr-margin-3,
+.tooltipster-box .vr-margin-3 {
     margin: 7.50003rem;
   }
   .user-css .vr-margin-4,
 .user-css-extended .vr-margin-4,
-.user-css-map-sidebar .vr-margin-4 {
+.user-css-map-sidebar .vr-margin-4,
+.tooltipster-box .vr-margin-4 {
     margin: 10.00004rem;
   }
   .user-css .vr-margin-5,
 .user-css-extended .vr-margin-5,
-.user-css-map-sidebar .vr-margin-5 {
+.user-css-map-sidebar .vr-margin-5,
+.tooltipster-box .vr-margin-5 {
     margin: 12.50005rem;
   }
   .user-css .vr-margin-top-1,
 .user-css-extended .vr-margin-top-1,
-.user-css-map-sidebar .vr-margin-top-1 {
+.user-css-map-sidebar .vr-margin-top-1,
+.tooltipster-box .vr-margin-top-1 {
     margin-top: 2.50001rem;
   }
   .user-css .vr-margin-top-2,
 .user-css-extended .vr-margin-top-2,
-.user-css-map-sidebar .vr-margin-top-2 {
+.user-css-map-sidebar .vr-margin-top-2,
+.tooltipster-box .vr-margin-top-2 {
     margin-top: 5.00002rem;
   }
   .user-css .vr-margin-top-3,
 .user-css-extended .vr-margin-top-3,
-.user-css-map-sidebar .vr-margin-top-3 {
+.user-css-map-sidebar .vr-margin-top-3,
+.tooltipster-box .vr-margin-top-3 {
     margin-top: 7.50003rem;
   }
   .user-css .vr-margin-top-4,
 .user-css-extended .vr-margin-top-4,
-.user-css-map-sidebar .vr-margin-top-4 {
+.user-css-map-sidebar .vr-margin-top-4,
+.tooltipster-box .vr-margin-top-4 {
     margin-top: 10.00004rem;
   }
   .user-css .vr-margin-top-5,
 .user-css-extended .vr-margin-top-5,
-.user-css-map-sidebar .vr-margin-top-5 {
+.user-css-map-sidebar .vr-margin-top-5,
+.tooltipster-box .vr-margin-top-5 {
     margin-top: 12.50005rem;
   }
   .user-css .vr-margin-bottom-1,
 .user-css-extended .vr-margin-bottom-1,
-.user-css-map-sidebar .vr-margin-bottom-1 {
+.user-css-map-sidebar .vr-margin-bottom-1,
+.tooltipster-box .vr-margin-bottom-1 {
     margin-bottom: 2.50001rem;
   }
   .user-css .vr-margin-bottom-2,
 .user-css-extended .vr-margin-bottom-2,
-.user-css-map-sidebar .vr-margin-bottom-2 {
+.user-css-map-sidebar .vr-margin-bottom-2,
+.tooltipster-box .vr-margin-bottom-2 {
     margin-bottom: 5.00002rem;
   }
   .user-css .vr-margin-bottom-3,
 .user-css-extended .vr-margin-bottom-3,
-.user-css-map-sidebar .vr-margin-bottom-3 {
+.user-css-map-sidebar .vr-margin-bottom-3,
+.tooltipster-box .vr-margin-bottom-3 {
     margin-bottom: 7.50003rem;
   }
   .user-css .vr-margin-bottom-4,
 .user-css-extended .vr-margin-bottom-4,
-.user-css-map-sidebar .vr-margin-bottom-4 {
+.user-css-map-sidebar .vr-margin-bottom-4,
+.tooltipster-box .vr-margin-bottom-4 {
     margin-bottom: 10.00004rem;
   }
   .user-css .vr-margin-bottom-5,
 .user-css-extended .vr-margin-bottom-5,
-.user-css-map-sidebar .vr-margin-bottom-5 {
+.user-css-map-sidebar .vr-margin-bottom-5,
+.tooltipster-box .vr-margin-bottom-5 {
     margin-bottom: 12.50005rem;
   }
   .user-css .vr-padding-1,
 .user-css-extended .vr-padding-1,
-.user-css-map-sidebar .vr-padding-1 {
+.user-css-map-sidebar .vr-padding-1,
+.tooltipster-box .vr-padding-1 {
     padding: 2.50001rem;
   }
   .user-css .vr-padding-2,
 .user-css-extended .vr-padding-2,
-.user-css-map-sidebar .vr-padding-2 {
+.user-css-map-sidebar .vr-padding-2,
+.tooltipster-box .vr-padding-2 {
     padding: 5.00002rem;
   }
   .user-css .vr-padding-3,
 .user-css-extended .vr-padding-3,
-.user-css-map-sidebar .vr-padding-3 {
+.user-css-map-sidebar .vr-padding-3,
+.tooltipster-box .vr-padding-3 {
     padding: 7.50003rem;
   }
   .user-css .vr-padding-4,
 .user-css-extended .vr-padding-4,
-.user-css-map-sidebar .vr-padding-4 {
+.user-css-map-sidebar .vr-padding-4,
+.tooltipster-box .vr-padding-4 {
     padding: 10.00004rem;
   }
   .user-css .vr-padding-5,
 .user-css-extended .vr-padding-5,
-.user-css-map-sidebar .vr-padding-5 {
+.user-css-map-sidebar .vr-padding-5,
+.tooltipster-box .vr-padding-5 {
     padding: 12.50005rem;
   }
   .user-css .vr-padding-top-1,
 .user-css-extended .vr-padding-top-1,
-.user-css-map-sidebar .vr-padding-top-1 {
+.user-css-map-sidebar .vr-padding-top-1,
+.tooltipster-box .vr-padding-top-1 {
     padding-top: 2.50001rem;
   }
   .user-css .vr-padding-top-2,
 .user-css-extended .vr-padding-top-2,
-.user-css-map-sidebar .vr-padding-top-2 {
+.user-css-map-sidebar .vr-padding-top-2,
+.tooltipster-box .vr-padding-top-2 {
     padding-top: 5.00002rem;
   }
   .user-css .vr-padding-top-3,
 .user-css-extended .vr-padding-top-3,
-.user-css-map-sidebar .vr-padding-top-3 {
+.user-css-map-sidebar .vr-padding-top-3,
+.tooltipster-box .vr-padding-top-3 {
     padding-top: 7.50003rem;
   }
   .user-css .vr-padding-top-4,
 .user-css-extended .vr-padding-top-4,
-.user-css-map-sidebar .vr-padding-top-4 {
+.user-css-map-sidebar .vr-padding-top-4,
+.tooltipster-box .vr-padding-top-4 {
     padding-top: 10.00004rem;
   }
   .user-css .vr-padding-top-5,
 .user-css-extended .vr-padding-top-5,
-.user-css-map-sidebar .vr-padding-top-5 {
+.user-css-map-sidebar .vr-padding-top-5,
+.tooltipster-box .vr-padding-top-5 {
     padding-top: 12.50005rem;
   }
   .user-css .vr-padding-bottom-1,
 .user-css-extended .vr-padding-bottom-1,
-.user-css-map-sidebar .vr-padding-bottom-1 {
+.user-css-map-sidebar .vr-padding-bottom-1,
+.tooltipster-box .vr-padding-bottom-1 {
     padding-bottom: 2.50001rem;
   }
   .user-css .vr-padding-bottom-2,
 .user-css-extended .vr-padding-bottom-2,
-.user-css-map-sidebar .vr-padding-bottom-2 {
+.user-css-map-sidebar .vr-padding-bottom-2,
+.tooltipster-box .vr-padding-bottom-2 {
     padding-bottom: 5.00002rem;
   }
   .user-css .vr-padding-bottom-3,
 .user-css-extended .vr-padding-bottom-3,
-.user-css-map-sidebar .vr-padding-bottom-3 {
+.user-css-map-sidebar .vr-padding-bottom-3,
+.tooltipster-box .vr-padding-bottom-3 {
     padding-bottom: 7.50003rem;
   }
   .user-css .vr-padding-bottom-4,
 .user-css-extended .vr-padding-bottom-4,
-.user-css-map-sidebar .vr-padding-bottom-4 {
+.user-css-map-sidebar .vr-padding-bottom-4,
+.tooltipster-box .vr-padding-bottom-4 {
     padding-bottom: 10.00004rem;
   }
   .user-css .vr-padding-bottom-5,
 .user-css-extended .vr-padding-bottom-5,
-.user-css-map-sidebar .vr-padding-bottom-5 {
+.user-css-map-sidebar .vr-padding-bottom-5,
+.tooltipster-box .vr-padding-bottom-5 {
     padding-bottom: 12.50005rem;
   }
   .user-css .vr-offset-1,
 .user-css-extended .vr-offset-1,
-.user-css-map-sidebar .vr-offset-1 {
+.user-css-map-sidebar .vr-offset-1,
+.tooltipster-box .vr-offset-1 {
     -webkit-transform: translateY(-1px);
     -ms-transform: translateY(-1px);
     transform: translateY(-1px);
@@ -1686,7 +2057,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   }
   .user-css .vr-offset-2,
 .user-css-extended .vr-offset-2,
-.user-css-map-sidebar .vr-offset-2 {
+.user-css-map-sidebar .vr-offset-2,
+.tooltipster-box .vr-offset-2 {
     -webkit-transform: translateY(-2px);
     -ms-transform: translateY(-2px);
     transform: translateY(-2px);
@@ -1694,7 +2066,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   }
   .user-css .vr-offset-3,
 .user-css-extended .vr-offset-3,
-.user-css-map-sidebar .vr-offset-3 {
+.user-css-map-sidebar .vr-offset-3,
+.tooltipster-box .vr-offset-3 {
     -webkit-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
     transform: translateY(-3px);
@@ -1702,7 +2075,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   }
   .user-css .vr-offset-4,
 .user-css-extended .vr-offset-4,
-.user-css-map-sidebar .vr-offset-4 {
+.user-css-map-sidebar .vr-offset-4,
+.tooltipster-box .vr-offset-4 {
     -webkit-transform: translateY(-4px);
     -ms-transform: translateY(-4px);
     transform: translateY(-4px);
@@ -1710,7 +2084,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   }
   .user-css .vr-offset-5,
 .user-css-extended .vr-offset-5,
-.user-css-map-sidebar .vr-offset-5 {
+.user-css-map-sidebar .vr-offset-5,
+.tooltipster-box .vr-offset-5 {
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
@@ -1718,7 +2093,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   }
   .user-css .vr-offset-top-1,
 .user-css-extended .vr-offset-top-1,
-.user-css-map-sidebar .vr-offset-top-1 {
+.user-css-map-sidebar .vr-offset-top-1,
+.tooltipster-box .vr-offset-top-1 {
     -webkit-transform: translateY(-1px);
     -ms-transform: translateY(-1px);
     transform: translateY(-1px);
@@ -1726,7 +2102,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   }
   .user-css .vr-offset-top-2,
 .user-css-extended .vr-offset-top-2,
-.user-css-map-sidebar .vr-offset-top-2 {
+.user-css-map-sidebar .vr-offset-top-2,
+.tooltipster-box .vr-offset-top-2 {
     -webkit-transform: translateY(-2px);
     -ms-transform: translateY(-2px);
     transform: translateY(-2px);
@@ -1734,7 +2111,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   }
   .user-css .vr-offset-top-3,
 .user-css-extended .vr-offset-top-3,
-.user-css-map-sidebar .vr-offset-top-3 {
+.user-css-map-sidebar .vr-offset-top-3,
+.tooltipster-box .vr-offset-top-3 {
     -webkit-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
     transform: translateY(-3px);
@@ -1742,7 +2120,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   }
   .user-css .vr-offset-top-4,
 .user-css-extended .vr-offset-top-4,
-.user-css-map-sidebar .vr-offset-top-4 {
+.user-css-map-sidebar .vr-offset-top-4,
+.tooltipster-box .vr-offset-top-4 {
     -webkit-transform: translateY(-4px);
     -ms-transform: translateY(-4px);
     transform: translateY(-4px);
@@ -1750,7 +2129,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   }
   .user-css .vr-offset-top-5,
 .user-css-extended .vr-offset-top-5,
-.user-css-map-sidebar .vr-offset-top-5 {
+.user-css-map-sidebar .vr-offset-top-5,
+.tooltipster-box .vr-offset-top-5 {
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
@@ -1758,34 +2138,40 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
   }
   .user-css .vr-offset-bottom-1,
 .user-css-extended .vr-offset-bottom-1,
-.user-css-map-sidebar .vr-offset-bottom-1 {
+.user-css-map-sidebar .vr-offset-bottom-1,
+.tooltipster-box .vr-offset-bottom-1 {
     margin-bottom: -1px;
   }
   .user-css .vr-offset-bottom-2,
 .user-css-extended .vr-offset-bottom-2,
-.user-css-map-sidebar .vr-offset-bottom-2 {
+.user-css-map-sidebar .vr-offset-bottom-2,
+.tooltipster-box .vr-offset-bottom-2 {
     margin-bottom: -2px;
   }
   .user-css .vr-offset-bottom-3,
 .user-css-extended .vr-offset-bottom-3,
-.user-css-map-sidebar .vr-offset-bottom-3 {
+.user-css-map-sidebar .vr-offset-bottom-3,
+.tooltipster-box .vr-offset-bottom-3 {
     margin-bottom: -3px;
   }
   .user-css .vr-offset-bottom-4,
 .user-css-extended .vr-offset-bottom-4,
-.user-css-map-sidebar .vr-offset-bottom-4 {
+.user-css-map-sidebar .vr-offset-bottom-4,
+.tooltipster-box .vr-offset-bottom-4 {
     margin-bottom: -4px;
   }
   .user-css .vr-offset-bottom-5,
 .user-css-extended .vr-offset-bottom-5,
-.user-css-map-sidebar .vr-offset-bottom-5 {
+.user-css-map-sidebar .vr-offset-bottom-5,
+.tooltipster-box .vr-offset-bottom-5 {
     margin-bottom: -5px;
   }
 }
 @media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .user-css,
 .user-css-extended,
-.user-css-map-sidebar {
+.user-css-map-sidebar,
+.tooltipster-box {
     /* Vertical Rhythm Reset: Fix for mobile select[multiple] elements */
   }
   .user-css select[multiple],
@@ -1793,13 +2179,16 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended select[multiple],
 .user-css-extended select[multiple][size],
 .user-css-map-sidebar select[multiple],
-.user-css-map-sidebar select[multiple][size] {
+.user-css-map-sidebar select[multiple][size],
+.tooltipster-box select[multiple],
+.tooltipster-box select[multiple][size] {
     height: 2.00001rem;
   }
 }
 .user-css,
 .user-css-extended,
-.user-css-map-sidebar {
+.user-css-map-sidebar,
+.tooltipster-box {
   font-family: proxima-nova, open-sans, sans-serif;
   overflow: hidden;
 }
@@ -1807,7 +2196,9 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended.page,
 .user-css-extended .page,
 .user-css-map-sidebar.page,
-.user-css-map-sidebar .page {
+.user-css-map-sidebar .page,
+.tooltipster-box.page,
+.tooltipster-box .page {
   background: white;
   margin-right: auto;
   margin-left: auto;
@@ -1818,7 +2209,9 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended.page,
 .user-css-extended .page,
 .user-css-map-sidebar.page,
-.user-css-map-sidebar .page {
+.user-css-map-sidebar .page,
+.tooltipster-box.page,
+.tooltipster-box .page {
     width: 72.00036rem;
   }
 }
@@ -1827,7 +2220,9 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended.page,
 .user-css-extended .page,
 .user-css-map-sidebar.page,
-.user-css-map-sidebar .page {
+.user-css-map-sidebar .page,
+.tooltipster-box.page,
+.tooltipster-box .page {
     width: 90.00036rem;
   }
 }
@@ -1836,7 +2231,9 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended.page,
 .user-css-extended .page,
 .user-css-map-sidebar.page,
-.user-css-map-sidebar .page {
+.user-css-map-sidebar .page,
+.tooltipster-box.page,
+.tooltipster-box .page {
     width: 96.00048rem;
   }
 }
@@ -1845,7 +2242,9 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended.page,
 .user-css-extended .page,
 .user-css-map-sidebar.page,
-.user-css-map-sidebar .page {
+.user-css-map-sidebar .page,
+.tooltipster-box.page,
+.tooltipster-box .page {
     width: 120.0006rem;
   }
 }
@@ -1861,13 +2260,20 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-map-sidebar h3,
 .user-css-map-sidebar h4,
 .user-css-map-sidebar h5,
-.user-css-map-sidebar h6 {
+.user-css-map-sidebar h6,
+.tooltipster-box h1,
+.tooltipster-box h2,
+.tooltipster-box h3,
+.tooltipster-box h4,
+.tooltipster-box h5,
+.tooltipster-box h6 {
   font-family: proxima-nova;
   text-transform: capitalize;
 }
 .user-css h1,
 .user-css-extended h1,
-.user-css-map-sidebar h1 {
+.user-css-map-sidebar h1,
+.tooltipster-box h1 {
   font-size: 2.48832rem;
   line-height: 4.00001rem;
   margin: 0px 0;
@@ -1875,7 +2281,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 @media (min-width: 1200px) {
   .user-css h1,
 .user-css-extended h1,
-.user-css-map-sidebar h1 {
+.user-css-map-sidebar h1,
+.tooltipster-box h1 {
     font-size: 3.0517578125rem;
     line-height: 5.00001rem;
     margin: 0px 0;
@@ -1883,7 +2290,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css h2,
 .user-css-extended h2,
-.user-css-map-sidebar h2 {
+.user-css-map-sidebar h2,
+.tooltipster-box h2 {
   color: var(--secondary_theme);
   font-size: 2.0736rem;
   line-height: 4.00001rem;
@@ -1898,16 +2306,26 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 @media (min-width: 1200px) {
   .user-css h2,
 .user-css-extended h2,
-.user-css-map-sidebar h2 {
+.user-css-map-sidebar h2,
+.tooltipster-box h2 {
     font-size: 2.44140625rem;
     line-height: 2.50001rem;
     display: inline-block;
     margin: 0px 0 calc((2.50001rem) - 1px);
   }
 }
+@media (min-width: 1200px) {
+  .user-css h2,
+.user-css-extended h2,
+.user-css-map-sidebar h2,
+.tooltipster-box h2 {
+    height: 4.00002rem;
+  }
+}
 .user-css h3,
 .user-css-extended h3,
-.user-css-map-sidebar h3 {
+.user-css-map-sidebar h3,
+.tooltipster-box h3 {
   font-size: 1.728rem;
   line-height: 2.00001rem;
   margin: 0px 0;
@@ -1918,7 +2336,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 @media (min-width: 1200px) {
   .user-css h3,
 .user-css-extended h3,
-.user-css-map-sidebar h3 {
+.user-css-map-sidebar h3,
+.tooltipster-box h3 {
     font-size: 1.953125rem;
     line-height: 2.50001rem;
     margin: 0px 0;
@@ -1926,7 +2345,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css h4,
 .user-css-extended h4,
-.user-css-map-sidebar h4 {
+.user-css-map-sidebar h4,
+.tooltipster-box h4 {
   font-size: 1.44rem;
   line-height: 2.00001rem;
   margin: 0px 0;
@@ -1936,7 +2356,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 @media (min-width: 1200px) {
   .user-css h4,
 .user-css-extended h4,
-.user-css-map-sidebar h4 {
+.user-css-map-sidebar h4,
+.tooltipster-box h4 {
     font-size: 1.5625rem;
     line-height: 2.50001rem;
     margin: 0px 0;
@@ -1944,7 +2365,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css h5,
 .user-css-extended h5,
-.user-css-map-sidebar h5 {
+.user-css-map-sidebar h5,
+.tooltipster-box h5 {
   font-size: 1.44rem;
   line-height: 2.00001rem;
   font-weight: 600;
@@ -1953,45 +2375,53 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 @media (min-width: 1200px) {
   .user-css h5,
 .user-css-extended h5,
-.user-css-map-sidebar h5 {
+.user-css-map-sidebar h5,
+.tooltipster-box h5 {
     font-size: 1.5625rem;
     line-height: 2.50001rem;
   }
 }
 .user-css a,
 .user-css-extended a,
-.user-css-map-sidebar a {
+.user-css-map-sidebar a,
+.tooltipster-box a {
   color: var(--link_active);
   font-weight: 700;
 }
 .user-css a:hover,
 .user-css-extended a:hover,
-.user-css-map-sidebar a:hover {
+.user-css-map-sidebar a:hover,
+.tooltipster-box a:hover {
   color: var(--link_hover);
 }
 .user-css a.text-danger,
 .user-css-extended a.text-danger,
-.user-css-map-sidebar a.text-danger {
+.user-css-map-sidebar a.text-danger,
+.tooltipster-box a.text-danger {
   color: var(--link_new);
 }
 .user-css b,
 .user-css-extended b,
-.user-css-map-sidebar b {
+.user-css-map-sidebar b,
+.tooltipster-box b {
   font-weight: 600;
 }
 .user-css em,
 .user-css-extended em,
-.user-css-map-sidebar em {
+.user-css-map-sidebar em,
+.tooltipster-box em {
   font-style: italic;
 }
 .user-css u,
 .user-css-extended u,
-.user-css-map-sidebar u {
+.user-css-map-sidebar u,
+.tooltipster-box u {
   text-decoration: underline;
 }
 .user-css i.fas,
 .user-css-extended i.fas,
-.user-css-map-sidebar i.fas {
+.user-css-map-sidebar i.fas,
+.tooltipster-box i.fas {
   font-style: normal;
 }
 .user-css sub,
@@ -1999,7 +2429,9 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended sub,
 .user-css-extended sup,
 .user-css-map-sidebar sub,
-.user-css-map-sidebar sup {
+.user-css-map-sidebar sup,
+.tooltipster-box sub,
+.tooltipster-box sup {
   font-size: 1rem;
   line-height: 2.00001rem;
   margin: 0px 0;
@@ -2013,7 +2445,9 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended sub,
 .user-css-extended sup,
 .user-css-map-sidebar sub,
-.user-css-map-sidebar sup {
+.user-css-map-sidebar sup,
+.tooltipster-box sub,
+.tooltipster-box sup {
     font-size: 1rem;
     line-height: 2.50001rem;
     margin: 0px 0;
@@ -2021,17 +2455,20 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css sub,
 .user-css-extended sub,
-.user-css-map-sidebar sub {
+.user-css-map-sidebar sub,
+.tooltipster-box sub {
   bottom: -0.25em;
 }
 .user-css sup,
 .user-css-extended sup,
-.user-css-map-sidebar sup {
+.user-css-map-sidebar sup,
+.tooltipster-box sup {
   top: -0.5em;
 }
 .user-css small,
 .user-css-extended small,
-.user-css-map-sidebar small {
+.user-css-map-sidebar small,
+.tooltipster-box small {
   font-size: 1.2rem;
   line-height: 2.00001rem;
   margin: 0px 0;
@@ -2039,7 +2476,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 @media (min-width: 1200px) {
   .user-css small,
 .user-css-extended small,
-.user-css-map-sidebar small {
+.user-css-map-sidebar small,
+.tooltipster-box small {
     font-size: 1.25rem;
     line-height: 2.50001rem;
     margin: 0px 0;
@@ -2050,13 +2488,16 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended p,
 .user-css-extended #profile,
 .user-css-map-sidebar p,
-.user-css-map-sidebar #profile {
+.user-css-map-sidebar #profile,
+.tooltipster-box p,
+.tooltipster-box #profile {
   font-family: muli, proxima-nova, open-sans, sans-serif;
   color: var(--base_text_colour);
 }
 .user-css p,
 .user-css-extended p,
-.user-css-map-sidebar p {
+.user-css-map-sidebar p,
+.tooltipster-box p {
   font-size: 1.44rem;
   line-height: 2.00001rem;
   margin: 0px 0;
@@ -2065,7 +2506,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 @media (min-width: 1200px) {
   .user-css p,
 .user-css-extended p,
-.user-css-map-sidebar p {
+.user-css-map-sidebar p,
+.tooltipster-box p {
     font-size: 1.5625rem;
     line-height: 2.50001rem;
     margin: 0px 0;
@@ -2074,7 +2516,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css #profile,
 .user-css-extended #profile,
-.user-css-map-sidebar #profile {
+.user-css-map-sidebar #profile,
+.tooltipster-box #profile {
   font-size: 1.44rem;
   line-height: 2.00001rem;
   margin: 0px 0;
@@ -2083,7 +2526,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 @media (min-width: 1200px) {
   .user-css #profile,
 .user-css-extended #profile,
-.user-css-map-sidebar #profile {
+.user-css-map-sidebar #profile,
+.tooltipster-box #profile {
     font-size: 1.5625rem;
     line-height: 2.50001rem;
     margin: 0px 0;
@@ -2092,7 +2536,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css blockquote,
 .user-css-extended blockquote,
-.user-css-map-sidebar blockquote {
+.user-css-map-sidebar blockquote,
+.tooltipster-box blockquote {
   font-size: 1.728rem;
   line-height: 2.00001rem;
   margin: 1.000005rem 0;
@@ -2104,7 +2549,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 @media (min-width: 1200px) {
   .user-css blockquote,
 .user-css-extended blockquote,
-.user-css-map-sidebar blockquote {
+.user-css-map-sidebar blockquote,
+.tooltipster-box blockquote {
     font-size: 1.953125rem;
     line-height: 2.50001rem;
     margin: 1.250005rem 0;
@@ -2113,24 +2559,28 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css blockquote + blockquote,
 .user-css-extended blockquote + blockquote,
-.user-css-map-sidebar blockquote + blockquote {
+.user-css-map-sidebar blockquote + blockquote,
+.tooltipster-box blockquote + blockquote {
   margin-top: 2.00001rem;
 }
 @media (min-width: 1200px) {
   .user-css blockquote + blockquote,
 .user-css-extended blockquote + blockquote,
-.user-css-map-sidebar blockquote + blockquote {
+.user-css-map-sidebar blockquote + blockquote,
+.tooltipster-box blockquote + blockquote {
     margin-top: 2.50001rem;
   }
 }
 .user-css hr,
 .user-css-extended hr,
-.user-css-map-sidebar hr {
+.user-css-map-sidebar hr,
+.tooltipster-box hr {
   border-color: var(--secondary_theme);
 }
 .user-css .line-spacer.d-block,
 .user-css-extended .line-spacer.d-block,
-.user-css-map-sidebar .line-spacer.d-block {
+.user-css-map-sidebar .line-spacer.d-block,
+.tooltipster-box .line-spacer.d-block {
   height: 2.00001rem;
   margin: 0;
   padding: 0;
@@ -2138,7 +2588,8 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 @media (min-width: 1200px) {
   .user-css .line-spacer.d-block,
 .user-css-extended .line-spacer.d-block,
-.user-css-map-sidebar .line-spacer.d-block {
+.user-css-map-sidebar .line-spacer.d-block,
+.tooltipster-box .line-spacer.d-block {
     height: 2.50001rem;
   }
 }
@@ -2148,12 +2599,16 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 .user-css-extended select:focus,
 .user-css-map-sidebar input:focus,
 .user-css-map-sidebar textarea:focus,
-.user-css-map-sidebar select:focus {
+.user-css-map-sidebar select:focus,
+.tooltipster-box input:focus,
+.tooltipster-box textarea:focus,
+.tooltipster-box select:focus {
   outline: none;
 }
 .user-css .row.row.row,
 .user-css-extended .row.row.row,
-.user-css-map-sidebar .row.row.row {
+.user-css-map-sidebar .row.row.row,
+.tooltipster-box .row.row.row {
   margin: 0;
   padding: 0;
 }
@@ -3049,6 +3504,44 @@ body:not(:-moz-handler-blocked) .user-css-map-sidebar fieldset {
 }
 .user-css-extended .tab-content {
   color: var(--base_text_colour);
+}
+
+.tooltipster-box .img-fluid {
+  display: none;
+}
+.tooltipster-box .tooltipster-content > div {
+  font-size: 1.44rem;
+  line-height: 2.00001rem;
+  margin: 0px 0;
+  padding: 0px 0;
+  font-family: muli, proxima-nova, open-sans, sans-serif;
+  color: var(--base_text_colour);
+}
+@media (min-width: 1200px) {
+  .tooltipster-box .tooltipster-content > div {
+    font-size: 1.5625rem;
+    line-height: 2.50001rem;
+    margin: 0px 0;
+    padding: 0px 0;
+  }
+}
+.tooltipster-box .tooltipster-content > div > h2:first-child {
+  font-size: 2.985984rem;
+  line-height: 4.00001rem;
+  margin: 0px 0 2.00001rem;
+  padding: 1.5000075rem 0 0.5000025rem;
+  font-family: bebas-neue, bebas-neue-regular;
+  font-weight: 500;
+  text-transform: none;
+  font-variant-caps: normal;
+}
+@media (min-width: 1200px) {
+  .tooltipster-box .tooltipster-content > div > h2:first-child {
+    font-size: 3.8146972656rem;
+    line-height: 5.00001rem;
+    margin: 0px 0 2.50001rem;
+    padding: 1.8750075rem 0 0.6250025rem;
+  }
 }
 
 .user-css #cover .nav-tabs,

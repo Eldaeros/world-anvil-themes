@@ -25,7 +25,8 @@ $DEBUG_MODE: false;
 
 .user-css,
 .user-css-extended,
-.user-css-map-sidebar {
+.user-css-map-sidebar,
+.tooltipster-box {
     @include vr-reset();
     @import "base-styling";
 }
@@ -63,6 +64,10 @@ $DEBUG_MODE: false;
     .tab-content {
         color: var(--base_text_colour);
     }
+}
+
+.tooltipster-box {
+    @import "user-css/tooltip";
 }
 
 .user-css,
